@@ -6,4 +6,5 @@
  * @LastEditTime: 2021-12-22 21:51:35
  */
 export const num = 123
+console.log(111)
 
