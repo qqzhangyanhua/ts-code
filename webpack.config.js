@@ -3,7 +3,7 @@
  * @Autor: Freddie
  * @Date: 2021-12-22 21:21:13
  * @LastEditors: Freddie
- * @LastEditTime: 2021-12-22 22:30:38
+ * @LastEditTime: 2021-12-23 22:49:58
  */
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin')
@@ -11,13 +11,13 @@ const {
     CleanWebpackPlugin
 } = require('clean-webpack-plugin')
 module.exports = {
-    mode:'production',
+    mode: 'production',
     entry: './src/index.ts',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'main.js',
         environment: {
-            arrowFunction: false,  //打包后兼容低版本
+            arrowFunction: false, //打包后兼容低版本
         }
     },
     module: {
@@ -37,16 +37,38 @@ module.exports = {
                                 // 要兼容的目标浏览器
                                 targets: {
                                     "chrome": "85",
-                                    "ie":'11'
+                                    "ie": '11'
                                 },
                                 "corejs": "3",
-                                "useBuiltIns":"usage",//使用core-js按需加载
+                                "useBuiltIns": "usage", //使用core-js按需加载
                             }
                         ]
                     ]
                 }
             }, 'ts-loader'],
             exclude: /node_modules/
+        }, {
+            test: /\.less$/,
+            use: [
+                "style-loader",
+                "css-loader",
+                {
+                    loader: 'postcss-loader',
+                    options: {
+                        postcssOptions: {
+                            plugins: [
+                                [
+                                    "postcss-preset-env",
+                                    {
+                                        browser: "last 10 versions"
+                                    }
+                                ]
+                            ]
+                        }
+                    }
+                },
+                "less-loader"
+            ]
         }]
     },
     plugins: [
@@ -56,6 +78,6 @@ module.exports = {
         })
     ],
     resolve: {
-        extensions:['.js', '.ts']
+        extensions: ['.js', '.ts']
     }
 }
