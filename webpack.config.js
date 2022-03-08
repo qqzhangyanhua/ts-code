@@ -3,7 +3,7 @@
  * @Autor: Freddie
  * @Date: 2021-12-22 21:21:13
  * @LastEditors: Freddie
- * @LastEditTime: 2021-12-23 22:49:58
+ * @LastEditTime: 2022-03-08 07:09:05
  */
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin')
@@ -11,7 +11,7 @@ const {
     CleanWebpackPlugin
 } = require('clean-webpack-plugin')
 module.exports = {
-    mode: 'production',
+    mode: 'development',
     entry: './src/index.ts',
     output: {
         path: path.resolve(__dirname, 'dist'),
