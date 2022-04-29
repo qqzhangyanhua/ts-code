@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    function TreeNode(val, left, right) {
+      this.val = val === undefined ? 0 : val;
+      this.left = left === undefined ? null : left;
+      this.right = right === undefined ? null : right;
+    }
+    // const root = new TreeNode("1", "2", "c");
+    const root = {
+      val: "A",
+      left: {
+        val: "B",
+        left: {
+          val: "D",
+        },
+        right: {
+          val: "E",
+        },
+      },
+      right: {
+        val: "C",
+        right: {
+          val: "F",
+        },
+      },
+    };
+
+    const postorderTraversal = function (root) {
+      const res = [];
+      if (!root) return res;
+      const stack = [];
+      stack.push(root);
+      while (stack.length) {
+        const cur = stack.pop();
+        res.unshift(cur.val);
+        if (cur.left) {
+          stack.push(cur.left);
+        }
+        if (cur.right) {
+          stack.push(cur.right);
+        }
+      }
+      return res;
+    };
+    console.log(postorderTraversal(root));
+  </script>
+</html>
