@@ -40,12 +40,12 @@
       stack.push(root);
       while (stack.length) {
         const cur = stack.pop();
-        res.unshift(cur.val);
-        if (cur.left) {
-          stack.push(cur.left);
-        }
+        res.push(cur.val);
         if (cur.right) {
           stack.push(cur.right);
+        }
+        if (cur.left) {
+          stack.push(cur.left);
         }
       }
       return res;
