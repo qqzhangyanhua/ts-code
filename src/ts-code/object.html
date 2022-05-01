@@ -35,21 +35,37 @@
 
     const postorderTraversal = function (root) {
       const res = [];
-      if (!root) return res;
       const stack = [];
-      stack.push(root);
-      while (stack.length) {
-        const cur = stack.pop();
+      let cur = root;
+      while (cur || stack.length) {
+        while (cur) {
+          stack.push(cur);
+          cur = cur.left;
+        }
+        cur = stack.pop();
         res.push(cur.val);
-        if (cur.right) {
-          stack.push(cur.right);
-        }
-        if (cur.left) {
-          stack.push(cur.left);
-        }
+        cur = cur.right;
       }
       return res;
     };
-    console.log(postorderTraversal(root));
+    // console.log(postorderTraversal(root));
+
+    const BSTIterator = function (root) {
+      this.cur = root;
+      this.stack = [];
+    };
+    BSTIterator.prototype.next = function () {
+      while (cur) {
+        this.stack.push(cur);
+        this.cur = this.cur.left.next;
+      }
+      this.cur = this.stack.pop();
+      let val = this.cur.value;
+      this.cur = this.cur.right;
+      return val;
+    };
+    BSTIterator.prototype.hasNext = function () {
+      return this.cur !== null || this.stack.length;
+    };
   </script>
 </html>
