@@ -13,7 +13,7 @@
       this.left = left === undefined ? null : left;
       this.right = right === undefined ? null : right;
     }
-    // const root = new TreeNode("1", "2", "c");
+    //
     const root = {
       val: "A",
       left: {
@@ -33,39 +33,64 @@
       },
     };
 
-    const postorderTraversal = function (root) {
-      const res = [];
-      const stack = [];
-      let cur = root;
-      while (cur || stack.length) {
-        while (cur) {
-          stack.push(cur);
-          cur = cur.left;
-        }
-        cur = stack.pop();
-        res.push(cur.val);
-        cur = cur.right;
-      }
-      return res;
-    };
-    // console.log(postorderTraversal(root));
+    const root1 = new TreeNode("2", "1", "3");
+    root1.left.val = 99;
 
-    const BSTIterator = function (root) {
-      this.cur = root;
-      this.stack = [];
+    var findBottomLeftValue = function (root) {
+      let answer = root.val || 0;
+      let maxLevel = 0;
+      const dfs = function (root, level) {
+        if (!root) return;
+        dfs(root.left, level + 1);
+        dfs(root.right, level + 1);
+
+        if (level > maxLevel) {
+          maxLevel = level;
+          answer = root.val;
+        }
+      };
+      dfs(root, 0);
+      return answer;
     };
-    BSTIterator.prototype.next = function () {
-      while (cur) {
-        this.stack.push(cur);
-        this.cur = this.cur.left.next;
-      }
-      this.cur = this.stack.pop();
-      let val = this.cur.value;
-      this.cur = this.cur.right;
-      return val;
-    };
-    BSTIterator.prototype.hasNext = function () {
-      return this.cur !== null || this.stack.length;
-    };
+    // function dfs(root, level) {
+    //   if (!root) return;
+    //   dfs(root.left, level + 1);
+    //   dfs(root.right, level + 1);
+
+    //   if (level > maxLevel) {
+    //     maxLevel = level;
+    //     answer = root.val;
+    //   }
+    // }
+    const textRoot = { val: 1, left: { val: 1 }, right: { val: 2 } };
+    const textValue = { val: 1233 };
+    const textRoot1 = { val: 2, left: { val: -1 } };
+    const textValue2 = { val: "第四个" };
+    console.log(textRoot);
+    console.log(findBottomLeftValue(textRoot));
+    console.log(findBottomLeftValue(textValue));
+    console.log(findBottomLeftValue(textRoot1));
+    console.log(findBottomLeftValue(textValue2));
+
+    // class findBottomLeftValue {
+    //   constructor() {
+    //     this.answer = 0;
+    //     this.maxLevel = 0;
+    //   }
+    //   findBottomLeftValue(root) {
+    //     this.dfs(root, 0);
+    //     return this.answer;
+    //   }
+    //   dfs(root, level) {
+    //     if (!root) return;
+    //     this.dfs(root.left, level + 1);
+    //     this.dfs(root.right, level + 1);
+
+    //     if (level > this.maxLevel) {
+    //       this.maxLevel = level;
+    //       this.answer = root.val;
+    //     }
+    //   }
+    // }
   </script>
 </html>
