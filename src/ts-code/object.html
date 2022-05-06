@@ -38,27 +38,49 @@
       left: { val: 111 },
       right: { val: 11111, left: { val: 1 }, right: { val: 4 } },
     };
-    var maxDepth = function (root) {
-      let level = 0;
-      if (!root) {
-        return level;
+
+    class Node {
+      constructor(val, next) {
+        this.val = val !== undefined ? val : -1;
+        this.next = next !== undefined ? next : null;
       }
-      const stack = [root];
-      while (stack.length) {
-        let len = stack.length;
-        for (let i = 0; i < len; i++) {
-          const node = stack.shift();
-          if (node.left) {
-            stack.push(node.left);
-          }
-          if (node.right) {
-            stack.push(node.right);
-          }
-        }
-        level++;
+    }
+    function hash(x) {
+      return x > 0 ? x : -x;
+    }
+
+    var MyHashSet = function () {
+      this.data = [];
+      this.capacity = 100;
+      for (var i = 0; i < capacity; i++) {
+        this.data[i] = new Node();
       }
-      return level;
+      this.getV = (key) => {
+        let index = hash(key) % this.capacity;
+        return this.data[index];
+      };
     };
-    console.log(maxDepth(aRoot));
+    MyHashSet.prototype.contains = function (key) {
+      let v = getV(key);
+      while (p && p.val != key) {
+        p = p.next;
+      }
+      return p != null;
+    };
+    MyHashSet.prototype.add = function (key) {
+      if (this.contains(key)) return; //如果存在就return
+      let v = getV(key);
+      let temp = new Node(key);
+      temp.next = v.next;
+      v.next = temp;
+    };
+    MyHashSet.prototype.remove = function (key) {
+      if (!this.contains(key)) return; //如果不存在就return
+      let v = getV(key);
+      while (v.next && v.next.val != key) {
+        p = p.next;
+      }
+      p.next = p.next.next;
+    };
   </script>
 </html>
