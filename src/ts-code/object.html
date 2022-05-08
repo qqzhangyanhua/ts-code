@@ -67,40 +67,72 @@
       });
       return arr;
     };
-    var cpdomains = ["9001 discuss.leetcode.com"];
-    /**
-     * @param {string[]} cpdomains
-     * @return {string[]}
-     */
-    var subdomainVisits = function (cpdomains) {
+
+    const nums = [1, 2, 2, 3, 1];
+    // var findShortestSubArray = function (nums) {
+    //   let map = new Map();
+    //   let len = nums.length;
+    //   if (nums.length == 0) {
+    //     return 0;
+    //   }
+    //   for (let i = 0; i < nums.length; i++) {
+    //     if (map.has(nums[i])) {
+    //       const val = map.get(nums[i]);
+    //       map.set(nums[i], val + 1);
+    //     } else {
+    //       map.set(nums[i], 1);
+    //     }
+    //   }
+    //   const max = Math.max(...map.values());
+    //   const arr = [];
+    //   for (let i = 0; i < nums.length; i++) {
+    //     const cur = nums[i];
+    //     if (cur === max) {
+    //       let start = nums.indexOf(cur);
+    //       console.log(nums[i], max, i);
+    //       arr.push(i);
+    //     }
+
+    //     const maxIndex = Math.max(...arr);
+    //     console.log(maxIndex, max, len);
+    //     len = Math.min(nums.length, maxIndex);
+    //   }
+    //   return len;
+    // };
+    var nums2 = [1, 2, 2, 3, 1, 4, 2];
+    var findShortestSubArray = function (nums) {
       let map = new Map();
-      for (let i = 0; i < cpdomains.length; i++) {
-        let count = 0;
-        let str = "";
-        count = Number(cpdomains[i].split(" ")[0]);
-        str = cpdomains[i].split(" ")[1];
-        setMapValue(map, str, count);
-        while (str.includes(".")) {
-          str = str.substr(str.indexOf(".") + 1);
-          setMapValue(map, str, count);
+      let size = 1;
+      let distance = nums.length;
+      for (let i = 0; i < nums.length; i++) {
+        if (map.has(nums[i])) {
+          const val = map.get(nums[i]);
+          map.set(nums[i], val + 1);
+        } else {
+          map.set(nums[i], 1);
+        }
+        size = Math.max(size, map.get(nums[i]));
+      }
+      // console.log(size, map);
+      let h = new Map();
+      for (let i = 0; i < nums.length; i++) {
+        let cur = nums[i];
+        if (h.has(cur)) {
+          h.set(cur, h.get(cur) + 1);
+        } else {
+          h.set(cur, 1);
+        }
+        if (h.get(cur) == size) {
+          let start = nums.indexOf(cur);
+          distance = Math.min(distance, i - start + 1);
         }
       }
-      const arr = [];
-      map.forEach((value, key) => {
-        let str = value + " " + key;
-        arr.push(str);
-      });
-      console.log(map, arr);
-      return arr;
+      return distance;
     };
-    function setMapValue(map, str, count) {
-      if (map.has(str)) {
-        const val = map.get(str);
-        map.set(str, val + count);
-      } else {
-        map.set(str, count);
-      }
-    }
-    subdomainVisits(cpdomains);
+    console.log("222222222", findShortestSubArray(nums));
+    console.log("6666666", findShortestSubArray(nums2));
+    console.log("111111111", findShortestSubArray([0]));
+    console.log("222222", findShortestSubArray([1, 1]));
+    console.log("33333", findShortestSubArray([1, 2, 1]));
   </script>
 </html>
