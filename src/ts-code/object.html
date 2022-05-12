@@ -8,46 +8,40 @@
   </head>
   <body>
     <script>
-      var buildings = [
-        [2, 9, 10],
-        [3, 7, 15],
-        [5, 12, 12],
-        [15, 20, 10],
-        [19, 24, 8],
-      ];
-      function arrSort(arr) {
-        return arr.sort((a, b) => (a[0] != b[0] ? a[0] - b[0] : a[1] - b[1]));
-      }
-      var getSkyline = function (buildings) {
-        if (buildings.length === 0) {
-          return [];
-        }
-        let result = [],
-          flatRes = [],
-          pre = null;
-        for (let val of buildings) {
-          flatRes.push([val[0], -val[2]]); //为了区别左端点存的是负数
-          flatRes.push([val[1], val[2]]);
-        }
-        arrSort(flatRes);
-        let heights = [0];
-        for (let val of flatRes) {
-          console.log(val);
-          if (val[1] < 0) {
-            heights.push(-val[1]); //左侧端点负负得正
-          } else {
-            const index = heights.findIndex((el) => el === val[1]);
-            heights.splice(index, 1);
-          }
-          let maxHeight = Math.max(...heights);
-          if (pre !== maxHeight) {
-            result.push([val[0], maxHeight]);
-            pre = maxHeight;
+      var nums = [3, 1, 3, 4, 2];
+      // var findDuplicate = function (nums) {
+      //   let map = new Map();
+      //   let flagNum;
+      //   for (let i = 0; i < nums.length; i++) {
+      //     if (!map.has(nums[i])) {
+      //       map.set(nums[i], nums[i]);
+      //     } else {
+      //       flagNum = nums[i];
+      //     }
+      //     console.log(map);
+      //   }
+      //   return flagNum;
+      // };
+      var findDuplicate = function (nums) {
+        let set = new Set(nums);
+        for (let item of nums) {
+          if (set.has(item)) {
+            return item;
+            set.add(item);
           }
         }
-        return result;
+        return -1;
       };
-      getSkyline(buildings);
+
+      // var findDuplicate= function (nums) {
+      //   let left=1;
+      //   let right=nums.length-1;
+      //   let flagNum
+      //   while(left<right) {
+
+      //   }
+      // }
+      console.log(findDuplicate(nums));
     </script>
   </body>
 </html>
