@@ -8,40 +8,41 @@
   </head>
   <body>
     <script>
-      var nums = [3, 1, 3, 4, 2];
-      // var findDuplicate = function (nums) {
-      //   let map = new Map();
-      //   let flagNum;
-      //   for (let i = 0; i < nums.length; i++) {
-      //     if (!map.has(nums[i])) {
-      //       map.set(nums[i], nums[i]);
-      //     } else {
-      //       flagNum = nums[i];
-      //     }
-      //     console.log(map);
-      //   }
-      //   return flagNum;
-      // };
-      var findDuplicate = function (nums) {
-        let set = new Set(nums);
-        for (let item of nums) {
-          if (set.has(item)) {
-            return item;
-            set.add(item);
+      /**
+       * Definition for singly-linked list.
+       * function ListNode(val) {
+       *     this.val = val;
+       *     this.next = null;
+       * }
+       */
+
+      /**
+       * @param {ListNode} head
+       * @return {ListNode}
+       */
+      var detectCycle = function (head) {
+        if (head === null) return null;
+        let slow = head;
+        let fast = head;
+        let isCycle = false;
+        while (fast.next !== null && fast.next.next !== null) {
+          slow = slow.next;
+          fast = fast.next.next;
+          if (slow === fast) {
+            isCycle = true;
+            break;
           }
         }
-        return -1;
+        if (!isCycle) {
+          return null;
+        }
+        fast = head; //放在头部
+        while (fast !== slow) {
+          slow = slow.next;
+          fast = fast.next;
+        }
+        return fast;
       };
-
-      // var findDuplicate= function (nums) {
-      //   let left=1;
-      //   let right=nums.length-1;
-      //   let flagNum
-      //   while(left<right) {
-
-      //   }
-      // }
-      console.log(findDuplicate(nums));
     </script>
   </body>
 </html>
