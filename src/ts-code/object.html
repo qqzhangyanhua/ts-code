@@ -8,41 +8,20 @@
   </head>
   <body>
     <script>
-      /**
-       * Definition for singly-linked list.
-       * function ListNode(val) {
-       *     this.val = val;
-       *     this.next = null;
-       * }
-       */
-
-      /**
-       * @param {ListNode} head
-       * @return {ListNode}
-       */
-      var detectCycle = function (head) {
-        if (head === null) return null;
-        let slow = head;
-        let fast = head;
-        let isCycle = false;
-        while (fast.next !== null && fast.next.next !== null) {
-          slow = slow.next;
-          fast = fast.next.next;
-          if (slow === fast) {
-            isCycle = true;
-            break;
+      var mySqrt = function (x) {
+        let left = 0;
+        let right = x;
+        while (left <= right) {
+          let mid = left + ((right - left) >> 1);
+          if (mid * mid <= x) {
+            left = mid + 1;
+          } else {
+            right = mid - 1;
           }
         }
-        if (!isCycle) {
-          return null;
-        }
-        fast = head; //放在头部
-        while (fast !== slow) {
-          slow = slow.next;
-          fast = fast.next;
-        }
-        return fast;
+        return right;
       };
+      console.log(mySqrt(8));
     </script>
   </body>
 </html>
