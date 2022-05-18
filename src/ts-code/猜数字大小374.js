@@ -4,6 +4,7 @@
       var guessNumber = function (n) {
           let l = 1;
           let r = n;
+
           while (l < r) {
               const mid = (l + (r - l)) >> 1;
               if (guess(mid) === 0) {
