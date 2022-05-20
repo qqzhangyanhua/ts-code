@@ -16,7 +16,6 @@
           let mid = l + ((r - l) >> 1);
           if (nums[mid] > nums[mid + 1]) {
             if (nums[mid] > nums[mid - 1]) {
-              console.log("i need", mid);
               res = mid;
             }
             r = mid - 1;
