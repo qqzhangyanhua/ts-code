@@ -66,8 +66,7 @@ var searchRange = function (nums, target) {
         res[1] = res[res.length - 1]
 
     }
-    // while (nums[mid] = target) {}
-    // console.log(l, r, result)
+
     return res.slice(0, 2)
 };
 
