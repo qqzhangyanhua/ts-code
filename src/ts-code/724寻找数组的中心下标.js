@@ -14,7 +14,7 @@ var pivotIndex = function (nums) {
         }
         leftSum += nums[i];
     }
-
+    
     return -1
 };
 var nums = [1, 7, 3, 6, 5, 6]
