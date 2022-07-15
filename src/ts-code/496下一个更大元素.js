@@ -38,4 +38,4 @@ for (let i = 0; i <n; i++) {
 return res;
 
 }
-console.log(nextGreaterElement([4,1,2],[1,3,4,2]))
+console.log(nextGreaterElement(nums,nums2))
