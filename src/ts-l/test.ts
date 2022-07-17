@@ -53,5 +53,6 @@ type PrimitivePropType = Composed["primitProp"]; //never
 type ObjectPropType = Composed["objectProp"]; // { name: string; age: number; }
 const object1: ObjectPropType = {
   name: "object1",
+  age: 12,
 };
 export {};

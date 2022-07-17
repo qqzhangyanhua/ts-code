@@ -49,8 +49,8 @@ sum(1, 2, 3, 4, 5);
 
 // 函数的重载
 
-function add(name: string, value: string): string;
-function add(name: number, value: number): number;
+// function add(name: string, value: string): string;
+// function add(name: number, value: number): number;
 function add(name: any, value: any) {
   return name + value;
 }
