@@ -52,7 +52,7 @@
             v-for="item in dataList"
             :key="item.film_id"
           >
-            <img :src="`${imgUrl + item.film_cover_image}`" />
+            <image class="img" :src="`${urls.IMAGE_URL + item.film_cover_image}`" />
             <view>
               <text>{{ item.film_name }}</text>
               <text class="red">8.9</text>
@@ -83,7 +83,7 @@
   </scroll-view>
 </template>
 <script setup>
-import axios from "axios";
+import {urls } from '../../../config'
 import { onMounted, ref } from "vue";
 const areaList = ref([{ country_id: 1, country_name: "全部" }]);
 const videoTypeList = ref([{ category_id: 1, category_name: "全部" }]);
@@ -98,10 +98,11 @@ const yearsList = [
   { year_id: 3, year_name: "2019" },
   { year_id: 4, year_name: "2018" },
 ];
-const imgUrl = "http://127.0.0.1:5500/public/img/";
 const yearsType = ref(1);
+
+
 const handelClick = (type, id) => {
-  console.log(type, id);
+  console.log(type, id,urls);
   page.value = 1;
   isOverscroll.value = false;
 
@@ -116,22 +117,20 @@ const handelClick = (type, id) => {
   getList();
 };
 const getAreaList = () => {
-  // console.log("11233");
-  // axios.get("http://localhost:8888/country").then((res) => {
-  //   areaList.value.push(...res.data);
-  // });
   uni.request({
-    url: 'http://localhost:8888/country', //仅为示例，并非真实接口地址。
+    url: `${urls.REQUEST_URL}country`, 
     success: (res) => {
-        console.log(res.data);
-       areaList.value.push(...res.data);
-    }
-});
-
+      console.log(res.data);
+      areaList.value.push(...res.data);
+    },
+  });
 };
 const getVideoTypeList = () => {
-  axios.get("http://localhost:8888/category").then((res) => {
-    videoTypeList.value.push(...res.data);
+  uni.request({
+    url: `${urls.REQUEST_URL}category`, 
+    success: (res) => {
+      videoTypeList.value.push(...res.data);
+    },
   });
 };
 const getList = () => {
@@ -141,12 +140,15 @@ const getList = () => {
     yearsType: yearsType.value,
     videoType: videoType.value,
   };
-  axios.get("http://localhost:8888/film", { params }).then((res) => {
-    console.log("111111111", res.data);
-    if (res.data.length == 0) {
-      isOverscroll.value = true;
-    }
-    dataList.value.push(...res.data);
+  uni.request({
+    url: `${urls.REQUEST_URL}film`,
+    data: params,
+    success: (res) => {
+      if (res.data.length == 0) {
+        isOverscroll.value = true;
+      }
+      dataList.value.push(...res.data);
+    },
   });
 };
 const scrollEvent = () => {
@@ -187,7 +189,7 @@ onMounted(() => {
       border-radius: 5rpx;
       box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.06);
       color: rgba(0, 0, 0, 0.65);
-      img {
+      .img {
         width: 100%;
         height: 460rpx;
       }

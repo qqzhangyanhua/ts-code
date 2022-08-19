@@ -33,14 +33,20 @@ const _sfc_main = {
       getList();
     };
     const getAreaList = () => {
-      console.log("11233");
-      common_vendor.axios.get("http://localhost:8888/country").then((res) => {
-        areaList.value.push(...res.data);
+      common_vendor.index.request({
+        url: "http://localhost:8888/country",
+        success: (res) => {
+          console.log(res.data);
+          areaList.value.push(...res.data);
+        }
       });
     };
     const getVideoTypeList = () => {
-      common_vendor.axios.get("http://localhost:8888/category").then((res) => {
-        videoTypeList.value.push(...res.data);
+      common_vendor.index.request({
+        url: "http://localhost:8888/category",
+        success: (res) => {
+          videoTypeList.value.push(...res.data);
+        }
       });
     };
     const getList = () => {
@@ -50,12 +56,15 @@ const _sfc_main = {
         yearsType: yearsType.value,
         videoType: videoType.value
       };
-      common_vendor.axios.get("http://localhost:8888/film", { params }).then((res) => {
-        console.log("111111111", res.data);
-        if (res.data.length == 0) {
-          isOverscroll.value = true;
+      common_vendor.index.request({
+        url: "http://localhost:8888/film",
+        data: params,
+        success: (res) => {
+          if (res.data.length == 0) {
+            isOverscroll.value = true;
+          }
+          dataList.value.push(...res.data);
         }
-        dataList.value.push(...res.data);
       });
     };
     const scrollEvent = () => {

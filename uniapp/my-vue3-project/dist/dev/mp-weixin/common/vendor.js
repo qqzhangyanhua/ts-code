@@ -5993,7 +5993,7 @@ const createSubpackageApp = initCreateSubpackageApp();
   wx.createPluginApp = global.createPluginApp = createPluginApp;
   wx.createSubpackageApp = global.createSubpackageApp = createSubpackageApp;
 }
-var axios$2 = { exports: {} };
+var axios$1 = { exports: {} };
 var bind$2 = function bind2(fn, thisArg) {
   return function wrap() {
     var args = new Array(arguments.length);
@@ -7236,28 +7236,27 @@ function createInstance(defaultConfig) {
   };
   return instance;
 }
-var axios$1 = createInstance(defaults);
-axios$1.Axios = Axios;
-axios$1.CanceledError = CanceledError_1;
-axios$1.CancelToken = CancelToken_1;
-axios$1.isCancel = isCancel$1;
-axios$1.VERSION = data.version;
-axios$1.toFormData = toFormData_1;
-axios$1.AxiosError = AxiosError_1;
-axios$1.Cancel = axios$1.CanceledError;
-axios$1.all = function all(promises) {
+var axios = createInstance(defaults);
+axios.Axios = Axios;
+axios.CanceledError = CanceledError_1;
+axios.CancelToken = CancelToken_1;
+axios.isCancel = isCancel$1;
+axios.VERSION = data.version;
+axios.toFormData = toFormData_1;
+axios.AxiosError = AxiosError_1;
+axios.Cancel = axios.CanceledError;
+axios.all = function all(promises) {
   return Promise.all(promises);
 };
-axios$1.spread = spread;
-axios$1.isAxiosError = isAxiosError;
-axios$2.exports = axios$1;
-axios$2.exports.default = axios$1;
-var axios = axios$2.exports;
+axios.spread = spread;
+axios.isAxiosError = isAxiosError;
+axios$1.exports = axios;
+axios$1.exports.default = axios;
 exports._export_sfc = _export_sfc;
-exports.axios = axios;
 exports.createSSRApp = createSSRApp;
 exports.e = e;
 exports.f = f;
+exports.index = index;
 exports.o = o;
 exports.onMounted = onMounted;
 exports.ref = ref;
