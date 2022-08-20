@@ -1,7 +1,7 @@
 /*
  * @Author: ZYH
  * @Date: 2022-07-15 08:56:27
- * @LastEditTime: 2022-08-20 09:47:28
+ * @LastEditTime: 2022-08-20 10:15:38
  * @Description: 
  */
 
@@ -107,13 +107,21 @@ function getCounter(): Counter {
  * declar的作用是把一个已经存在的对象赋值给另一个变量
  * 
  */
-function clone(obj,keys){
-    const ret = {}
-    for (const key of keys){
-        ret[key] = obj[key]
+function deepCopy<T extends unknown>(sourceData: T): T {
+  if (Array.isArray(sourceData)) {
+    return sourceData.map((item) => deepCopy(item)) as T;
+  }
+  const obj: T = {} as T;
+  for (let key in sourceData) {
+    if (typeof sourceData[key] === "object" && sourceData[key] !== null) {
+      obj[key] = deepCopy(sourceData[key]);
+    } else {
+      obj[key] = sourceData[key];
     }
-    return ret
+  }
+  return obj;
 }
+
 
 
 export {}
