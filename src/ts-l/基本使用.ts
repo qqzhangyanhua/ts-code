@@ -1,7 +1,7 @@
 /*
  * @Author: ZYH
  * @Date: 2022-07-15 08:56:27
- * @LastEditTime: 2022-07-15 09:55:18
+ * @LastEditTime: 2022-08-20 09:47:28
  * @Description: 
  */
 
@@ -102,4 +102,18 @@ function getCounter(): Counter {
     counter.reset = function () { };
     return counter;
 }
+
+/*******
+ * declar的作用是把一个已经存在的对象赋值给另一个变量
+ * 
+ */
+function clone(obj,keys){
+    const ret = {}
+    for (const key of keys){
+        ret[key] = obj[key]
+    }
+    return ret
+}
+
+
 export {}
