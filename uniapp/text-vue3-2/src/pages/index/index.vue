@@ -1,5 +1,5 @@
 <template>
-  <scroll-view :scroll-y="true" style="height: 100vh">
+  <scroll-view :scroll-y="true" style="height: 100vh" @scrolltolower="handelScroll">
     <view class="content">
       <view class="content-header">header</view>
       <view class="content-center">
@@ -8,9 +8,10 @@
             <text>类型:</text>
             <view class="content-center-condition-type-btn">
               <view
-                class="active"
+                :class="{ active: item.category_id == params.videoType }"
                 v-for="item in videoTypeList"
                 :key="item.category_id"
+                @click="handelTabClick('videoType', item.category_id)"
                 >{{ item.category_name }}</view
               >
             </view>
@@ -19,9 +20,10 @@
             <text>区域:</text>
             <view class="content-center-condition-type-btn">
               <view
-                class="active"
+                :class="{ active: item.country_id == params.areaType }"
                 v-for="item in areaList"
                 :key="item.country_id"
+                @click="handelTabClick('areaType', item.country_id)"
                 >{{ item.country_name }}</view
               >
             </view>
@@ -36,6 +38,7 @@
         <!-- <scroll-view :scroll-y="true" @scroll="scrollEvent" style="height: 600px;"> -->
         <view class="content-box">
           <FileList v-for="item in dataList" :item="item" />
+          <view v-if="dataList.length ==0" class="no-empty ">暂无数据</view>
         </view>
       </view>
       <view class="content-footer"> footer </view>
@@ -46,7 +49,7 @@
 <script setup>
 import FileList from "./fileLIst.vue";
 import { urls } from "../../../config";
-import { onMounted, ref } from "vue";
+import { onMounted, ref, reactive } from "vue";
 const dataList = ref([]);
 const areaList = ref([{ country_id: 1, country_name: "全部" }]);
 const videoTypeList = ref([{ category_id: 1, category_name: "全部" }]);
@@ -56,10 +59,28 @@ const yearsList = [
   { year_id: 3, year_name: "2019" },
   { year_id: 4, year_name: "2018" },
 ];
+const params = reactive({
+  areaType: 1,
+  yearsType: 1,
+  page: 1,
+  videoType: 1,
+});
+const isOverscroll =ref(false)
+const handelTabClick = (type, val) => {
+  params[type] = val;
+  params.page = 1;
+  dataList.value = []
+  getFileList();
+};
 const getFileList = () => {
+  isOverscroll.value =false
   uni.request({
     url: `${urls.REQUEST_URL}film`,
+    data: params,
     success: (res) => {
+      if(res.data?.length==0){
+        isOverscroll.value = true
+      }
       dataList.value.push(...res.data);
     },
   });
@@ -80,10 +101,16 @@ const getVideoTypeList = () => {
     },
   });
 };
+const handelScroll = ()=>{
+  if(isOverscroll.value) return
+  params.page++;
+  getFileList();
+  console.log('564756757')
+}
 onMounted(() => {
   getFileList();
-  getVideoTypeList()
-  getAreaList()
+  getVideoTypeList();
+  getAreaList();
 });
 </script>
 
