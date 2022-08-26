@@ -1,13 +1,13 @@
-import { useState } from 'react'
-import {Header} from './components/Header'
+import { useState } from "react";
+import {Header} from "./components/Header";
 function App() {
-  const [count, setCount] = useState(0)
+	const [count, setCount] = useState(0);
 
-  return (
-    <div className="App">
-      <Header/>
-    </div>
-  )
+	return (
+		<div className="App">
+			<Header/>
+		</div>
+	);
 }
 
-export default App
+export default App;

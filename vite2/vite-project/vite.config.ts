@@ -15,7 +15,7 @@ export default defineConfig({
       },
       jsxImportSource: "@emotion/react",
     }),
-    windi()
+    windi(),
   ],
   css: {
     postcss: {
