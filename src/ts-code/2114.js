@@ -11,7 +11,6 @@ var mostWordsFound = function (sentences) {
     let count = 0;
     for (let i = 0; i < sentences.length; i++) {
         const len = sentences[i].split(' ').length;
-        console.log(sentences[i].split(" "));
         count = Math.max(count, len);
     }
     return count
