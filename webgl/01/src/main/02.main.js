@@ -1,9 +1,7 @@
 import * as THREE from "three";
 //倒入轨道控制器
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
-// console.log(THREE);
-
-//目标：创建一个立方体
+console.log(THREE);
 
 // 1 创建场景
 const scene = new THREE.Scene();
@@ -25,16 +23,7 @@ const cubMaterial = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
 //根据几何体和材质创建物体
 const cube = new THREE.Mesh(cubeGeometry, cubMaterial);
 
-//修改物体的位置
-// cube.position.set(5,0,0)
-
 //将物体添加到场景中
-
-//目标：物体的缩放---
-// cube.scale.set(3, 2, 1);
-
-//旋转
-// cube.rotation.set(0, 0, 0.5);
 scene.add(cube);
 
 //初始化渲染器
@@ -55,15 +44,7 @@ const controls = new OrbitControls(camera, renderer.domElement);
 const axesHelper = new THREE.AxesHelper(5);
 scene.add(axesHelper);
 
-
 function render() {
-    // 物品移动
-    cube.position.x+=0.01;
-    //旋转
-    cube.rotation.x+=0.01;
-    if(cube.position.x>5){
-        cube.position.x  =0;
-    }
   renderer.render(scene, camera);
   requestAnimationFrame(render);
 }
