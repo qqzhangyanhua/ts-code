@@ -2,8 +2,8 @@ import * as THREE from "three";
 //倒入轨道控制器
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 //倒入动画库
-import gsap from 'gsap';
-import * as dat from  'dat.gui'
+import gsap from "gsap";
+import * as dat from "dat.gui";
 // console.log(THREE);
 
 //目标：创建一个立方体
@@ -38,38 +38,44 @@ const cube = new THREE.Mesh(cubeGeometry, cubMaterial);
 //旋转
 // cube.rotation.set(0, 0, 0.5);
 scene.add(cube);
-
-
-console.log('cube',cube)
 // 控制器--链式调用
 const gui = new dat.GUI();
-gui.add(cube.position,'x').min(0).max(5).step(0.01).name('移动x轴').onChange(val=>{
-  console.log('值被修改了',val)
-}).onFinishChange(val=>{
-  console.log('完全停下来',val)
-})
+gui
+  .add(cube.position, "x")
+  .min(0)
+  .max(5)
+  .step(0.01)
+  .name("移动x轴")
+  .onChange((val) => {
+    console.log("值被修改了", val);
+  })
+  .onFinishChange((val) => {
+    console.log("完全停下来", val);
+  });
 
 // 修改颜色
-const params ={
-  color:'#ffff00',
-  fn:()=>{
-    // 
-    gsap.to(cube.position,{x:4,direction:3,yoyo:true,repeat:-1})
-  }
-}
-gui.addColor(params,"color").onChange(val=>{  
-  console.log('color被修改了',val)
-  cube.material.color.set(val)
-}).name('修改颜色')
+const params = {
+  color: "#ffff00",
+  fn: () => {
+    //
+    gsap.to(cube.position, { x: 4, direction: 3, yoyo: true, repeat: -1 });
+  },
+};
+gui
+  .addColor(params, "color")
+  .onChange((val) => {
+    console.log("color被修改了", val);
+    cube.material.color.set(val);
+  })
+  .name("修改颜色");
 // 设置选项框
-gui.add(cube,'visible').name('是否显示')
+gui.add(cube, "visible").name("是否显示");
 
 // 设置点击触发某个事件
-gui.add(params,'fn').name('设置动画')
+gui.add(params, "fn").name("设置动画");
 
-const folder = gui.addFolder('设置立方体')
-folder.add(cube.material,'wireframe').name('设置线框')
-
+const folder = gui.addFolder("设置立方体");
+folder.add(cube.material, "wireframe").name("设置线框");
 
 //初始化渲染器
 const renderer = new THREE.WebGLRenderer();
@@ -94,55 +100,52 @@ scene.add(axesHelper);
 //设置时钟
 const clock = new THREE.Clock();
 
-
 // 设置动画
-gsap.to(cube.position,{x:5,direction:15},)
-gsap.to(cube.rotation,{x:2*Math.PI,direction:5})
+gsap.to(cube.position, { x: 5, direction: 15 });
+gsap.to(cube.rotation, { x: 2 * Math.PI, direction: 5 });
 function render() {
   // 设置阻尼必须调用update
-  controls.update()
-    // 物品移动
-    // cube.position.x+=0.01;
-    // //旋转
-    // cube.rotation.x+=0.01;
-    // if(cube.position.x>5){
-    //     cube.position.x  =0;
-    // }
+  controls.update();
+  // 物品移动
+  // cube.position.x+=0.01;
+  // //旋转
+  // cube.rotation.x+=0.01;
+  // if(cube.position.x>5){
+  //     cube.position.x  =0;
+  // }
 
-    //获取时钟运行总时长
-    // let time = clock.getElapsedTime();
-    // let deltaTime = clock.getDelta();
-    // console.log('时钟运行总时长',time)
-    // console.log("两次获取的间隔时间", deltaTime);
+  //获取时钟运行总时长
+  // let time = clock.getElapsedTime();
+  // let deltaTime = clock.getDelta();
+  // console.log('时钟运行总时长',time)
+  // console.log("两次获取的间隔时间", deltaTime);
   renderer.render(scene, camera);
   requestAnimationFrame(render);
 }
 render();
 
 // 缩放的时候
-window.addEventListener('resize', ()=>{
-  console.log('resize',)
+window.addEventListener("resize", () => {
+  console.log("resize");
   // 更新摄像头
-  camera.aspect = window.innerWidth / window.innerHeight; 
+  camera.aspect = window.innerWidth / window.innerHeight;
   // 更新摄像机的投影矩阵
   camera.updateProjectionMatrix();
 
   //更新渲染器
   renderer.setSize(window.innerWidth, window.innerHeight);
   // 设置渲染器的像素比
-  renderer.setPixelRatio(window.devicePixelRatio)
+  renderer.setPixelRatio(window.devicePixelRatio);
 });
 
 //双击
-window.addEventListener('dblclick', ()=>{
+window.addEventListener("dblclick", () => {
   // 双击进入全屏
-  const full =document.fullscreenElement;
+  const full = document.fullscreenElement;
 
-  if(!full){
-  renderer.domElement.requestFullscreen();
-
-  }else{
+  if (!full) {
+    renderer.domElement.requestFullscreen();
+  } else {
     document.exitFullscreen();
   }
-
 });
