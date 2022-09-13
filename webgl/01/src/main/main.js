@@ -1,80 +1,34 @@
-import * as THREE from "three";
-//倒入轨道控制器
+ import * as THREE from "three";
+//导入控制器
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
-//倒入动画库
-import gsap from 'gsap';
-import * as dat from  'dat.gui'
-// console.log(THREE);
-
-//目标：创建一个立方体
-
-// 1 创建场景
+//  初始化场景
 const scene = new THREE.Scene();
-//2 创建相机
-const camera = new THREE.PerspectiveCamera(
-  75,
-  window.innerWidth / window.innerHeight,
-  0.1,
-  1000
-);
-camera.position.set(0, 0, 10);
+
+//初始化相机
+const camera = new THREE.PerspectiveCamera(75,window.innerWidth / window.innerHeight,0.1,2000);
+
+
+//设置相机位置
+camera.position.set(-50,50,100);
+//更新摄像头
+camera.aspect = window.innerWidth / window.innerHeight;
+// 更新摄像机的投影矩阵
+camera.updateProjectionMatrix();
 scene.add(camera);
 
-//添加物体
-//创建集合体
-const geometry = new THREE.BufferGeometry();
-
-const vertices = Float32Array([
-  -1.0,-1.0,1.0,
-  1.0,-1.0,1.0,
-  1.0,1.0,1.0
-]);
-const cubMaterial = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-
-
-
-
-
-
 //初始化渲染器
-const renderer = new THREE.WebGLRenderer();
+const renderer = new THREE.WebGLRenderer({
+  //设置抗锯齿
+  antialias:true,
+});
+renderer.outputEncoding = THREE.sRGBEncoding;
+// 设置宽高比列
 renderer.setSize(window.innerWidth, window.innerHeight);
 
-//将渲染器的dom元素添加到body中
-console.log("document", document.body);
-document.body.appendChild(renderer.domElement);
-
-//使用渲染器 通过相机和场景渲染出场景
-// renderer.render(scene, camera);
-
-//c创建轨道控制器
-const controls = new OrbitControls(camera, renderer.domElement);
-
-//设置控制器组尼 ，让控制器更有真实
-controls.enableDamping = true;
-
-//添加坐标辅助器
-const axesHelper = new THREE.AxesHelper(5);
-scene.add(axesHelper);
-//设置时钟
-const clock = new THREE.Clock();
-
-
-
-function render() {
-  // 设置阻尼必须调用update
-  controls.update()
- 
-  renderer.render(scene, camera);
-  requestAnimationFrame(render);
-}
-render();
-
-// 缩放的时候
-window.addEventListener('resize', ()=>{
-  console.log('resize',)
+//监听屏幕大小的改变，修改渲染器和相机的比列
+window.addEventListener('resize', () => {
   // 更新摄像头
-  camera.aspect = window.innerWidth / window.innerHeight; 
+  camera.aspect = window.innerWidth / window.innerHeight;
   // 更新摄像机的投影矩阵
   camera.updateProjectionMatrix();
 
@@ -84,16 +38,33 @@ window.addEventListener('resize', ()=>{
   renderer.setPixelRatio(window.devicePixelRatio)
 });
 
-//双击
-window.addEventListener('dblclick', ()=>{
-  // 双击进入全屏
-  const full =document.fullscreenElement;
 
-  if(!full){
-  renderer.domElement.requestFullscreen();
+// 添加到画布
+document.body.appendChild(renderer.domElement);
 
-  }else{
-    document.exitFullscreen();
-  }
 
-});
+// 实例化控制器
+ const controls = new OrbitControls( camera,renderer.domElement)
+
+
+function render() {
+  //渲染场景
+  renderer.render(scene, camera);
+  // 引擎自动更新渲染器
+  requestAnimationFrame(render);
+};
+render();
+
+
+// 添加平面
+// const planGeometry = new THREE.PlaneGeometry(100,100);
+// const planMaterial = new THREE.MeshBasicMaterial({
+//   color:0xffffff,
+// })
+// const plane = new THREE.Mesh(planGeometry, planMaterial);
+// scene.add(plane);
+
+
+
+// 创建一个巨大的天空球
+const  skyGeometry = new THREE.SphereGeometry(1000,60,40)
