@@ -50178,51 +50178,11 @@ camera.position.set(0, 0, 10);
 scene.add(camera); //添加物体
 //创建集合体
 
-var cubeGeometry = new THREE.BoxGeometry();
+var geometry = new THREE.BufferGeometry();
+var vertices = Float32Array([-1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0]);
 var cubMaterial = new THREE.MeshBasicMaterial({
   color: 0x00ff00
-}); //根据几何体和材质创建物体
-
-var cube = new THREE.Mesh(cubeGeometry, cubMaterial); //修改物体的位置
-// cube.position.set(5,0,0)
-//将物体添加到场景中
-//目标：物体的缩放---
-// cube.scale.set(3, 2, 1);
-//旋转
-// cube.rotation.set(0, 0, 0.5);
-
-scene.add(cube);
-console.log('cube', cube); // 控制器--链式调用
-
-var gui = new dat.GUI();
-gui.add(cube.position, 'x').min(0).max(5).step(0.01).name('移动x轴').onChange(function (val) {
-  console.log('值被修改了', val);
-}).onFinishChange(function (val) {
-  console.log('完全停下来', val);
-}); // 修改颜色
-
-var params = {
-  color: '#ffff00',
-  fn: function fn() {
-    // 
-    _gsap.default.to(cube.position, {
-      x: 4,
-      direction: 3,
-      yoyo: true,
-      repeat: -1
-    });
-  }
-};
-gui.addColor(params, "color").onChange(function (val) {
-  console.log('color被修改了', val);
-  cube.material.color.set(val);
-}).name('修改颜色'); // 设置选项框
-
-gui.add(cube, 'visible').name('是否显示'); // 设置点击触发某个事件
-
-gui.add(params, 'fn').name('设置动画');
-var folder = gui.addFolder('设置立方体');
-folder.add(cube.material, 'wireframe').name('设置线框'); //初始化渲染器
+}); //初始化渲染器
 
 var renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight); //将渲染器的dom元素添加到body中
@@ -50239,33 +50199,11 @@ controls.enableDamping = true; //添加坐标辅助器
 var axesHelper = new THREE.AxesHelper(5);
 scene.add(axesHelper); //设置时钟
 
-var clock = new THREE.Clock(); // 设置动画
-
-_gsap.default.to(cube.position, {
-  x: 5,
-  direction: 15
-});
-
-_gsap.default.to(cube.rotation, {
-  x: 2 * Math.PI,
-  direction: 5
-});
+var clock = new THREE.Clock();
 
 function render() {
   // 设置阻尼必须调用update
-  controls.update(); // 物品移动
-  // cube.position.x+=0.01;
-  // //旋转
-  // cube.rotation.x+=0.01;
-  // if(cube.position.x>5){
-  //     cube.position.x  =0;
-  // }
-  //获取时钟运行总时长
-  // let time = clock.getElapsedTime();
-  // let deltaTime = clock.getDelta();
-  // console.log('时钟运行总时长',time)
-  // console.log("两次获取的间隔时间", deltaTime);
-
+  controls.update();
   renderer.render(scene, camera);
   requestAnimationFrame(render);
 }
@@ -50322,7 +50260,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50071" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59106" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
