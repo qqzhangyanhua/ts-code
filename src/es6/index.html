@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>预约全民乐分期-自由分期</title>
+
+	<meta charset="utf-8">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+	<link type="text/css" rel="stylesheet" href="../../../css/theme/frozen.css" />
+
+	<link type="text/css" rel="stylesheet" href="../../../css/theme/core.css" />
+
+	<link type="text/css" rel="stylesheet" href="../css/orderhappyFree.css" />
+
+</head>
+
+<body>
+
+	<div id="pageA" class="page" title="预约全民乐分期-自由分期" desc="预约全民乐分期自由分期办理页" data-btnLeft="true|返回|App.homeBack()" data-btnRight="false||">
+
+    	<header class="multiple_accounts" id="multipleAccounts">
+    		<div class="multiple_accounts_left">
+    			<img src="img/icon-acc.png" alt="" style="width: 19px;">
+    			<span id="userAccount"></span>
+    		</div>
+    		<div class="multiple_accounts_rule">业务介绍</div>
+    	</header>
+    
+    	<div class="cashAccountsBody">
+    		<div class="ui-form-userenteramount">
+    			<div class="moneytypeWrap">
+    				<span id="moneyTitle">分期起始金额</span>
+    			</div>
+    			<div id="currency"
+    				style="position: relative;top:-9px;font-size: 24px;display: inline-block;margin-right: 3px;">¥</div>
+    			<input type="tel" class="yui-default" data-keyboard="Money0" autocomplete="off" max-length="10"
+    				data-type="number" data-name="applyAmt" data-label="申请分期金额" id="pbVal" data-clear="false"
+    				data-required="true" callback="App.changeSilder" data-bury="true">
+    			<img src="img/icon-edit.png" class="icon-edit" />
+    
+    			<div class="icon-close-wrap hidden">
+    				<img src="img/icon_close.png" class="icon-close" />
+    			</div>
+    		</div>
+    
+    		<div class="ui-form billMountWrap highAmountWrap">
+    			<div class="min-border"></div>
+    			<div class="ui-form-item" style="height: 50px;line-height: 50px">
+    				<span class="ui-ed-t">最高分期金额</span>
+    				<span style="float: right;font-size: 15px" id="highestAmount"></span>
+    			</div>
+    		</div>
+    		<div class="ui-form-item" style="height: auto">
+    			<p class="large-amount-t">*分期金额使用全民乐分期-自由分期专项额度，不影响您的消费额度。该额度系统实时评测，随您的用卡情况变化。</p>
+    		</div>
+    		<div class="ui-form yui-list">
+    			<div class="ui-form-item ui-stag">
+    				<span style="font-size: 15px;color: #1a1a1a;">期数</span>
+    				<div class="ui-stagNum-showOrHideWrap">
+    					<div data-stag="" class="stagNum">
+    						<span id="stagNum" style="color: #5F656B"></span>
+    						<span id="stagAmount" style="color: #ff941b"></span>
+    						<span id="rateStand" style="text-decoration:line-through;color:#a8adb2"></span>
+    					</div>
+    					<img class="icon_xj" src="img/icon_xj.png">
+    					<img class="icon_sj hidden" src="img/icon_sj.png">
+    				</div>
+    			</div>
+    			<div class="min-border2 hidden"></div>
+    
+    			<ul class="dowebok yui-list-detail">
+    			<!--<li data-index="+j+" class=" + obj.STAG_NUM + " data-rateYear=" + obj.rateYear + " data-rate=" + obj.STAG_RATE + " data-num=" + obj.STAG_NUM + ">3期<p style='color: #a8adb2;font-size:13px'>费率 12<span style='text-decoration: line-through;padding-left: 4px'>22%</span></p></li>
+    				<li data-index="+j+" class=" + obj.STAG_NUM + " data-rateYear=" + obj.rateYear + " data-rate=" + obj.STAG_RATE + " data-num=" + obj.STAG_NUM + ">3期<p style='color: #a8adb2;font-size:13px'>费率 12<span style='text-decoration: line-through;padding-left: 4px'>22%</span></p></li>
+    
+    				<li data-index="+j+" class=" + obj.STAG_NUM + " data-rateYear=" + obj.rateYear + " data-rate=" + obj.STAG_RATE + " data-num=" + obj.STAG_NUM + ">3期<p style='color: #a8adb2;font-size:13px'>费率 12<span style='text-decoration: line-through;padding-left: 4px'>22%</span></p></li>
+    
+    				<li data-index="+j+" class=" + obj.STAG_NUM + " data-rateYear=" + obj.rateYear + " data-rate=" + obj.STAG_RATE + " data-num=" + obj.STAG_NUM + ">3期<p style='color: #a8adb2;font-size:13px'>费率 12<span style='text-decoration: line-through;padding-left: 4px'>22%</span></p></li>
+    
+    				<li data-index="+j+" class=" + obj.STAG_NUM + " data-rateYear=" + obj.rateYear + " data-rate=" + obj.STAG_RATE + " data-num=" + obj.STAG_NUM + ">3期<p style='color: #a8adb2;font-size:13px'>费率 xxx<span style='text-decoration: line-through;padding-left: 4px'>22%</span></p></li>
+    
+    				<li data-index="+j+" class=" + obj.STAG_NUM + " data-rateYear=" + obj.rateYear + " data-rate=" + obj.STAG_RATE + " data-num=" + obj.STAG_NUM + ">3期<p style='color: #a8adb2;font-size:13px'>费率 xxx<span style='text-decoration: line-through;padding-left: 4px'>22%</span></p></li>-->	
+    
+    			</ul>
+    		</div>
+    		<div class="cover hidden"></div>
+    		<div class="ui-form ui-repay-bill">
+    			<div class="ui-maxDay-showOrHide"
+    				style="height:50px;line-height:54px;margin-top:10px;position: relative;">
+    				<span style="font-size: 15px;color: #1a1a1a;padding-left: 15px;">申请天数</span>
+    				<img class="icon_xji" src="img/icon_xj.png">
+    				<img class="icon_sji hidden" src="img/icon_sj.png">
+    				<span id="applyOfDays" class="applyOfDays"></span>
+    			</div>
+    			<div class="min-border"></div>
+    			<ul class="ui-maxDay-wrap yui-list-detail2" style="display:none">
+    				<li class="ui-maxDay-data">30天</li>
+    				<li class="ui-maxDay-data">20天</li>
+    				<li class="ui-maxDay-data">10天</li>
+    				<li class="changeInput" onclick="ShowElement(this)">自定义</li>
+    			</ul>
+    			<div class="min-border3 hidden"></div>
+    			<div style="height:50px;line-height:54px;position: relative;">
+    				<span style="font-size: 15px;color: #1a1a1a;padding-left: 15px;">到期日</span>
+    				<span id="endDate"></span>
+    			</div>
+    		</div>
+    		<div class="min-border"></div>
+    		<p class="ui-ad-wrap">
+    			*手续费费率由系统实时测评，以界面实时显示为准，您本次交易以单利计算的近似折算<span style="color:#030303">年化利率为</span><span style="color:#030303" id="dataRateYear"></span>，详情点击
+    			<img src="img/icon-help.png" alt="" class="icon-toast">
+    		</p>
+    		<div class="min-border"></div>
+    		<p class="ui-ad-wrap" style="border-bottom-right-radius:initial;border-bottom-left-radius:initial;background:#fff;color:#333333;font-size: 12px;padding: 7px 16px 7px 16px;">
+    			您可于分期办理成功后申请提前还款，我行将免除您提前还款款项在剩余期数内的手续费，同时收取一定金额的提前还款违约金，详情点击<span id="jumpPage" style="color: #1bb465;text-decoration:underline">收费标准</span>
+    		</p>
+    		<p class="yui-mustSelect" style="float: left;margin:22px 5px 0 4px;">
+    			<span>
+    				<input type="checkbox" class="input_check" id="mustChecked"><label for="mustChecked"></label>
+    			</span>
+    		</p>
+    		<p class="yui-no-float yui-mustSelect" style="padding: 10px;padding-left: 15px;text-align: left;">
+    			<span style="color: #5f656B;font-size: 13px;">阅读并已同意</span>
+    			<a id="bank_agreement" data-index="1"
+    				style="font-size: 13px;color: #1bb465;line-height: 20px;">《全民乐分期业务办理合约及承诺函》</a>
+    		</p>
+    	</div>
+    
+    	<div style="text-align: center;padding-top: 25px;">
+    		<button id="confirmA" disabled="disabled" class="ui-apply-btn" data-bury="true">确定开通</button>
+    	</div>
+    	<div class="ui-foorter-warm">
+    		<p>温馨提示</p>
+    		<p>1、该功能仅支持人民币交易转分期付款，外币交易不支持。</p>
+    		<p>2、该功能单笔分期上限为10万元，当您的消费超过分期上限或全民乐分期-自由分期专项额度不足时，持卡人满足条件的消费转分期交易将失败，如需继续消费，可关注民生信用卡微信公众号或登录全民生活APP申请关闭该功能。
+    		</p>
+    		<p>3、该功能到期时间截止至到期日当天发卡系统结算时间。</p>
+    	</div>
+    </div>
+    
+    <!-- 已到期或已开通页 -->
+    <div id="pageC" class="page" title="预约全民乐分期-自由分期" desc="预约全民乐分期自由分期已到期或已开通页" data-btnLeft="true|返回|App.pageC_back()" data-btnRight="false||">
+    	<header class="multiple_accounts" id="multipleAccounts">
+    		<div class="multiple_accounts_left">
+    			<img src="img/icon-acc.png" alt="" style="width: 19px;">
+    			<span id="userAccount2"></span>
+    		</div>
+    		<div class="multiple_accounts_rule">业务介绍</div>
+    	</header>
+    	<div class="cashAccountsBody">
+    		<div class="ui-form-userenteramount" style="padding-left:0">
+    			<div class="ui-openInfo-wrap">
+    				<img src="img/icon-open.png" alt="" class="icon-open">
+    				<img src="img/icon-available.png" alt="" class="icon-available hidden">
+    				<span class="ui-open-status"></span>
+    				<p class="ui-open-txt"></p>
+    			</div>
+    
+    		</div>
+    
+    		<div class="ui-form billMountWrap highAmountWrap">
+    			<div class="min-border"></div>
+    			<div class="ui-form-item" style="height: 50px;line-height: 50px">
+    				<span class="ui-ed-t">当前可分期额度</span>
+    				<span style="float: right;font-size: 15.5px" id="highAmount"></span>
+    			</div>
+    		</div>
+    		<div class="ui-form-item" style="height: auto">
+    			<p class="large-amount-t">*分期金额使用全民乐分期-自由分期专项额度，不影响您的消费额度。该额度系统实时评测，随您的用卡情况变化。</p>
+    		</div>
+    		<div class="ui-form ui-openinfo-box">
+    			<div class="user-openInfo">已开通信息</div>
+    			<div class="min-border"></div>
+    			<div class="ui-openinfo-ul">
+    				<p>
+    					分期起始金额
+    					<span id="userInfoAmount"></span>
+    				</p>
+    				<p style="float: left;">期数及费率</p>
+    				<p class="userRateOrStand">
+    					<b id="userInfoStagNum"></b>
+    					<b id="userInfoRate"></b>
+    					<b id="userRateStand" style="text-decoration: line-through;padding-left: 3px"></b>
+    				</p>
+    				<p>
+    					近似折算年化利率（单利）
+    					<span id="userInfoRateYear"></span>
+    				</p>
+    				<p>
+    					申请天数
+    					<span id="userInfoMaxDate"></span>
+    				</p>
+    				<p>
+    					失效时间
+    					<span id="userInfoEndDate"></span>
+    				</p>
+    			</div>
+    		</div>
+    		<div class="cover hidden"></div>
+    		<div class="popUpWindow hidden">
+    			<img src="img/icon-close.png" alt="" class="icon-close-btn">
+    			<div class="popUpWindow-content">
+    				<div class="popUpWindow-sx">
+    					<img src="img/icon-sx.png" alt="" class="icon-sx">
+    					<p class="popUpWindow-title" style="margin-left: 7px">省心省时</p>
+    					<p class="popUpWindow-sx-txt popUpWindow-sx-txt1" style="text-align: left;padding-left: 23px;">符合条件，自动办理，无需手动操作</p>
+    				</div>
+    				<div class="popUpWindow-zx">
+    					<img src="img/icon-zx.png" alt="" class="icon-zx">
+    					<p class="popUpWindow-title">专项额度</p>
+    					<p class="popUpWindow-sx-txt popUpWindow-sx-txt2" style="text-align: left;width: 80%;margin-left: 12%;">
+    						使用全民乐自由分期专项额度，办理后不影响消费额度</p>
+    				</div>
+    
+    			</div>
+    			<div class="goTerminate-btn-wrap">
+    				<div class="goTerminate-btn" id="goTerminate">确认停用</div>
+    				<div class="close-popUpWindow">考虑一下</div>
+    			</div>
+    		</div>
+    		<div class="ui-openinfo-btnWrap ">
+    			<div class="terminate-btn">解除预约</div>
+    			<div class="edit-btn" id="goEdit">修改</div>
+    		</div>
+    		<div class="ui-overdue-btnWrap hidden">
+    			<div class="application-btn" id="goApplication">继续申请</div>
+    		</div>
+    		<div class="ui-success-btnWrap hidden">
+    			<div class="application-btn" id="goBackBtn">完成</div>
+    		</div>
+    	</div>
+    </div>
+    <!-- 缺省页和结果页-->
+    <div id="pageD" class="page" title="预约全民乐分期-自由分期" desc="预约全民乐分期自由分期结果页" data-btnLeft="true|返回|Fw.goBack()" data-btnRight="false||">
+    	<header class="multiple_accounts" id="multipleAccounts">
+    		<div class="multiple_accounts_rule">业务介绍</div>
+    		<div class="multiple_accounts_accNoWrap hidden">
+    			<img src="img/icon-acc.png" alt="" style="width: 19px;width: 19px;vertical-align: middle;">
+    			<span id="userAccount3"></span>
+    		</div>
+    	</header>
+    	<div class="ui-radius-box"></div>
+    	<img src="" alt="" class="icon-unable" id="icon-unable">
+    	<p class="structure-page-txt"></p>
+    	<p class="structure-page-dis"></p>
+    	<div class="struture-btn" id="strutureBtn"></div>
+    	<!-- 广告位 -->
+    	<div class="recommWrap hidden">
+    		<span>为您推荐</span>
+    		<img id="imageId" class="pageImage hidden" src="" data-click="" style="width: 92%" data-bury="true"
+    			data-buryName="账单分期_广告位">
+    		<img id="image2Id" class="pageImage hidden" src="" data-click="" style="width: 92%" data-bury="true"
+    			data-buryName="账单分期_广告位">
+    	</div>
+    </div>
+    <script type="text/javascript" src="../../../js/ytfw.js"></script>
+
+</body>
+
+</html>
