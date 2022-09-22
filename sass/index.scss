@@ -1,0 +1,33 @@
+
+//mixin的使用
+@mixin grey-border-radius{
+    border: 1px solid #e3e3e3;
+    border-radius: 2px;
+}
+.description{
+    @include grey-border-radius;
+    color: red;
+}
+.article{
+    @include grey-border-radius;
+    color: #444;
+}
+
+
+//exten的使用和mixins功能类似
+.msg{
+    border: 1px solid #e3e3e3;
+    background: #dff0d8;
+}
+.msg-success{
+    @extend .msg;
+    color: #4cae4c;
+}
+.msg-error{
+    @extend .msg;
+    color: #d43f3a;
+}
+//变量命名
+ $highlight-color: #F90;
+
+ 
