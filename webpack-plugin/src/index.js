@@ -1,5 +1,5 @@
 
-import './main.css'
+// import './main.css'
 const add=(a,b)=>{
     return a+b;
 }

@@ -13,9 +13,26 @@ module.exports={
         filename:'bundle.js',
         path:path.resolve(__dirname,'dist')
     }, 
+    resolveLoader: {
+        //modules也是一种方式
+        modules:['node_modules',path.resolve(__dirname,'loader')]
+        //配置别名loader是一种方式
+        // alias:{
+        //     loader1:path.resolve(__dirname,'loader','loader1.js')
+        // }
+    },
+    devtool:"source-map",
     module:{
         rules:[
-            { test:/\.css$/, use:[miniCssExtractPlugin.loader,'css-loader']}
+            { test:/\.css$/, use:[miniCssExtractPlugin.loader,'css-loader']},
+            // { test:/\.js$/, use:['loader1','loader2']}
+            { test:/\.js$/, use:{
+                loader:'babel-loader',
+               options: {
+                presets:['@babel/preset-env']
+               }
+            }}
+
         ]
     },
     plugins:[
