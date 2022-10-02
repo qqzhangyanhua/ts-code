@@ -1,0 +1,11 @@
+
+
+.hello{
+    color:rgb(179, 255, 0) !important ;
+    display: flex ;
+    user-select: none;
+    transition: all 1s ease-in;
+}
+:fullscreen{
+
+}
