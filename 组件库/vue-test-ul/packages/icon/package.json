@@ -1,0 +1,26 @@
+{
+  "name": "@z-ui/icon",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "LAPTOP-HIKE95SF\\张艳华 <zhangyanhua@tongbaninfo.com>",
+  "homepage": "https://github.com/qqzhangyanhua/ts-code#readme",
+  "license": "ISC",
+  "main": "lib/icon.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qqzhangyanhua/ts-code.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/icon.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/qqzhangyanhua/ts-code/issues"
+  }
+}

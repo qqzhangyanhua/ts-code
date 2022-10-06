@@ -30,4 +30,17 @@
 //变量命名
  $highlight-color: #F90;
 
- 
+h2{
+    color:$highlight-color
+}
+
+//携带参数的
+@mixin border-radius($radius){
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+h3{
+    color: #444;
+    @include border-radius(5px);
+}

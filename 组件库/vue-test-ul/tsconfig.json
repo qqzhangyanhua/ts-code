@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "esnext", //打包的语法
+    "module": "esnext", //打包的模块化
+    "esModuleInterop":true, //支持模块化打包
+    "skipLibCheck":true, //跳过类型检查
+    "forceConsistentCasingInFileNames": true, //文件名大小写一致
+    "moduleResolution":"node",
+    "jsx": "preserve", //支持jsx
+    "declaration": true, //
+    "sourceMap": true, // 生成map文件
+    
+  }
+}
