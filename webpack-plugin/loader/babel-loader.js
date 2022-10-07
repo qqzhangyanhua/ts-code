@@ -10,7 +10,8 @@ function loader(source) {
         sourceMap: true,
         filename: this.resourcePath.split('/').pop  //sourcemap的文件名
     }, (err, result) => {
-        cb(err, result.code, result.map) //异步
+        console.log(result)
+        // cb(err, result, result.map) //异步
     })
     console.log('loader1================', options)
     return source
