@@ -1,9 +1,8 @@
 import style from "./index.module.scss";
 export function Header() {
+	
 	return (
-
-    
-		<div className="flex">
+		<div >
       This is Header
 			<span bg="blue-600">13123</span>
 			<button
@@ -15,6 +14,11 @@ export function Header() {
 			>
         Button
 			</button>
+			<ul>
+				<li>1111</li>
+				<li>1111</li>
+				<li>1111</li>
+			</ul>
 		</div>
 	);
 }
