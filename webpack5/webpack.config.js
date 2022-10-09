@@ -2,7 +2,9 @@
 
 const path = require('path')
 const EslintPlugin = require('eslint-webpack-plugin');
-module.exports = {
+const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
+const smp = new SpeedMeasurePlugin();
+const webpackConfig = {
   entry: "./src/index.ts",
   output: {
     filename: "[name].js",
@@ -43,3 +45,4 @@ module.exports = {
     extensions: [".ts", ".js"],
   },
 };
+module.exports = smp.wrap(webpackConfig)
