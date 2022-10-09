@@ -2,7 +2,7 @@
 
 const path = require('path')
 const EslintPlugin = require('eslint-webpack-plugin');
-const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
+const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");  //计算打包用时间的
 const smp = new SpeedMeasurePlugin();
 const webpackConfig = {
   entry: "./src/index.ts",
