@@ -10,8 +10,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.txt$/i,
-        use: ["a-loader", "b-loader", "c-loader"],
+        test: /\.js$/,
+        use: [{loader:"a-loader",options:{
+          author: "zyh",
+          email:'42434@qq.com'
+        }}],
       },
     ],
   },

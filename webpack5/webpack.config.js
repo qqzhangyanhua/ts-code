@@ -2,29 +2,27 @@
 
 const path = require('path')
 const EslintPlugin = require('eslint-webpack-plugin');
-module.exports = {
-  entry: "./src/index.ts",
-  output: {
-    filename: "[name].js",
-    path: path.resolve(__dirname, "dist"),
-  },
-  plugins: [new EslintPlugin()],
-  mode:'development',
+const {merge} = require('webpack-merge');
+const StatoscopeWebpackPlugin = require('@statoscope/webpack-plugin').default;  //打包分析工具
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const otherConfig ={
+  plugins: [new EslintPlugin(),new CleanWebpackPlugin()],
+  mode:'production',
+//   cache: {
+//     type: 'filesystem'
+// },
   module: {
     rules: [
       {
         test: /\.css$/i,
-        use:['style-loader', 'css-loader']
-        // include: {
-        //   and: [path.join(__dirname, "./src/")],
-        // },
-        // use:['style-loader','css-loader',{
-        //     loader:'less-loader',
-        // }]
+        use:['style-loader', 'css-loader'],
+        exclude: /node_modules/,
       },
       {
         test: /\.js$/,
+        exclude: /node_modules/,
         use: [
+          'cache-loader',
           {
             loader: "babel-loader",
             options: {
@@ -42,4 +40,23 @@ module.exports = {
   resolve: {
     extensions: [".ts", ".js"],
   },
-};
+}
+module.exports = (env ,argv)=>{
+  // console.log('env=====',env)
+  // console.log('argv======',argv)
+  return [ 
+    merge( {
+      entry: "./src/index.ts",
+      output: {
+        filename: '[contenthash:8].bundle.js',
+        path: path.resolve(__dirname, "dist"),
+      },
+    },otherConfig),merge(otherConfig,{
+      entry: "./src/index2.ts",
+      output: {
+        filename: "index2.js",
+        path: path.resolve(__dirname, "dist1"),
+      },
+    })
+  ]
+}
