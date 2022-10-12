@@ -2,28 +2,16 @@
 
 const path = require('path')
 const EslintPlugin = require('eslint-webpack-plugin');
-<<<<<<< HEAD
 const {merge} = require('webpack-merge');
 const StatoscopeWebpackPlugin = require('@statoscope/webpack-plugin').default;  //打包分析工具
+const WebpackBar = require('webpackbar'); //打包进度
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const otherConfig ={
-  plugins: [new EslintPlugin(),new CleanWebpackPlugin()],
+  plugins: [new EslintPlugin(),new CleanWebpackPlugin(),  new WebpackBar()],
   mode:'production',
 //   cache: {
 //     type: 'filesystem'
 // },
-=======
-const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");  //计算打包用时间的
-const smp = new SpeedMeasurePlugin();
-const webpackConfig = {
-  entry: "./src/index.ts",
-  output: {
-    filename: "[name].js",
-    path: path.resolve(__dirname, "dist"),
-  },
-  plugins: [new EslintPlugin()],
-  mode:'development',
->>>>>>> 56760f28d3334c70e36675fbf14cdbebcf708af2
   module: {
     rules: [
       {
@@ -53,7 +41,6 @@ const webpackConfig = {
   resolve: {
     extensions: [".ts", ".js"],
   },
-<<<<<<< HEAD
 }
 module.exports = (env ,argv)=>{
   // console.log('env=====',env)
@@ -74,7 +61,3 @@ module.exports = (env ,argv)=>{
     })
   ]
 }
-=======
-};
-module.exports = smp.wrap(webpackConfig)
->>>>>>> 56760f28d3334c70e36675fbf14cdbebcf708af2
