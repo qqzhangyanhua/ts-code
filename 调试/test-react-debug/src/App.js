@@ -2,6 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const handelClick=()=>{
+    console.log('233344')
+    console.log('111')
+
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -9,14 +14,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+       <button onClick={handelClick}>按钮</button>
       </header>
     </div>
   );
