@@ -7,10 +7,15 @@ module.exports ={
         rules: [
             {
                 test: /\.js$/,
+                exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        presets: ['@babel/preset-env']
+                        // presets: ['@babel/preset-env']
+                        // plugins:[
+                        //     '@babel/plugin-transform-arrow-functions',
+                        //     "@babel/plugin-transform-block-scoping"
+                        // ]
                     }
                 }
             }
@@ -19,17 +24,7 @@ module.exports ={
     output:{
         filename:"[name].js",
         path:path.join(__dirname,'./dist'),
-        library:{
-            name:"abc",
-            type:'umd'
-        }
+   
     },
-    externals:{
-        lodash:{
-            commonjs:'lodash',
-            commonjs2:"lodash",
-            amd:"lodash",
-            root:'_'
-        }
-    }
+
 }
