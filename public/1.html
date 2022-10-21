@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>立即还款</title>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link type="text/css" rel="stylesheet" href="../../css/theme/frozen.css" />
+    <link type="text/css" rel="stylesheet" href="../../css/theme/core.css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <style>
+        #editDefine::-webkit-input-placeholder,#editDefine1::-webkit-input-placeholder {
+            font-size: 13px;
+        }
+        #For i,#For_H i,#Rmb i,#Rmb_H i{
+            color: #1BB465;
+            font-size: 13px;
+        } 
+        #For,#For_H,#Rmb,#Rmb_H{
+            color: #a0a5aa;
+        }
+    </style>
+</head>
+<body data-page-vers="1.5">
+<div id="pageA" class="page" title="立即还款" desc="立即还款页面202012_首页"
+     data-btnLeft="true|返回|App.pageA_back()" data-btnRight="true|自动还款|App.autoPayment()">
+     <div class="adBox hidden" style="position:relative;width:100%">
+     	<img alt="" src="" id="imageId" style="height:68px;width:100%">
+     	<img alt="" src="./img/icon_close.png" class="closeAd" style="width:20px;position: absolute;right:0px;top:50%;margin-top:-30px;padding:20px">
+     </div>
+    <div class="shade hide"></div>
+    <div class="yt-tab">
+        <div class="switchAccountWrap">
+            <div class="switchAccount">
+                <img src="./img/icon.png" alt="" id="logo">
+                <div id="accountWrap">
+                    <span id="accountNoVal">--</span>
+                    <img src="./img/pull2.png" alt="" class="pull2">
+                    <select class="account" id="account">
+                        
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="yt-tab-nav hidden">
+            <ul id="toolbar" class="toolbar-nav">
+            </ul>
+        </div>
+        <ul class="ui-tab-content" >
+            <!--人民币还款开始-->
+            <span class="width_calculator" ></span>
+            <li id="rmb_pay" class="current tabs">
+                <!--账单明细开始-->
+                <div class="bill">
+                    <div class="bill_content">
+                        <div class="placeholder-header">
+                            <div class="top">本期未还</div>
+                            <div class="bottom">--</div>
+                        </div>
+                        <div class="noPayment hidden" id="noPaymentRmb">
+                            <label class="noBillImg hidden"><img src="./img/noBill.png" alt=""></label>
+                            <span class="noPaymentTitle rmb" style="display: inline;"></span> <span id="Rmb" class="hidden">
+                                ，<i>去还外币>></i>
+                            </span>
+                            <div class="noPaymentNum">
+                                <span class="symbol hidden sym">¥</span><span id="sholdRepayment"></span>
+                            </div>
+                           <div class="hasnoBill rmb hidden"><img src="./img/repayed.png" alt="">已还清</div>
+                        </div>
+                        <div class="hasPayment hidden" id="hasPaymentRmb">
+                            <div class="hasPaymentFlag">
+                                <!-- <div class="hasPaymentTop"><img src="./img/repayed.png" alt=""><span>已还清</span></div> -->
+                                <div class="hasPaymentSin hidden">
+                                    <span id="sinTip">本期人民币账单已还清</span><span id="Rmb_H" class="hidden">，<i>去还外币>></i></span>
+                                </div>
+                                <div class="hasPaymentAll hidden">
+                                    <img src="./img/repayed2.png" alt=""><span>本期账单已还清</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+						 <div class="nobill hidden" id="nobill_rmb">
+                                <span style="font-size:12px">未出账单</span><span class="nobillMoney" id="nobillMoneyRmb">--</span>
+						</div>
+                        <div class="bill_bottom rmb">
+                            <div class="left float_l">
+                                <span>本期账单 </span>
+                                <span id="repayBal">--</span>
+                            </div>
+                            <div class="right float_r">
+                                <span>最低应还 </span>
+                                <span id="minRepayment">--</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gey"></div>
+                <!--账单明细结束-->
+                <div class="discountWrap">
+                    <div class="item hidden" id="repayCoY">
+                        <img src="./img/duigou.png" alt=""><span>还款金可用</span>
+                    </div>
+                    <div class="item">
+                        <img src="./img/duigou.png" alt=""><span>还款手续费全免</span>
+                    </div>
+                </div>
+                <div class="repaymentModeBox">
+                    <!--自定义还款开始-->
+                    <div class="repaymentMode repaymentModeBar rmb defineRepay" data-check="1">
+                        <div class="image float_l">
+                            <img src="./img/elect2.png" alt="" class="elect">
+                        </div>
+                        <div class="left float_l">
+                            <p>还款</p>
+                            <!-- <span class="verticalCoupon" id="maxVertical">立减50元</span> -->
+                            <p>自定义还款金额</p>
+                        </div>
+                        <div class="right float_r changeColor font-color ">
+                            <span class="label"><span class="rmbMoney" id="defineMoney">--</span></span>
+                            <!--<input type="text" data-keyboard="Money0" class="hidden" id="editDefine">  -->
+                            <input type="text" class="hidden" data-keyboard="Money0" id="editDefine" data-name="repayBal" data-type="money" placeholder="请输入还款金额" data-label="还款金额" data-required="true" data-clear="true" autocomplete="off" data-bury="true" data-buryName="人民币还款_输入还款金额">
+                            <div class="digitTips"></div>
+                            <div class="edit">
+                                <div class="finish hidden" style="color:#030303"></div>
+                                <img src="./img/edit.png" alt="" class="editImg">
+                            </div>
+                            <div class="clear hidden">
+                                <img src="./img/clear.png" alt="" class="clearImg">
+                            </div>
+                        </div>
+                    </div>
+                    <!--自定义还款结束-->
+                    <!--还最低开始-->
+                    <div class="repaymentMode repaymentModeBar border-t minRepay rmb hidden">
+                        <div class="image float_l">
+                            <img src="./img/noElect2.png" alt="" class="elect">
+                        </div>
+                        <div class="left float_l">
+                            <p>还最低<img src="./img/icon-help.png" class="icon-interest" style="display: inline-block;width:24px;margin-top:-2px" alt=""></p>
+                            <!-- <span class="verticalCoupon" id="minVertical">立减50元</span> -->
+                            <p>按日计息，日利率0.05%</p>
+                            
+
+                        </div>
+                        <div class="right changeColor">
+                            <span id="minRepayMony" class="rmbMoney"></span>
+                        </div>
+                    </div>
+                    <!--还最低结束-->
+                    <!--分期还开始-->
+                    <div class="repaymentMode repaymentModeBar amortize amortizeRepay rmb hidden">
+                        <div class="image float_l">
+                            <img src="./img/noElect2.png" alt="" class="elect">
+                        </div>
+                        <div class="left activity">
+                            <p>分期还</p>
+                            <div class="pAmoTip">分期偿还本期账单</div>
+                            <div class="activity_img">
+                                <img class="imgA hidden"><div class="redPacketTip rmb hidden">红包</div>
+                            </div>
+                            <div class="activity_tips hidden"></div>
+                        </div>
+                        <div class="amortizeDetail hidden">
+                            <div class="first float_l">
+                                <p>申请账单分期</p>
+                                <div class="applyAmortize">
+                                    <div class="moneyTips">
+                                        <span class="label changeColor border-b"><span class=""></span><span id="amortizeMoneyRmb" class="rmbMoney"></span></span>
+                                        <input type="text" class="hidden" data-keyboard="Money0" id="editAmortize" data-name="repayBal" data-type="money" placeholder="请输入还款金额" data-label="还款金额" data-required="true" data-clear="true" autocomplete="off" data-bury="true" data-buryName="人民币还款_输入还款金额" style="width: 100%;">
+                                        <div class="digitTips1"></div>
+                                        <div class="clear hidden">
+                                            <img src="./img/clear.png" alt="" class="clearImg">
+                                        </div>
+                                    </div> 
+                                        <div class="edit">
+                                            <div class="finish hidden" style="color:#030303;"></div>
+                                            <img src="./img/noEdit.png" alt="">
+                                        </div>
+                                    
+                                </div>
+                            
+
+                            </div>
+                            <div class="remark changeColor2">
+                                可申请金额(¥):600.00<span class="amortizeTotalRmb"></span>
+                            </div>
+                            <div class="second float_r cycle_rate" id="cycle_rate_rmb">
+                                <p style="margin-bottom: 8px">
+                                    <span style="padding-right:0.12rem;color:#737373"><span id="cycleRmb"></span>期</span>
+                                    <img src="./img/pull.png" alt="" class="pull">
+                                </p>
+                                <span class="rate_left">每期利率</span><span class="rate_new" id="rateRmb"></span><span class="rate_old"></span>
+                            </div>
+
+                        </div>
+                        <div class="amortizeDetail_new hidden">
+                            <div class="module">
+                                <div class="left">每期应还本金</div>
+                                <div class="right"><span>¥</span><span id="stagAmt_rmb"></span></div>
+                            </div>
+                            <div class="module red_packet border-t">
+                                <div class="left">每期利息</div>
+                                <div class="right">
+                                    <span class="old hidden redFlag"><span>¥</span><span id="notRedpackMoney"></span></span>
+                                    <span>¥</span><span id="everyStagSch_rmb"></span>
+                                </div>
+                                <p class="tips redFlag hidden">当前使用<span id="redPacketMax"></span>元红包</p>
+                                <div class="enterBox redFlag hidden" id="useRedPacket">
+                                    <img src="./img/enter.png" alt="" class="enter">
+                                </div>
+                            </div>
+                            <div class="module border-t">
+                                <div class="left">分期后本期应还</div>
+                                <div class="right"><span id="amortizeLeaveRmb"></span></div>
+                            </div>
+                            <div class="module border-t notice">
+                                <p style="display: contents">*分期利率由系统实时测评，以界面实时显示为准，您本次交易以单利计算的近似折算<span style="color: #030303">年化利率为</span><span style="color: #030303" id="dataRateYear"></span>，详情点击
+                                <img src="img/icon-help.png" alt="" class="icon-toast rmb-toast" style="display: inline-block;width:20px;vertical-align: middle"></p>
+                            </div>
+                            <p class="common-style ui-ad-wrap" style="border-bottom-right-radius:initial;border-bottom-left-radius:initial;background:#fff;color:#333333;font-size:0.11rem;">
+                                您可于分期办理成功后申请提前还款，我行将免除您提前还款款项在剩余期数内的手续费，同时收取一定金额的提前还款违约金，详情点击<span id="jumpPage" style="color: #1bb465;text-decoration:underline">收费标准</span>
+                            </p>
+                            <div class="module border-t contract hidden" id="contractRmb">
+                                <div class="contract_agree" id="contract_agree"></div>
+                                <p class="contract_content_box"><span>阅读并同意</span><span class="contract_content" id="bank_agreement">《中国民生银行信用卡账单分期业务办理合约》</span></p>
+                            </div>
+                            <!--选择分期期数-->
+                            <div class="selectCycle">
+                                <div class="selectCycle_top border-b">
+                                    <div class="cancle">
+                                        <img src="./img/close.png">
+                                    </div>
+                                    <div class="title lineH50">选择分期期数</div>
+                                </div>
+                                <ul class="selectCycle_body" id="selectCycle_body_rmb">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--分期还结束-->
+                    <!-- 分期还结果开始 -->
+                    <div class="repaymentMode amortizeResultData amortize rmb hidden">
+                        <div class="image float_l">
+                            <img src="./img/elect3.png" alt="" class="elect">
+                        </div>
+                        <div class="left">
+                            <p>本期账单您已申请分期</p>
+                        </div>
+                        <div class="amortizeDetail">
+                            <div class="first float_l">
+                                <p class="changeColor">分期金额</p>
+                                <div class="applyAmortize">
+                                    <label class="changeColor"><span id="amortizeMoney1"></span></label>
+                                </div>
+                            
+
+                            </div>
+                            <div class="second float_r">
+                                <p class="changeColor" style="margin-bottom: 8px">分期期数</p>
+                                <label class="changeColor"><span id="amortizeLengthRmb"></span>期</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- 分期还结果结束 -->
+                    <!--选择扣款账号开始-->
+                    <div class="selectAccount rmb hidden">
+                    <div class="scroll padding_l_r20">
+                        <div class="title border-b">还款</div>
+                        <div class="close">
+                            <img src="./img/close.png" alt="">
+                        </div>
+                        <div class="repay_account hidden lineH50">
+                            <div class="left float_l">还款账户</div>
+                            <div class="right float_r" id="repay_accountRmb"></div>
+                        </div>
+                        <div class="creditCard lineH50" id="creditCardRmbBox">
+                            <div class="left float_l">信用卡号</div>
+                            <div class="right float_r" id="creditCardRmb"></div>
+                            <div class="enter">
+                                    <img src="./img/enter2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="charge_account border-t">
+                            <div class="left">扣款账号</div>
+                            <div class="right">
+                                <img class="bankLogo rmb hidden" alt="">
+                                <div class="fmt-debit lineH30 hidden" id="fmtDebitCardNo"></div>
+                           		<div class="editInput">
+                           			<input type="tel" data-required="true" id="debitCardNo" placeholder="请输入扣款账号" data-label="扣款账号" data-minlength="16" max-length="20" data-clear="false" data-name="debitCardNo" data-cardNo='true' autocomplete="off" data-bury="true" data-buryName="人民币还款_输入还款账号">
+                                       <img alt="" src="./img/icon_close.png" class="closeImg hidden">
+                                       <span class="valSpan"></span>
+                           		</div>
+                                <div class="accountImg" id="rmbIcont">
+                                    <img src="./img/account2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="balance hidden">
+                           			<span style="color: #737373">余额</span>
+	                                <span style="color: #EE5C2F">¥</span><span style="color: #EE5C2F" id="balance"></span>
+                           		</div>
+                        </div>
+                       <!-- <div class="repay_bank border-t lineH50 clearfix">
+                            <div class="left float_l">扣款银行</div>
+                            <div class="right float_r">
+                                <span id="repay_bank">民生银行</span>
+                            </div>
+                        </div>  -->
+                         
+                        <div class="repay_rmbmoney border-t border-b lineH50">
+                            <div class="left float_l">还款金额</div>
+                            <div class="right float_r">
+                                <span id="repay_rmbmoney" style="color: #737373;margin-right:0.2rem;font-size: 0.2rem"></span>
+                            </div>
+                        </div>
+                        <div class="repay_coupon border-b">
+                            <div class="left float_l">还款金券</div>
+                            <div class="right" style="width: 98%;">
+                                <div class="right_content">
+                                    <div class="discountInfo">
+                                        <div class="discountTips hidden">本次最优</div>
+                                        <div class="noCoupon hidden">暂无可用</div>
+                                        <span id="discountVal"></span>
+                                    </div>
+                                    <div class="realMoney hidden">
+                                        <span id="realVal"></span>
+                                    </div>
+                                </div>
+                                <!-- <div class="unCoupons hidden">暂无可用</div> -->
+                                <span class="enter">
+                                    <img src="./img/enter2.png" alt="">
+                                </span>
+                            </div>
+
+                        </div>
+                        <!-- <div class="nowGet border-t lineH50 hidden">
+                            <div class="left float_l">还款金券</div>
+                            <div class="right float_r" id="getCoupons">立即获取</div>
+                        </div> -->
+                        <div class="bankSupport">
+                            <span id="getCoupons" style="float: left;">如何获取还款金券</span>
+                            <span id="bankSupport">查看支持银行</span>
+                        </div>
+						<div class="agreeRepay_rule lineH50 marginTopStyle" data-id="0" id="agreeRepayRule" style="position:static;margin-top:138px;">
+                            <div class="elect1 float_l">
+                                <!-- <img src="./img/noElect1.png" alt=""> -->
+                            </div>
+                            <p class="float_l repaymentAgreement" style="width: 100%;text-align: center;">点击"确定"即代表您同意<span>《信用卡还款服务协议》</span></p>
+                        </div>
+                        <button style="position:static;margin-top:4px;width:100%;height:45px;" id="repayRmb" >确定</button>
+                    </div>
+                    </div>
+                    <!-- 选择还款方式 -->
+                    <div class="selectAccount account hidden" style="height: 250px;">
+                        <div class="scroll padding_l_r20">
+                            <div class="title border-b">选择自动还款方式</div>
+                            <div class="repayClose">
+                                <img src="./img/close.png" alt="">
+                            </div>
+                            <div class="repay-line border-b" onclick="App.change_reapy()">
+                                <div class="repayTitle">储蓄卡自动还款</div>
+                                <div class="repaySub">绑定本行储蓄卡自动还款</div>
+                            </div>
+                            <div class="repay-line border-b" onclick="App.change_reapy()">
+                                <div class="repayTitle">
+                                    <span>财富账户自动还款</span><img src="./img/logo.png">
+                                </div>
+                                <div class="repaySub"><img class="introduce" src="./img/icon-help.png" alt="">申购理财客户绑定财富账户自动还款</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--选择扣款账号结束-->
+                </div>
+                <button class="btn" style="margin:0.4rem auto;" id="rmbBtn">确定</button>
+            </li>
+            <li id="foreignCurr_pay" class="tabs">
+            	<!--外币   账单明细开始-->
+                <div class="bill">
+                    <div class="bill_content">
+                        <div class="noPayment" id="noPaymentFor">
+                            <label class="noBillImg"><img src="./img/noBill.png" alt=""></label>
+                            <span class="noPaymentTitle for" style="display: inline;"></span><span id="For" class="hidden">，<i>去还人民币>></i></span>
+                            <div class="noPaymentNum">
+                                <span class="symbol1 hidden sym">¥</span><span id="sholdRepayment1"></span>
+                            </div>
+                            <div class="hasnoBill for hidden"><img src="./img/repayed.png" alt="">已还清</div>
+                        </div>
+                        <div class="hasPayment hidden" id="hasPaymentFor">
+                            <div class="hasPaymentFlag">
+                                <!-- <div class="hasPaymentTop"><img src="./img/repayed.png" alt=""><span>已还清</span></div> -->
+                                <div class="hasPaymentSin hidden">
+                                    <span>本期外币账单已还清</span><span id="For_H" class="hidden">，<i>去还人民币>></i></span>
+                                </div>
+                                <div class="hasPaymentAll hidden" id="hasPaymentAllFor">
+                                    <img src="./img/repayed2.png" alt=""><span>本期账单已还清</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+						 <div class="nobill hidden" id="nobill_for">
+                                <span style="font-size:12px">未出账单</span><span class="nobillMoney" id="nobillMoneyFor"></span>
+                            </div>
+                        <div class="bill_bottom for">
+                            <div class="left float_l">
+                                <span>本期账单 </span>
+                                <span id="repayBal1"></span>
+                            </div>
+                            <div class="right float_r">
+                                <span>最低应还 </span>
+                                <span id="minRepayment1"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gey"></div>
+                <!--账单明细结束-->
+                <div class="discountWrap for hidden">
+                    <div class="item">
+                        <img src="./img/duigou.png" alt=""><span>还款手续费全免</span>
+                    </div>
+                </div>
+                <div class="tipsFor hidden">
+                    <div>温馨提示</div>
+                    <div>外币未出账单不支持提前还款。</div>
+                </div>
+                <div class="repaymentModeBox">
+                	
+                    
+                    <!--自定义还款开始-->
+                    <div class="repaymentMode repaymentModeBar defineRepay for" data-check="1">
+                        <div class="image float_l">
+                            <img src="./img/elect2.png" alt="" class="elect">
+                        </div>
+                        <div class="left float_l">
+                            <p>还款</p>
+                            
+                            <p>自定义还款金额</p>
+                        </div>
+                        <div class="right float_r changeColor font-color ">
+                            <span class="label"><span class="currType"></span><span id="defineMoney1" class="forMoney"></span></span>
+                            <input type="text" class="hidden" data-keyboard="Money0" id="editDefine1" data-name="repayBal" data-type="money" placeholder="请输入还款金额" data-label="还款金额" data-required="true" data-clear="true" autocomplete="off" data-bury="true" data-buryName="人民币还款_输入还款金额">
+                            <div class="digitTips"></div>
+                            <div class="edit">
+                                <div class="finish hidden" style="color:#030303"></div>
+                                <img src="./img/edit.png" alt="" class="editImg">
+                            </div>
+                            <div class="clear hidden">
+                                <img src="./img/clear.png" alt="" class="clearImg">
+                            </div>
+                        </div>
+                    </div>
+                    <!--自定义还款结束-->
+                    <!--还最低开始-->
+                    <div class="repaymentMode repaymentModeBar border-t minRepay for">
+                        <div class="image float_l">
+                            <img src="./img/noElect2.png" alt="" class="elect">
+                        </div>
+                        <div class="left float_l">
+                            <p>还最低<img src="./img/icon-help.png" class="icon-interest" style="display: inline-block;width:24px;margin-top:-2px" alt=""></p>
+                            <p>按日计息，日利率0.05%</p>
+                        </div>
+                        <div class="right changeColor">
+                        	<span class="currType"></span><span id="minRepayMony1" class="forMoney"></span>
+                        </div>
+                    </div>
+                    <!--还最低结束-->
+                    <!--分期还开始-->
+                    <div class="repaymentMode repaymentModeBar amortize for amortizeRepay hidden">
+                        <div class="image float_l">
+                            <img src="./img/noElect2.png" alt="" class="elect">
+                        </div>
+                        <div class="left activity">
+                            <p>分期还</p>
+                            <div class="pAmoTip">分期偿还本期账单</div>
+							<div class="activity_img">
+                            	<img class="imgA hidden"><div class="redPacketTip for hidden">红包</div>
+                            </div>
+                            <div class="activity_tips hidden"></div>
+                        </div>
+                        <div class="amortizeDetail hidden">
+                            <div class="first float_l">
+                                <p>申请账单分期</p>
+                                <div class="applyAmortize">
+                                    <div class="moneyTips">
+                                        <span class="changeColor label border-b"><span class="currType"></span><span id="amortizeMoneyFor" class="forMoney"></span></span>
+                                        <input type="text" class="hidden" data-keyboard="Money0" id="editAmortize1" data-name="repayBal" data-type="money" placeholder="请输入还款金额" data-label="还款金额" data-required="true" data-clear="true" autocomplete="off" data-bury="true" data-buryName="人民币还款_输入还款金额" style="width:100%">
+                                        <div class="digitTips1"></div>
+                                        <div class="clear hidden">
+                                            <img src="./img/clear.png" alt="" class="clearImg">
+                                        </div>
+                                    </div>
+                                    <div class="edit">
+                                    	<div class="finish hidden" style="color:#030303;"></div>
+                                    	<img src="./img/noEdit.png" alt="">
+                                	</div>
+                                </div>
+                               
+
+                            </div>
+                            <div class="remark changeColor2">
+                                	可申请金额<span class="amortizeMinFor"></span>
+                                	<span class="amortizeTotalFor"></span>
+                            </div>
+                            <div class="second float_r cycle_rate" id="cycle_rate_for">
+                                <p style="margin-bottom: 8px">
+                                	<span style="padding-right:20px"><span id="cycleFor"></span>期</span>
+                                	<img src="./img/pull.png" alt="" class="pull">
+                                </p>
+                                <span class="rate_left">每期利率</span><span class="rate_new" id="rateFor"></span><span class="rate_old"></span>
+                            </div>
+
+                        </div>
+						<div class="amortizeDetail_new hidden">
+                        	<div class="module">
+                        		<div class="left">每期应还本金</div>
+                        		<div class="right"><span class="currType"></span><span id="stagAmt_for"></span></div>
+                        	</div>
+                        	<div class="module red_packet border-t">
+                        		<div class="left">每期利息</div>
+                        		<div class="right">
+                        			<span class="currType"></span><span id="everyStagSch_for"></span>
+                        		</div>
+                        	</div>
+                        	<div class="module border-t">
+                        		<div class="left">分期后本期应还</div>
+                        		<div class="right"><span id="amortizeLeaveFor"></span></div>
+                        	</div>
+                        	<div class="module border-t notice">
+                                <p style="display: contents">*分期利率由系统实时测评，以界面实时显示为准，您本次交易近似折算年化利率为<span id="dataRateYearFor"></span>，详情点击
+                                <img src="img/icon-help.png" alt="" class="icon-toast wb-toast" style="display: inline-block;width:20px;vertical-align: middle"></p>
+                            </div>
+                            <p class="common-style ui-ad-wrap" style="border-bottom-right-radius:initial;border-bottom-left-radius:initial;background:#fff;color:#333333;font-size:0.11rem;">
+                                您可于分期办理成功后申请提前还款，我行将免除您提前还款款项在剩余期数内的手续费，同时收取一定金额的提前还款违约金，详情点击<span id="jump_Page" style="color: #1bb465;text-decoration:underline">收费标准</span>
+                            </p>
+                        	<div class="module border-t contract hidden" id="contractFor">
+                        		<div class="contract_agree" id="contract_agree_for"></div>
+                        		<p class="contract_content_box"><span>阅读并同意</span><span class="contract_content" id="bank_agreement_for">《中国民生银行信用卡账单分期业务办理合约》</span></p>
+                        	</div>
+                        	<!--选择分期期数-->
+                        	<div class="selectCycle">
+                        		<div class="selectCycle_top border-b">
+                        			<div class="cancle">
+                        				<img src="./img/close.png">
+                        			</div>
+                        			<div class="title lineH50">选择分期期数</div>
+                        		</div>
+                        		<ul class="selectCycle_body" id="selectCycle_body_for">
+                        			
+                        		</ul>
+                        	</div>
+                        </div>
+                    </div>
+                    <!--分期还结束-->
+                    <!-- 分期还结果开始 -->
+                    <div class="repaymentMode amortizeResultData amortize for hidden">
+                        <div class="image float_l">
+                            <img src="./img/elect3.png" alt="" class="elect">
+                        </div>
+                        <div class="left">
+                            <p>本期账单您已申请分期</p>
+                        </div>
+                        <div class="amortizeDetail">
+                            <div class="first float_l">
+                                <p class="changeColor">分期金额</p>
+                                <div class="applyAmortize">
+                                    <label class="changeColor"><span id="amortizeMoney2"></span></label>
+                                </div>
+                               
+
+                            </div>
+                            <div class="second float_r">
+                                <p class="changeColor" style="margin-bottom: 8px">分期期数</p>
+                                <label class="changeColor"><span id="amortizeLengthFor"></span>期</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- 分期还结果结束 -->
+                    <!--选择扣款账号开始-->
+                    <div class="selectAccount for hidden" style="overflow:hidden;height:75%">
+                        <div class="title border-b">还款</div>
+                        <div class="scroll padding_l_r20">
+                        <div class="close">
+                            <img src="./img/close.png" alt="">
+                        </div>
+                        <div class="repay_account hidden lineH50">
+                            <div class="left float_l">还款账户</div>
+                            <div class="right float_r" id="repay_accountFor"></div>
+                        </div>
+                        <div class="creditCard lineH50" id="creditCardForBox">
+                            <div class="left float_l">信用卡号</div>
+                            <div class="right float_r" id="creditCardFor"></div>
+                            <div class="enter">
+                                    <img src="./img/enter2.png" alt="">
+                                </div>
+                        </div>
+                        <div class="repay_method border-t lineH50">
+                            <div class="left float_l">还款方式</div>
+                            <div class="right float_r" id="repay_method_for">
+                                <p id="repay_methodVal">信用卡溢缴款购汇还款</p>
+                                <div class="enter">
+                                    <img src="./img/enter2.png" alt="">
+                                </div>
+                                  
+                            </div>
+                        </div>
+                         <div class="charge_account border-t hidden">
+                            <div class="left">扣款账号</div>
+                            <div class="right">
+                                <img class="bankLogo for hidden" alt="">
+                                <div class="fmt-debit lineH30 hidden" id="fmtDebitCardNo1"></div>
+                           		<div class="editInput">
+                           			<input type="tel" data-required="true" id="debitCardNo1" placeholder="请输入扣款账号" data-label="扣款账号" data-minlength="16" max-length="20" data-clear="false" data-name="debitCardNo" data-cardNo='true' autocomplete="off" data-bury="true" data-buryName="人民币还款_输入还款账号">
+                                       <img alt="" src="./img/icon_close.png" class="closeImg hidden">
+                                       <span class="valSpan1"></span>
+                           		</div>
+                           		
+	                                
+                                <div class="accountImg" id="forIcont">
+                                    <img src="./img/account2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="balance hidden" style="font-size:14px;text-align:right">
+                           			<span style="color: #737373">余额</span>
+	                                <span style="color: #EE5C2F">¥</span><span style="color: #EE5C2F" id="balance1"></span>
+                           		</div>
+                        </div>
+                         <div class="repay_foreignmoney border-t lineH50">
+                            <div class="left float_l">还款金额</div>
+                            <div class="right float_r">
+                                <span id="repay_formoney"></span>
+                            </div>
+                            
+                        </div>
+                        <div class="currentRateFor">
+                            <div class="currentRateForRight">
+                                <span style="color:#81868B">系统当前汇率</span> <span id="rate" style="color:#EE5C2F"></span>
+                            </div>
+                            
+                        </div>
+                        <div class="withhold border-t lineH50">
+                            <div class="left float_l">实际扣缴金额</div>
+                            <div class="right float_r" style="color: #EE5C2F">
+                                <span>¥</span><span id="virtualMoney"></span>
+                            </div>
+                        </div>
+                        <div class="agree border-t lineH50" id="agreeRate">
+                            <div class="elect1 float_l">
+                                <img src="./img/noElect1.png" alt="">
+                            </div>
+                            <p class="float_l">本人同意按照系统当前汇率进行购汇还款</p>
+                        </div>
+                        <div class="agreeRepay_rule lineH50" data-id="0" id="agreeRepayRule1" 
+                        style="height: 21px;position:static;margin-top:60px">
+                             <div class="elect1 float_l">
+                                <!-- <img src="./img/noElect1.png" alt=""> -->
+                            </div> 
+                            <p class="float_l repaymentAgreement" style="width: 100%;text-align: center;">点击"确定"即代表您同意<span>《信用卡还款服务协议》</span></p>
+                        </div>
+                         <button style="position:static;opacity:0.5;width:100%;height:45px;margin-top:4px;" id="repayFor" disabled="disabled">确定</button>
+                        </div>
+                       
+                    </div>
+                    <div class="selectAccount account hidden" style="height: 250px;">
+                        <div class="scroll padding_l_r20">
+                            <div class="title border-b">选择自动还款方式</div>
+                            <div class="close repayClose">
+                                <img src="./img/close.png" alt="">
+                            </div>
+                            <div class="repay-line border-b" onclick="App.change_reapy()">
+                                <div class="repayTitle">储蓄卡自动还款</div>
+                                <div class="repaySub">绑定本行储蓄卡自动还款</div>
+                            </div>
+                            <div class="repay-line border-b" onclick="App.change_reapy()">
+                                <div class="repayTitle">
+                                    <span>财富账户自动还款</span><img src="./img/logo.png">
+                                </div>
+                                <div class="repaySub"><img class="introduce" src="./img/icon-help.png" alt="">申购理财客户绑定财富账户自动还款</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--选择扣款账号结束-->
+                </div>
+                <button class="btn" style="margin: 0.4rem auto;" id="forBtn">确定</button>
+            </li>
+        </ul>
+    </div>
+	<div class="authorization_shade">
+        <div class="authorization_box">
+			<p class="authorization_title">授权提示</p>
+			<div class="authorization_content"><div class="authorization_content_scroll">
+				<iframe class="authorizationLetter" id="authorizationLetter" scrolling="no" src="" frameborder="0" width="100%"></iframe>
+			
+			</div></div>
+			<div class="authorization_btn">同意授权</div>
+			<div class="authorization_btn_disagree">暂不同意</div>
+		</div>
+    </div>
+</div>
+<!--自定义还款结果页面-->
+<div id="pageB" class="page" title="还款结果" desc="立即还款页面202012_还款成功页"
+     data-btnLeft="true|返回|App.pageB_back()" data-btnRight="false||">
+    <div class="gey"></div>
+    <div class="repayResult">
+        <div class="repayFail hidden">
+            <div class="repayIcon">
+                <img src="./img/icon_fail.png" alt="">
+            </div>
+            <div class="explainFail">
+                <p style="font-size: 18px;color: #262733;">还款失败?</p>
+                <p style="font-size: 15px;color: #81868B;margin-top: 7px;">最终结果以银行系统及短信提示为准</p>
+                <p style="font-size: 14px;color: #B7BABE;width: 78%;margin-left: 11%;margin-top: 13px;">若还款金券使用失败，系统会将券码返还至您的账户，您可尝试继续还款</p>
+            </div>
+            <div class="useRecord">
+                点击查看使用记录>>
+            </div>
+        </div>
+        <div class="repayStatus hidden">
+            <img src="./img/success2.png" alt="">
+        </div>
+        <div class="repayExplain hidden">还款成功</div>
+        <p id="economize"></p>
+        <div class="repayDetail">
+            <div class="currentRepay">
+                <p>本次还款金额</p>
+                <span></span><span id="currentRepay"></span>
+            </div>
+            <div class="currentNorepay">
+                <p>本期未还金额</p>
+                <span></span><span id="currentNorepay"></span>
+            </div>
+        </div>
+        <div class="afterRepay">
+            <div class="queryBill hidden" id="queryBill">查询账单</div>
+            <div class="billStage hidden" id="billStage">账单分期</div>
+			<div class="billStage hidden" id="goRepay">继续还款</div>
+			<div class="billStage hidden" id="goquota">查询额度</div>
+        </div>
+
+        <!--<div class="amortizeResult border-t padding_t_b16 padding_l_r16 clearfix hidden">
+            <div class="left float_l">
+                <lebal>本期账单还需还款</lebal>
+                <span></span><span>1200.00</span>
+            </div>
+            <div class="right float_r">
+                去还款
+            </div>
+        </div>  -->
+        <div class="ad-recommend">
+            <div class="icon-recommend">
+                <img src="./img/icon-recommend.png" alt="">
+                <span>为您推荐</span>
+            </div>
+            <div class="ad-imgs">
+            </div>
+        </div>
+    </div>
+	<div class="icon-repaymentMoney">
+		<img class="icon-repaymentMoney_img " src="./img/icon-nls.gif" alt="" />
+		<p class="icon-repaymentMoney_p">领能量</p>
+		<p class="icon-repaymentMoney_p1"></p>
+	</div>
+	<div class="popup-repaymentMoney-bg">
+		<div class="popup-repaymentMoney">
+			<p class="icon-coupons_p">本次还款任务获得<span></span>能量石</p>
+			<p class="icon-coupons_p5">目前已累计获得<span></span>能量石</p>
+			<img class="nls_list_line" src="./img/icon_line.png" alt="" />
+			<div class="nls_list_bar"></div>
+			<div class="btn_bar clearfix">
+				<img class="btn_gift float_l" src="./img/btn_gift.png" data-bury="true" data-buryName="立即还款结果页_弹窗_能量石兑换_更多礼品" alt="" />
+				<img class="btn_energy float_r" src="./img/btn_energy.png" data-bury="true" data-buryName="立即还款结果页_弹窗_能量石兑换_更多能量" alt="" />
+			</div>
+			<img class="nls_list_close" src="./img/btn_close.png" alt="" data-bury="true" data-buryName="立即还款结果页_弹窗_能量石兑换_关闭" />
+		</div>
+	</div>
+</div>
+
+<!--目前支持的银行卡-->
+<div id="pageD" class="page" title="支持还款的银行" desc="支持的银行卡页面"
+     data-btnLeft="true|返回|App.pageD_back()" data-btnRight="false|更多|App.backTest()">
+	<div class="gey"></div>
+    <ul class="ui-list ui-border-tb yui-no-margin" id="bankList">
+
+    </ul>
+
+    <ul class="ui-list ui-border-tb yui-no-margin" id="bankList_ono">
+
+    </ul>
+</div>
+<!--人民币  成功扣款账号列表-->
+<div id="pageF" class="page" title="常用账号" desc="人民币成功扣款账号列表页"
+     data-btnLeft="true|返回|App.pageF_back()" data-btnRight="true|编辑|App.editOperate()">
+    <div class="gey"></div>
+    <ul class="yui-cardNoList padding_l_r16" id="rmbCardNoList">
+        <!--<li class="padding_l_r16 padding_t_b16">
+        	<div class="bankName">
+        		<img alt="" src="./img/icon.png" class="bankflag">
+        		<span class="bank">民生银行</span>
+        	</div>
+        	<p class="bankAccount">6226171700000000</p>
+        	<div class="elect">
+        		<img alt="" src="./img/noElect2.png">
+        	</div>
+        </li>
+   -->         
+    </ul>
+    <div class="ui-add-card" id="addBankCard">
+        <img src="img/icon-addbank.png" alt="" class="icon-add-bank">
+        <p>添加卡片</p>
+    </div>
+	<div class="noCardNumWrap hidden" id="rmb_noCardNum">
+		<div class="noCardImg">
+			<img src="./img/icon-notCard.png" alt="">
+		</div>
+		<p class="noCardTips">暂无银行卡号</p>
+        <!-- <div class="notEditCard-addBtn">
+            <img src="img/icon-nocardAdd.png" alt="" class="icon-nocardAdd">
+            <span>添加卡片</span>
+        </div> -->
+	</div>
+</div>
+<!--外币  成功扣款账号列表-->
+<div id="pageH" class="page" title="常用账号" desc="外币成功扣款账号列表页"
+     data-btnLeft="true|返回|App.pageH_back()" data-btnRight="true|编辑|App.editOperate()">
+    <div class="gey"></div>
+    <ul class="yui-cardNoList padding_l_r16" id="forCardNoList">
+        <!--<li class="padding_l_r16 padding_t_b16">
+        	<div class="bankName">
+        		<img alt="" src="./img/icon.png" class="bankflag">
+        		<span class="bank">民生银行</span>
+        	</div>
+        	<p class="bankAccount">6226171700000000</p>
+        	<div class="elect">
+        		<img alt="" src="./img/noElect2.png">
+        	</div>
+        </li>
+   -->         
+    </ul>
+    <div class="ui-add-card" id="addBankCard">
+        <img src="img/icon-addbank.png" alt="" class="icon-add-bank">
+        <p>添加卡片</p>
+    </div>
+	<div class="noCardNumWrap hidden" id="for_noCardNum">
+		<div class="noCardImg">
+			<img src="./img/icon-notCard.png" alt="">
+		</div>
+		<p class="noCardTips">暂无银行卡号</p>
+        <!-- <div class="notEditCard-addBtn">
+            <img src="img/icon-nocardAdd.png" alt="" class="icon-nocardAdd">
+            <span>添加卡片</span>
+        </div> -->
+	</div>
+</div>
+<!--外币  还款方式-->
+<div id="pageG" class="page" title="还款方式" desc="外币选择还款方式页"
+     data-btnLeft="true|返回|App.pageG_back()" data-btnRight="false|更多|App.backTest()">
+	<div class="gey"></div>
+    <ul class="forRepayMethodBox">
+		<li class="forRepayMethod padding_l_r16"  data-method="x" data-check="1">
+			<div class="left lineH50">信用卡溢缴款购汇还款</div>
+			<div class="right">
+				<img alt="" src="./img/elect2.png">
+			</div>
+		</li>
+		<li class="forRepayMethod padding_l_r16"  data-method="b">
+			<div class="left lineH50">本行人民币活期存款购汇还款</div>
+			<div class="right">
+				<img alt="" src="./img/noElect2.png">
+			</div>
+		</li>
+    </ul>
+</div>
+<!--信用卡卡号选择 人民币-->
+<div id="pageK" class="page" title="卡号选择" desc="人民币信用卡卡号选择页"
+     data-btnLeft="true|返回|App.pageK_back()" data-btnRight="false|更多|App.backTest()">
+	<div class="gey"></div>
+     <ul class="yui-cardNoList padding_l_r16" id="creditListRmb">
+        <!--<li class="padding_l_r16 padding_t_b16">
+        	<div class="bankName">
+        		<img alt="" src="./img/icon.png" class="bankflag">
+        		<span class="bank">民生银行</span>
+        	</div>
+        	<p class="bankAccount">6226171700000000</p>
+        	<div class="elect">
+        		<img alt="" src="./img/noElect2.png">
+        	</div>
+        </li>
+          -->   
+    </ul>
+</div>
+<!--信用卡卡号选择 外币-->
+<div id="pageL" class="page" title="卡号选择" desc="外币信用卡卡号选择页"
+     data-btnLeft="true|返回|App.pageL_back()" data-btnRight="false|更多|App.backTest()">
+	<div class="gey"></div>
+     <ul class="yui-cardNoList padding_l_r16" id="creditListFor">
+        <!--<li class="padding_l_r16 padding_t_b16">
+        	<div class="bankName">
+        		<img alt="" src="./img/icon.png" class="bankflag">
+        		<span class="bank">民生银行</span>
+        	</div>
+        	<p class="bankAccount">6226171700000000</p>
+        	<div class="elect">
+        		<img alt="" src="./img/noElect2.png">
+        	</div>
+        </li>
+          -->   
+    </ul>
+</div>
+<!--分期结果页面-->
+<div id="pageN" class="page" title="分期结果" desc="分期结果页"
+     data-btnLeft="true|返回|App.pageN_back()" data-btnRight="false||">
+    <div class="gey"></div>
+    <div class="ui-form">
+        <img src="img/success.png" class="icon-success"/>
+        <p class="title-success">分期成功</p>
+        <div class="ui-form-item cachWrap lineH50">
+            <div class="min-border"></div>
+            <span class="cachMoney">本期剩余应还：</span> <span id="cach_money"></span>
+            <div class="icon-cachMoney">
+                <span class="cachMoney-span">去还款</span>
+                <img src="./img/enter2.png" class="cachMoney-enter">
+            </div>
+            <div class="min-border"></div>
+        </div>
+    </div>
+    <div class="au-tips">
+        <div>温馨提示</div>
+        <p>1.申请成功后的账单分期不能对期数、金额等进行更改，不能对未偿还的分期余额再次申请分期付款。</p>
+        <p class="large-amount-toast">2.账单分期申请成功后可于<span style="color:#ff941b">当日北京时间19:00</span> (以系统实际结算时间为准)前可致电客服或登录民生信用卡全民生活app申请撤销。
+        </p>
+    </div>
+    <!-- 广告位 -->
+    <div class="ui-list">
+        <div class="recommWrap">
+            <img class="icon-recomm" src="./img/icon-recommend.png"/><span>为您推荐</span>
+            <img id="image3Id" class="pageImage" data-bury="true"
+                 data-buryName="账单分期_广告位">
+        </div>
+    </div>
+
+</div>
+<!-- 添加卡片页面 -->
+<div id="pageP" class="page" title="添加卡片" desc="添加银行卡页" data-btnLeft="true|返回|App.pageP_back()" data-btnRight="false||">
+    <div class="step1TopInfo"></div>
+    <div class="ui-form" style="margin-right: 4%;margin-left: 4%;border-radius: 10px;">
+        <div class="ui-form-item ui-line1-height" style="padding-right:0;">
+            <label style="width:105px;font-size: 15px;">借记卡卡号</label>
+            <input data-name="cardNo3" style="padding-left:120px;right:0;top:-1px;text-align:left;font-size:15px;" type="tel" data-clear="false" id="cardNo3"
+                data-cardNo='true' data-minlength="16" max-length="20" data-required="true" data-required="true"
+                data-label="转入银行卡号" placeholder="请输入本人借记卡" data-type="number">
+            <img src="./img/Groupcode.png" class="groupcode">
+        </div>
+        <div class="min-border"></div>
+        <div class="ui-form-item ui-line1-height" id="resiveBank">
+            <label style="font-size: 15px">所属银行</label>
+            <span class="ui-bank" id="bank2" data-bank=""><span calss=""></span></span>
+            <p class="ui-select-bankIcon" style="padding-left:120px;text-align:left;font-size:15px;color: #BABBBD;">请选择所属银行</p>
+            <img class="icon_youjian" src="./img/icon_youjian.png">
+        </div>
+        
+    </div>
+    <div class="ui-btn-wrap">
+        <button class="ui-btn-lg ui-btn-outlined" id="addResiveBankNo" style="margin-top: 4%;background-color: #50B964;background-image: none;width: 88%;border-radius: 4px;">确定</button>
+    </div>
+</div>
+<!-- 用户支持银行列表页面 -->
+<div id="pageO" class="page" title="支持银行" desc="支持转入银行列表页" data-btnLeft="true|返回|App.pageO_back()" data-btnRight="false||">
+    <div class="gey"></div>
+    <ul class="ui-list ui-border-tb yui-no-margin" id="bankList">
+
+    </ul>
+
+    <ul class="ui-list ui-border-tb yui-no-margin" id="bankList_ono">
+        
+    </ul>
+</div>
+<div id="repayFail" class="hidden">
+    <div class="content">
+        <div class="title">还款失败</div>
+        <div id="failMsg"></div>
+        <div class="min-border-red"></div> 
+        <div id="failConfirm">确定</div>
+    </div>
+</div>
+<div id="minRepayTips" class="hidden">
+    <div class="content">
+        <img src="./img/close2.png" alt="" id="closeTips">
+        <div class="title">还最低</div>
+        <div class="pTips">利息将按照账单全额从记账日起，以每天万分之五的利率计收利息，直到全额还清为止停止计收。</div>
+        <button class="btn" id="minBtn">确定</button>
+    </div>
+</div>
+<script type="text/javascript" src="../../js/ytfw.js"></script>
+<script type="text/javascript" src="../../js/ytfw/util/Toolbar.js"></script>
+
+</body>
+</html>

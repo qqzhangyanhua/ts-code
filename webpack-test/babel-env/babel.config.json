@@ -1,0 +1,16 @@
+// .babelrc
+{
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+            "corejs": "3.25.5",
+            "useBuiltIns": "usage",
+          "targets": {
+            "ie": 10
+          }
+        }
+      ]
+    ]
+  }
+  
