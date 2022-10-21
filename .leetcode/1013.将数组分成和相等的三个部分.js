@@ -9,20 +9,29 @@
  * @param {number[]} arr
  * @return {boolean}
  */
+
+//思路，先累加一个num 然后取余比较
 var canThreePartsEqualSum = function(arr) {
-  let result = []
-    for(let i =0;i<arr.length;i++){
-        let count=0
-        if(arr[i]>arr[i+1]){
-            count+=arr[i]
-        }else{
-            result.push(count)
-            count=0
-        }
+    let count = 0;
+    let sum = 0;
+    let s = 0
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i]
     }
-    console.log(result)
+    if(sum%3!=0){
+        return false; //边界处理，如果不能被3整除说明不能累加
+    }
+    for(let i = 0; i < arr.length; i++) {
+        s +=arr[i];
+        if(s==sum/3){
+            count++;
+            s=0
+        }
+
+    }
+    return count>=3
 
 };
-canThreePartsEqualSum([0,2,1,-6,6,-7,9,1,2,0,1])
+console.log(canThreePartsEqualSum([0,2,1,-6,6,-7,9,1,2,0,1]))
 // @lc code=end
 
