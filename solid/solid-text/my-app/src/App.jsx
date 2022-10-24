@@ -48,6 +48,7 @@ function AboutShow() {
   let myRef
   const [count, setCount] = createSignal(10);
   const handelSetCount = () => {
+    debugger
     setCount(count() - 6);
     console.log("myRef===",myRef);
   };
