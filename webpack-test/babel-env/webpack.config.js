@@ -9,7 +9,10 @@ module.exports = {
     rules: [
         {
             test: /\.js$/,
-            exclude: /node_modules/,
+            include:function(modulePath){
+              console.log('modulePath===', modulePath);
+              // return  /node_modules/
+            },
             use: {
                 loader: 'babel-loader',
             }
