@@ -1,20 +1,20 @@
 
-const add = (a, b) =>a+b;
-const msg ='hello world'
-console.log(add(1,2),'fffffffffffffffffff');
-console.log(msg,add(4,2),'3333333333');
-let promies = new Promise((resolve, reject) => {
-    resolve(); //异步处理 
-   });
-   
-console.log('promise===',promies);
-// const arr = [1,2,3,4,5,6,7,8]
-// console.log('dfsdfsdfsdfsdfsfsdf',arr.at(2))
-// function getA(){
-//     return new Promise((resolve, reject) =>{
-//         resolve(1234)
-//     })
-// }
-// getA.then(res=>{
-//     console.log(msg)
-// })
+import APP from './App.vue';
+import Vue from 'vue';
+
+new Vue({
+    el: '#app',
+    components: {APP},
+    template: '<APP/>',
+})
+// import JSONBig from 'json-bigint'
+// const add = (a, b) =>a+b;
+// const msg ='hello world'
+// console.log(add(1,2),'fffffffffffffffffff');
+// console.log(msg,add(4,2),'3333333333');
+
+// var dupkeys = '{ "dupkey": "value 1", "dupkey": "value 2"}';
+// var works = JSONBig.parse(dupkeys);
+
+// console.log('JSON.parse(dupkeys).dupkey: %s', works.dupkey);
+

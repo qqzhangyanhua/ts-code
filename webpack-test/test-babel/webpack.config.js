@@ -1,30 +1,42 @@
-
-const path= require('path')
-module.exports ={
-    mode:'production',
-    entry:'./src/index.js',
-    module:{
+const path = require('path')
+const HtmlWebpackPlugin = require("html-webpack-plugin")
+const vueLoaderPlugin=require('vue-loader/lib/plugin') 
+module.exports = {
+    mode: 'development',
+    entry: './src/index.js',
+    module: {
         rules: [
             {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        // presets: ['@babel/preset-env']
-                        // plugins:[
-                        //     '@babel/plugin-transform-arrow-functions',
-                        //     "@babel/plugin-transform-block-scoping"
-                        // ]
-                    }
-                }
+                test: /\.vue$/, 
+                use:['vue-loader']
+            },
+            {
+            test: /\.(js|jsx)$/,
+            // exclude: /node_modules/,
+            exclude: /node_modules\/(?!(json-bigint|ANOTHER-ONE)\/).*/, //排除node_modules下的MY_MODULE和ANOTHER-ONE
+            // include:[ path.resolve(__dirname, './node_modules/json-bigint'),path.resolve(__dirname,'./src')], //只转换这个包
+            use: {
+                loader: 'babel-loader',
             }
-        ]
+        },
+        {
+            test:/\.css$/,
+            use:['style-loader','css-loader'] // 从右向左解析原则
+          }]
     },
-    output:{
-        filename:"[name].js",
-        path:path.join(__dirname,'./dist'),
-   
+    output: {
+        filename: "[name].js",
+        path: path.join(__dirname, './dist'),
+
     },
+  
+    plugins: [
+        new vueLoaderPlugin(),
+        new HtmlWebpackPlugin({
+          template: "./src/index.html",
+          filename: "index.html"
+        }),
+      ],
+
 
 }
