@@ -3,7 +3,6 @@ import { ref, onMounted } from "vue";
 
 defineProps<{ msg: string }>();
 onMounted(() => {
-  // debugger
   console.log("onMounted");
 });
 

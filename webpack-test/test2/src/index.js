@@ -1,7 +1,7 @@
-// import dayjs from 'dayjs';
+// import moment from 'moment';
 
-// const m1  = dayjs("20111031", "YYYYMMDD").fromNow(); // 11 years ago
-// const m2 = dayjs("20120620", "YYYYMMDD").fromNow();
+// const m1  = moment("20111031", "YYYYMMDD").fromNow(); // 11 years ago
+// const m2 = moment("20120620", "YYYYMMDD").fromNow();
 // console.log('m1===',m1);
 // console.log('m2===',m2);
 
@@ -37,9 +37,9 @@
 
 // 这样又有哪些被打包进去了呢
 
-import {addMapping} from './test4'
-console.log('info==',addMapping(1,2))
-console.log('info==222',addMapping(1,2))
+// import {addMapping} from './test4'
+// console.log('info==',addMapping(1,2))
+// console.log('info==222',addMapping(1,2))
 
 
 

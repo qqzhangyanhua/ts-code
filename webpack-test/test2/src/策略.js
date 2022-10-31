@@ -1,27 +1,34 @@
 const getPrice = (from, rate) => {
     if (from === 'wb') {
+        if(rate>200){
+            return rate-50
+        }
         return rate * 0.8
     } else if (from === 'qq') {
         return rate * 0.9
     } else if (from === 'wx') {
         return rate * 0.7
-    } else {
+    } else if(from==='dy'){
+        return rate*0.6
+    }else {
         return rate
     }
 }
+const froms ={
+    wb(rate){
 
+        return rate*0.8
+    },
+    qq(){},
+    wx(){},
+    dy(){},
+    default(){
 
-const forms = {
-    wb(rate) {
-        return rate * 0.8
-    },
-    qq(rate) {
-        return rate * 0.9
-    },
-    wx(rate) {
-        return rate * 0.7
     }
 }
-const getPrices = (from, rate) => {
-    return forms[from](rate)
+
+const getPrice2 = (from, rate) => {
+
+    return froms[from](rate)
 }
+

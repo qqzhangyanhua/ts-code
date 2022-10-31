@@ -1,1 +1,1 @@
-!function(){"use strict";console.log("info==",2)}();
+!function(){var e={502:function(e,o,t){"use strict";t.r(o),o.default={name:"zyh",age:2,like:"123"}}},o={};function t(n){var r=o[n];if(void 0!==r)return r.exports;var i=o[n]={exports:{}};return e[n](i,i.exports,t),i.exports}t.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},function(){const e=t(502);console.log("info==",e.age)}()}();

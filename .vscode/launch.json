@@ -6,7 +6,17 @@
     "configurations": [
         {
             "name": "Launch Program",
-            "program": "${workspaceFolder}/add.js",
+            "program": "${workspaceFolder}/app.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+
+        {
+            "name": "调试js",
+            "program": "${workspaceFolder}/调试/js/test.js",
             "request": "launch",
             "skipFiles": [
                 "<node_internals>/**"

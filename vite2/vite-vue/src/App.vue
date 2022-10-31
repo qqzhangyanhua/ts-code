@@ -6,6 +6,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <div>
+    <el-button type='primary'>按钮</el-button>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>

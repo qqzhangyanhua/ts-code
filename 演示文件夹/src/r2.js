@@ -32,22 +32,23 @@ const getDeps = (target,key)=>{
     }
     return dep
 }
+const baseHandler = {
+    get(target, key) {
+        const dep = getDeps(target,key)
+        dep.depend();
+        return Reflect.get(target, key)
+
+    },
+    set(target, key, value) {
+        const dep = getDeps(target,key)
+        const result = Reflect.set(target, key,value)
+        dep.notice();
+        return result;
+
+    }
+}
 const reactive = (raw) => {
-    return new Proxy(raw, {
-        get(target, key) {
-            const dep = getDeps(target,key)
-            dep.depend();
-            return Reflect.get(target, key)
-
-        },
-        set(target, key, value) {
-            const dep = getDeps(target,key)
-            const result = Reflect.set(target, key,value)
-            dep.notice();
-            return result;
-
-        }
-    })
+    return new Proxy(raw,baseHandler )
 }
 
 const user = reactive({
