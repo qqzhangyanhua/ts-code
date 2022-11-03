@@ -57,7 +57,7 @@ function App() {
     if (e.code === "Enter") {
       if (editedTodo.title) {
         // 获取对应待办并更新
-        const todo = todos.find((todo) => todo.id === editedTodo.id);
+        const todo = todos.find((todo:any) => todo.id === editedTodo.id);
         todo.title = editedTodo.title;
         setTodos([...todos]);
       }
