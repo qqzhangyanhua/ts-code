@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+        .active{
+            color:red;
+        }
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -25,27 +30,41 @@
           super();
           this.state = {
             movies: ["流浪月球", "火星救援", "星際穿越"],
-            msg:'hello',
-            count:0
+            msg: "hello",
+            count: 0,
+            current:0
           };
         }
-        initial(){
-            this.setState({
-                count:this.state.count+1,
-            })
+        initial(e) {
+          console.log(e);
+          this.setState({
+            count: this.state.count + 1,
+          });
         }
-        decrement(){
+        decrement() {
+          this.setState({
+            count: this.state.count - 1,
+          });
+        }
+        liClick(index){
             this.setState({
-                count:this.state.count-1,
+                current:index
             })
         }
         render() {
-            const {msg,count} = this.state;
+          const { msg, count,current } = this.state;
           return (
             <div>
-              <h3>{msg}===={count}</h3>
+              <h3>
+                {msg}===={count}
+              </h3>
               <button onClick={this.initial.bind(this)}>+1</button>
               <button onClick={this.decrement.bind(this)}>-1</button>
+              <ul>
+                {this.state.movies.map((item,index) => (
+                  <li className={current===index?'active':''} key={index} onClick={()=>this.liClick(index)}>{item}</li>
+                ))}
+              </ul>
             </div>
           );
         }
