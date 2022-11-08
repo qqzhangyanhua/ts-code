@@ -9,6 +9,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <div>
       <button data-click='{level:12,ac:0}'>按钮</button>
+      <a> 跳转</a>
     </div>
     <App />
   </React.StrictMode>
