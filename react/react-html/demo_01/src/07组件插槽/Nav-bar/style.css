@@ -1,0 +1,12 @@
+.nav-bar{
+    display:flex;
+    height:40px;
+}
+.left,.right{
+    width:80px;
+    background-color: antiquewhite;
+}
+.center{
+    flex:1;
+    background-color:aquamarine
+}

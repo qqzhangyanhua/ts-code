@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 // import './index.css';
-import App from './App';
+// import App from './App';
+// import App from './07组件插槽/App'
+import App from './09费父子组件通信/App'
+
 // import HelloClass from './component/helloClass';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

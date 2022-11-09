@@ -8,8 +8,8 @@ export class MainProductList extends Component {
       <div>
         MainProductList
         <ul>
-          {productList.map((item) => (
-            <li key={item.title}>{item.title}</li>
+          {productList.map((item,index) => (
+            <li className="item" key={index}>{item.title}</li>
           ))}
         </ul>
       </div>

@@ -10,7 +10,7 @@ export class MainBanner extends Component {
     return (
       <div>MainBanner
         <ul>
-         {banner.map(item => <li key={item.title}>{item.title}</li>)}
+         {banner.map((item,index) => <li key={index}>{item.title}</li>)}
         </ul>
       </div>
     )
