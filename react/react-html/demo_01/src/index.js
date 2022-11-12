@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 // import './index.css';
 // import App from './App';
 // import App from './07组件插槽/App'
-import App from './09费父子组件通信/App'
+// import App from './14ref获取/App'
+import App from './15受控组件非受控组件/App'
 
 // import HelloClass from './component/helloClass';
 
