@@ -4,7 +4,9 @@ import ReactDOM from 'react-dom/client';
 // import App from './App';
 // import App from './07组件插槽/App'
 // import App from './14ref获取/App'
-import App from './15受控组件非受控组件/App'
+// import App from './16高阶组件/App.jsx'
+import App from './关于redux/App'
+
 
 // import HelloClass from './component/helloClass';
 
