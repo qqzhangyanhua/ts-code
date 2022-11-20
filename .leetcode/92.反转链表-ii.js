@@ -32,7 +32,7 @@ var reverseBetween = function(head, left, right) {
     // 找到区间
     for (let j = 0; j < right-left; j++){
         let next = cur.next
-        cur.next = prev
+        cur.next = prev //交换
         prev = cur
         cur = next
     }
