@@ -7,6 +7,7 @@ specifiers:
   clean-webpack-plugin: ^4.0.0
   core-js: ^3.20.0
   css-loader: ^6.7.1
+  dayjs: ^1.11.6
   html-webpack-plugin: ^5.5.0
   less: ^4.1.2
   less-loader: ^10.2.0
@@ -19,6 +20,9 @@ specifiers:
   webpack: ^5.65.0
   webpack-cli: ^4.9.1
   webpack-dev-server: ^4.7.0
+
+dependencies:
+  dayjs: 1.11.6
 
 devDependencies:
   '@babel/core': 7.17.9
@@ -2161,6 +2165,10 @@ packages:
     engines: {node: '>=4'}
     hasBin: true
     dev: true
+
+  /dayjs/1.11.6:
+    resolution: {integrity: sha512-zZbY5giJAinCG+7AGaw0wIhNZ6J8AhWuSXKvuc1KAyMiRsvGQWqh4L+MomvhdAYjN+lqvVCMq1I41e3YHvXkyQ==}
+    dev: false
 
   /debug/2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}

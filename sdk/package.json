@@ -11,9 +11,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dayjs": "^1.11.6",
+    "qs": "^6.11.0",
+    "uuid-js": "^0.7.5",
     "webpack": "^5.75.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.19.6",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.0",
     "webpack-cli": "^5.0.0"
   }
 }
