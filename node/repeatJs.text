@@ -1,0 +1,144 @@
+
+共有重复js: 28
+  [
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/public/static/html/NewEnergyGuide/lib/vue-resource.min.js",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/public/static/html/aNewEnergyGuide/lib/vue-resource.min.js",
+    "size": 15312
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/public/static/html/NewEnergyGuide/lib/vue-router.min.js",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/public/static/html/aNewEnergyGuide/lib/vue-router.min.js",
+    "size": 28027
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/public/static/html/NewEnergyGuide/lib/vue.js",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/public/static/html/aNewEnergyGuide/lib/vue.js",
+    "size": 366063
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/public/static/html/NewEnergyGuide/lib/vue.min.js",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/public/static/html/aNewEnergyGuide/lib/vue.min.js",
+    "size": 93897
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/public/static/html/NewEnergyGuide/lib/vuex.js",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/public/static/html/aNewEnergyGuide/lib/vuex.js",
+    "size": 40657
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/public/static/html/NewEnergyGuide/lib/vuex.min.js",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/public/static/html/aNewEnergyGuide/lib/vuex.min.js",
+    "size": 10808
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/assets/enterprise/json/licenseType.js",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/assets/hg/json/licenseType.js",
+    "size": 45389
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/assets/enterprise/json/projectMatter.js",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/assets/hg/json/projectMatter.js",
+    "size": 2572
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/assets/enterprise/json/regionMapper.js",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/assets/hg/json/regionMapper.js",
+    "size": 555
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/assets/enterprise/json/licenseType.js",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/assets/lg/json/licenseType.js",
+    "size": 45389
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/assets/enterprise/json/projectMatter.js",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/assets/lg/json/projectMatter.js",
+    "size": 2572
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/assets/enterprise/json/regionMapper.js",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/assets/lg/json/regionMapper.js",
+    "size": 555
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/assets/enterprise/json/regionMapper.js",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/assets/personal/js/regionMapper.js",
+    "size": 555
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/enterprise/enterpriseHelp/api/index.js",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/enterpriseHelp/api/index.js",
+    "size": 3751
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/enterprise/enterpriseHelp/index.js",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/enterpriseHelp/index.js",
+    "size": 201
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/enterprise/enterpriseHelp/service/index.js",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/enterpriseHelp/service/index.js",
+    "size": 1160
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/enterprise/enterpriseHelp/store/index.js",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/enterpriseHelp/store/index.js",
+    "size": 4557
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/enterprise/enterpriseHelp/service/index.js",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/proposedListing/service/index.js",
+    "size": 1160
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/mixins/hg/article.js",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/mixins/lg/article.js",
+    "size": 2811
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/store/hg.js",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/store/lg.js",
+    "size": 10281
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/store/modules/hg-store.js",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/store/modules/lg-store.js",
+    "size": 7439
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/buy-house/mixins.js",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/buy-house/mixins.js",
+    "size": 432
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/buy-house/mixins.js",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/buy-house/mixins.js",
+    "size": 432
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/integral-view/apis/index.js",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/integral-view/apis/index.js",
+    "size": 2152
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/integral-view/index.js",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/integral-view/index.js",
+    "size": 466
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/integral-view/integral/dialog-address/assets/js/city.js",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/integral-view/integral/dialog-address/assets/js/city.js",
+    "size": 97045
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/integral-view/integral/my-integral/assets/js/festival.js",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/integral-view/integral/my-integral/assets/js/festival.js",
+    "size": 1236
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/integral-view/integral-detail/integral-rules/service.js",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/integral-view/integral-detail/integral-rules/service.js",
+    "size": 47
+  }
+]

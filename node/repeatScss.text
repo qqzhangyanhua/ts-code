@@ -1,0 +1,929 @@
+
+共有重复scss: 185
+  [
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/enterprise/book/rent-reduction/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/hg/book/rent-reduction/index.scss",
+    "size": 1120
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/enterprise/onething_custom/3000apply/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/hg/onething_custom/3000apply/index.scss",
+    "size": 1063
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/enterprise/book/rent-reduction/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/book/rent-reduction/index.scss",
+    "size": 1120
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/enterprise/enterpriseHelp/components/district-policies/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/enterpriseHelp/components/district-policies/index.scss",
+    "size": 1584
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/enterprise/enterpriseHelp/components/handle-service/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/enterpriseHelp/components/handle-service/index.scss",
+    "size": 2360
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/enterprise/enterpriseHelp/components/handle-service/matter-list/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/enterpriseHelp/components/handle-service/matter-list/index.scss",
+    "size": 2155
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/enterprise/enterpriseHelp/components/hot-service/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/enterpriseHelp/components/hot-service/index.scss",
+    "size": 3895
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/enterprise/enterpriseHelp/components/interact/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/enterpriseHelp/components/interact/index.scss",
+    "size": 476
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/enterprise/enterpriseHelp/components/introduction-service/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/enterpriseHelp/components/introduction-service/index.scss",
+    "size": 865
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/enterprise/enterpriseHelp/components/municipal-government/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/enterpriseHelp/components/municipal-government/index.scss",
+    "size": 1163
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/enterprise/enterpriseHelp/components/one-window/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/enterpriseHelp/components/one-window/index.scss",
+    "size": 1272
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/enterprise/enterpriseHelp/components/other-policies/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/enterpriseHelp/components/other-policies/index.scss",
+    "size": 946
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/enterprise/enterpriseHelp/components/policy-overview/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/enterpriseHelp/components/policy-overview/index.scss",
+    "size": 1974
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/enterprise/enterpriseHelp/components/policy-test/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/enterpriseHelp/components/policy-test/index.scss",
+    "size": 8216
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/enterprise/enterpriseHelp/components/policy-zone/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/enterpriseHelp/components/policy-zone/index.scss",
+    "size": 1383
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/enterprise/enterpriseHelp/components/popular-policy/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/enterpriseHelp/components/popular-policy/index.scss",
+    "size": 1787
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/enterprise/enterpriseHelp/components/primary-title/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/enterpriseHelp/components/primary-title/index.scss",
+    "size": 344
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/enterprise/enterpriseHelp/components/project-declaration/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/enterpriseHelp/components/project-declaration/index.scss",
+    "size": 2372
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/enterprise/enterpriseHelp/components/project-month/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/enterpriseHelp/components/project-month/index.scss",
+    "size": 1469
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/enterprise/enterpriseHelp/components/various-departments/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/enterpriseHelp/components/various-departments/index.scss",
+    "size": 2855
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/hg/file-download/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/file-download/index.scss",
+    "size": 1225
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/hg/home/enterprise-service/components/block-tabs/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/home/enterprise-service/components/block-tabs/index.scss",
+    "size": 986
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/hg/home/enterprise-service/components/certificate-album/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/home/enterprise-service/components/certificate-album/index.scss",
+    "size": 1901
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/hg/home/enterprise-service/components/detail-dialog/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/home/enterprise-service/components/detail-dialog/index.scss",
+    "size": 1729
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/hg/home/enterprise-service/components/icon-grid/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/home/enterprise-service/components/icon-grid/index.scss",
+    "size": 1093
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/hg/home/enterprise-service/main/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/home/enterprise-service/main/index.scss",
+    "size": 807
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/hg/home/home-enjoy/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/home/home-enjoy/index.scss",
+    "size": 975
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/hg/home/notice-detail/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/home/notice-detail/index.scss",
+    "size": 2233
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/hg/home/notice-list/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/home/notice-list/index.scss",
+    "size": 2226
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/hg/home/recommend-nologin/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/home/recommend-nologin/index.scss",
+    "size": 2029
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/hg/home/user-nologin/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/home/user-nologin/index.scss",
+    "size": 1380
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/enterprise/onething_custom/3000apply/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/onething_custom/3000apply/index.scss",
+    "size": 1063
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/hg/policy/policy-overview/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/lg/policy/policy-overview/index.scss",
+    "size": 3709
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/message/components/message-detail/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/message-v2/components/message-detail/index.scss",
+    "size": 44
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/message-v2/components/remind-bar/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/message-v2/components/remind-detail/index.scss",
+    "size": 44
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/recommend/components/recommend/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/recommend-oc/compontants/recommend/index.scss",
+    "size": 179
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/scene/component/easydo/guide-offline/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/scene/component/easydo-v2/guide-offline/index.scss",
+    "size": 290
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/scene/component/easydo/header/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/scene/component/easydo-v2/header/index.scss",
+    "size": 577
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/scene/component/easydo/select/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/scene/component/easydo-v2/select/index.scss",
+    "size": 70
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/scene/component/easydo/authorize/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/scene/component/quickdo/authorize/index.scss",
+    "size": 556
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/scene/component/easydo/guide-offline/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/scene/component/quickdo/guide-offline/index.scss",
+    "size": 290
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/scene/component/easydo-v2/guide-online/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/scene/component/quickdo/guide-online/index.scss",
+    "size": 291
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/scene/component/easydo/header/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/scene/component/quickdo/header/index.scss",
+    "size": 577
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/scene/component/easydo-v2/note/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/scene/component/quickdo/note/index.scss",
+    "size": 175
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/scene/component/easydo-v2/precheck/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/scene/component/quickdo/precheck/index.scss",
+    "size": 390
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/scene/component/easydo-v2/submit-success/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/scene/component/quickdo/submit-success/index.scss",
+    "size": 154
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/tourist/enterpriseHelp/common.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/tourist/proposedListing/common.scss",
+    "size": 421
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/apply3000.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/apply3000.scss",
+    "size": 3595
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/auth.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/auth.scss",
+    "size": 78
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/authorize.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/authorize.scss",
+    "size": 2787
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/cert.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/cert.scss",
+    "size": 2758
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/chat.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/chat.scss",
+    "size": 57142
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/defencewar.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/defencewar.scss",
+    "size": 5311
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/elementui.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/elementui.scss",
+    "size": 2220
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/evaluation.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/evaluation.scss",
+    "size": 1965
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/matter-form.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/matter-form.scss",
+    "size": 4949
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/myProject.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/myProject.scss",
+    "size": 1100
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/nbxx.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/nbxx.scss",
+    "size": 376
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/new-energy.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/new-energy.scss",
+    "size": 4507
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/policy/policy-filter.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/policy/policy-filter.scss",
+    "size": 1521
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/policy/policy-list.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/policy/policy-list.scss",
+    "size": 1884
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/policy/policy-report.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/policy/policy-report.scss",
+    "size": 305
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/policy-test-detail.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/policy-test-detail.scss",
+    "size": 10216
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/policy-test-report.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/policy-test-report.scss",
+    "size": 1001
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/project.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/project.scss",
+    "size": 3329
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/projectOverview.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/projectOverview.scss",
+    "size": 11479
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/questionnaire.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/questionnaire.scss",
+    "size": 2507
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/radioCode.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/radioCode.scss",
+    "size": 4309
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/recommend.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/recommend.scss",
+    "size": 246
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/service/service.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/service/service.scss",
+    "size": 3402
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/skin/new-year.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/skin/new-year.scss",
+    "size": 4832
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/talbleListLjh.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/talbleListLjh.scss",
+    "size": 947
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/tax.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/tax.scss",
+    "size": 2441
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/user-info/bios-list.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/user-info/bios-list.scss",
+    "size": 1357
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/user-info/remind-msg.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/user-info/remind-msg.scss",
+    "size": 1092
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/apply3000.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/apply3000.scss",
+    "size": 3595
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/auth.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/auth.scss",
+    "size": 78
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/authorize.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/authorize.scss",
+    "size": 2787
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/block-title.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/block-title.scss",
+    "size": 466
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/buttons.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/buttons.scss",
+    "size": 883
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/cert.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/cert.scss",
+    "size": 2758
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/chat.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/chat.scss",
+    "size": 57142
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/defencewar.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/defencewar.scss",
+    "size": 5311
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/ecommon.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/ecommon.scss",
+    "size": 1291
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/elementui.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/elementui.scss",
+    "size": 2220
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/evaluation.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/evaluation.scss",
+    "size": 1965
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/goldbase.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/goldbase.scss",
+    "size": 1251
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/matter-form.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/matter-form.scss",
+    "size": 4949
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/myProject.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/myProject.scss",
+    "size": 1100
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/navbar/info-menu.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/navbar/info-menu.scss",
+    "size": 3595
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/navbar/nav-menu.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/navbar/nav-menu.scss",
+    "size": 1916
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/nbxx.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/nbxx.scss",
+    "size": 376
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/new-energy.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/new-energy.scss",
+    "size": 4507
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/page-notifyDetail.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/page-notifyDetail.scss",
+    "size": 2658
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/policy/policy-filter.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/policy/policy-filter.scss",
+    "size": 1521
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/policy/policy-list.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/policy/policy-list.scss",
+    "size": 1884
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/policy/policy-report.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/policy/policy-report.scss",
+    "size": 305
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/policy-test-detail.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/policy-test-detail.scss",
+    "size": 10216
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/policy-test-report.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/policy-test-report.scss",
+    "size": 1001
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/policyTest.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/policyTest.scss",
+    "size": 19626
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/project.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/project.scss",
+    "size": 3329
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/projectOverview.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/projectOverview.scss",
+    "size": 11479
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/questionnaire.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/questionnaire.scss",
+    "size": 2507
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/radioCode.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/radioCode.scss",
+    "size": 4309
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/recommend.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/recommend.scss",
+    "size": 246
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/service/service.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/service/service.scss",
+    "size": 3402
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/skin/new-year.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/skin/new-year.scss",
+    "size": 4832
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/talbleListLjh.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/talbleListLjh.scss",
+    "size": 947
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/tax.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/tax.scss",
+    "size": 2441
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/user-info/bios-list.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/user-info/bios-list.scss",
+    "size": 1357
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/user-info/grow-rate.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/user-info/grow-rate.scss",
+    "size": 874
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/user-info/remind-msg.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/user-info/remind-msg.scss",
+    "size": 1092
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/user-info/user.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/user-info/user.scss",
+    "size": 1117
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/hg/usercenter.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/lg/usercenter.scss",
+    "size": 3131
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/policy/policy-report.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/personal/policy/policy-report.scss",
+    "size": 305
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/enterprise/policy-test-report.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/styles/personal/policy-test-report.scss",
+    "size": 1001
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/authorize/auth/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/authorize/auth/index.scss",
+    "size": 540
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/authorize/auth-precise/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/authorize/auth-precise/index.scss",
+    "size": 342
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/authorize/auth-service/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/authorize/auth-service/index.scss",
+    "size": 342
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/easydo/easydo-wapper/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/easydo/easydo-wapper/index.scss",
+    "size": 1335
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/easydo-v2/easydo-wapper/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/easydo-v2/easydo-wapper/index.scss",
+    "size": 1770
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/innovate-development/home/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/innovate-development/home/index.scss",
+    "size": 390
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/innovate-development/policy-basis/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/innovate-development/policy-basis/index.scss",
+    "size": 4165
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/innovate-development/policy-overview-more/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/innovate-development/policy-overview-more/index.scss",
+    "size": 4661
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/innovate-development/project-matching/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/innovate-development/project-matching/index.scss",
+    "size": 127
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/occupational_health/dialog/pay-dialog.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/occupational_health/dialog/pay-dialog.scss",
+    "size": 1767
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/occupational_health/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/occupational_health/index.scss",
+    "size": 11283
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/quickdo/quickdo-wapper/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/quickdo/quickdo-wapper/index.scss",
+    "size": 1299
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/special-funds/policy-basis/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/special-funds/policy-basis/index.scss",
+    "size": 4175
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/special-funds/projecr-detail/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/special-funds/projecr-detail/index.scss",
+    "size": 5523
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/special-funds/special-funds-book/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/special-funds/special-funds-book/index.scss",
+    "size": 851
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/taxation/apply-table/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/taxation/apply-table/index.scss",
+    "size": 2571
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/taxation/dialog-import/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/taxation/dialog-import/index.scss",
+    "size": 1724
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/taxation/dialog-submit/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/taxation/dialog-submit/index.scss",
+    "size": 821
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/taxation/dialog-verify/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/taxation/dialog-verify/index.scss",
+    "size": 626
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/taxation/field/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/taxation/field/index.scss",
+    "size": 633
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/taxation/form/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/taxation/form/index.scss",
+    "size": 67
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/taxation/guide-form/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/taxation/guide-form/index.scss",
+    "size": 255
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/taxation/note/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/taxation/note/index.scss",
+    "size": 66
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/authorize/auth/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/authorize/auth/index.scss",
+    "size": 540
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/authorize/auth-precise/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/authorize/auth-precise/index.scss",
+    "size": 342
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/authorize/auth-service/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/authorize/auth-service/index.scss",
+    "size": 342
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/easydo/easydo-wapper/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/easydo/easydo-wapper/index.scss",
+    "size": 1335
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/easydo-v2/easydo-wapper/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/easydo-v2/easydo-wapper/index.scss",
+    "size": 1770
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/innovate-development/home/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/innovate-development/home/index.scss",
+    "size": 390
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/innovate-development/policy-basis/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/innovate-development/policy-basis/index.scss",
+    "size": 4165
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/innovate-development/policy-overview-more/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/innovate-development/policy-overview-more/index.scss",
+    "size": 4661
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/innovate-development/project-matching/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/innovate-development/project-matching/index.scss",
+    "size": 127
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/integral-view/common/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/integral-view/common/index.scss",
+    "size": 886
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/integral-view/integral/dialog-address/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/integral-view/integral/dialog-address/index.scss",
+    "size": 1746
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/integral-view/integral/integral-address/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/integral-view/integral/integral-address/index.scss",
+    "size": 2603
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/integral-view/integral/my-exchange/components/jf-dialog/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/integral-view/integral/my-exchange/components/jf-dialog/index.scss",
+    "size": 313
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/integral-view/integral/my-exchange/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/integral-view/integral/my-exchange/index.scss",
+    "size": 15300
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/integral-view/integral/my-integral/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/integral-view/integral/my-integral/index.scss",
+    "size": 18197
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/integral-view/integral-detail/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/integral-view/integral-detail/index.scss",
+    "size": 468
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/integral-view/integral-detail/integral-details/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/integral-view/integral-detail/integral-details/index.scss",
+    "size": 959
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/integral-view/integral-detail/integral-rules/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/integral-view/integral-detail/integral-rules/index.scss",
+    "size": 1104
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/occupational_health/dialog/pay-dialog.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/occupational_health/dialog/pay-dialog.scss",
+    "size": 1767
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/occupational_health/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/occupational_health/index.scss",
+    "size": 11283
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/park/parkCenter.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/park/parkCenter.scss",
+    "size": 10533
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/quickdo/quickdo-wapper/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/quickdo/quickdo-wapper/index.scss",
+    "size": 1299
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/special-funds/home/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/special-funds/home/index.scss",
+    "size": 1680
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/hg/special-funds/information-disclosure-more/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/special-funds/information-disclosure-more/index.scss",
+    "size": 3560
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/special-funds/policy-basis/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/special-funds/policy-basis/index.scss",
+    "size": 4175
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/special-funds/projecr-detail/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/special-funds/projecr-detail/index.scss",
+    "size": 5523
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/special-funds/special-funds-book/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/special-funds/special-funds-book/index.scss",
+    "size": 851
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/taxation/apply-table/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/taxation/apply-table/index.scss",
+    "size": 2571
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/taxation/dialog-import/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/taxation/dialog-import/index.scss",
+    "size": 1724
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/taxation/dialog-submit/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/taxation/dialog-submit/index.scss",
+    "size": 821
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/taxation/dialog-verify/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/taxation/dialog-verify/index.scss",
+    "size": 626
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/taxation/field/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/taxation/field/index.scss",
+    "size": 633
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/taxation/form/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/taxation/form/index.scss",
+    "size": 67
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/taxation/guide-form/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/taxation/guide-form/index.scss",
+    "size": 255
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/taxation/note/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/lg/taxation/note/index.scss",
+    "size": 66
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/common/signature/signature-dialog/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/personal/autho/autho-apply/index.scss",
+    "size": 0
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/common/signature/signature-dialog/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/personal/autho/autho-book/index.scss",
+    "size": 0
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/common/signature/signature-dialog/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/personal/autho/autho-entry/index.scss",
+    "size": 0
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/components/common/signature/signature-dialog/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/personal/autho/autho-record/index.scss",
+    "size": 0
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/occupational_health/dialog/pay-dialog.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/personal/occupational_health/dialog/pay-dialog.scss",
+    "size": 1767
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/quickdo/quickdo-wapper/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/personal/quickdo/quickdo-wapper/index.scss",
+    "size": 1299
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/special-funds/home/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/personal/special-funds/home/index.scss",
+    "size": 1837
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/special-funds/information-disclosure-more/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/personal/special-funds/information-disclosure-more/index.scss",
+    "size": 3358
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/special-funds/policy-basis/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/personal/special-funds/policy-basis/index.scss",
+    "size": 4175
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/special-funds/projecr-detail/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/personal/special-funds/projecr-detail/index.scss",
+    "size": 5523
+  },
+  {
+    "similar": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/enterprise/special-funds/special-funds-book/index.scss",
+    "fullFilePath": "/Users/zhangyanhua/Desktop/workcode/project_front_sh_shell/src/views/personal/special-funds/special-funds-book/index.scss",
+    "size": 851
+  }
+]
