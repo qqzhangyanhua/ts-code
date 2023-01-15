@@ -3,6 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const SparkMD5 = require("spark-md5");
 const sparkMD52 = new SparkMD5.ArrayBuffer();
+const { getMd5, getAllSize, getTypeof } = require("./utils/utils");
 const imgArr = [];
 const allImgArr = [];
 const imgType = [".png", ".jpg", ".jpeg", ".gif"];
@@ -14,48 +15,39 @@ const obj = {
   vueMap: new Map(),
   vueArr: [],
   json: 0,
+  jsonMap: new Map(),
+  jsonArr: [],
   css: 0,
+  cssMap: new Map(),
+  cssArr: [],
   scss: 0,
   scssMap: new Map(),
   scssArr: [],
+  html: 0,
+  htmlMap: new Map(),
+  htmlArr: [],
+  less: 0,
+  lessMap: new Map(),
+  lessArr: [],
 };
-function getMd5(fullFilePath) {
-  const buffer = fs.readFileSync(fullFilePath);
-  sparkMD52.append(buffer);
-  const hexHash = sparkMD52.end();
-  return hexHash;
+function handelProcess(fullFilePath, map, arr, file, size) {
+  const hexHash = getMd5(fullFilePath);
+  if (map.has(hexHash)) {
+    const similar = map.get(hexHash).fullFilePath;
+    arr.push({ similar, fullFilePath, size });
+  } else {
+    map.set(hexHash, { file, fullFilePath });
+  }
 }
 function getNums(type, file, fullFilePath, size) {
   if (!type) return;
   const val = type.replace(".", "");
   if (!obj.hasOwnProperty(val)) return;
-  //todo 带优化
-  if (val === "js") {
-    const hexHash = getMd5(fullFilePath);
-    if (obj.jsMap.has(hexHash)) {
-      const similar = obj.jsMap.get(hexHash).fullFilePath;
-      obj.jsArr.push({ similar, fullFilePath, size });
-    } else {
-      obj.jsMap.set(hexHash, { file, fullFilePath });
-    }
-  } else if (val === "vue") {
-    const hexHash = getMd5(fullFilePath);
-    if (obj.vueMap.has(hexHash)) {
-      const similar = obj.vueMap.get(hexHash).fullFilePath;
-      obj.vueArr.push({ similar, fullFilePath, size });
-    } else {
-      obj.vueMap.set(hexHash, { file, fullFilePath });
-    }
-  } else if (val === "scss") {
-    const hexHash = getMd5(fullFilePath);
-    if (obj.scssMap.has(hexHash)) {
-      const similar = obj.scssMap.get(hexHash).fullFilePath;
-      obj.scssArr.push({ similar, fullFilePath, size });
-    } else {
-      obj.scssMap.set(hexHash, { file, fullFilePath });
-    }
+  const countArr = ["js", "vue", "scss", "html", "less", "css", "json"];
+  if (countArr.includes(val)) {
+    handelProcess(fullFilePath, obj[`${val}Map`], obj[`${val}Arr`], file, size);
+    obj[val]++;
   }
-  obj[val]++;
 }
 const repeatImgArr = [];
 const findSync = (pkg) => {
@@ -64,7 +56,6 @@ const findSync = (pkg) => {
     if (file === "node_modules") return;
     let fullFilePath = path.join(pkg, file);
     let fileStat = fs.statSync(fullFilePath);
-
     //是否还是文件夹,如果还是文件夹就递归处理
     if (fileStat.isDirectory()) {
       findSync(fullFilePath);
@@ -118,33 +109,20 @@ function init() {
   findSync(folder);
 }
 init();
-function getAllSize(obj) {
-  let size = 0;
-  for (const key in obj) {
-    if (Array.isArray(obj[key])) {
-      const item = obj[key];
-      for (let i = 0; i < item.length; i++) {
-        size += item[i].size;
-      }
+function printAll(obj) {
+  console.log("共有图片", imgArr.length);
+  console.log("共有重复图片", repeatImgArr.length);
+  for (let key in obj) {
+    const type = getTypeof(obj[key]);
+    if (type === "Number") {
+      console.log(`共有${key}文件`, obj[key]);
+    } else if (type === "Array") {
+      console.log(`共有重复${key.replace("Arr", "")}`, obj[key].length);
     }
   }
-  return size;
+  console.log("重复文件占用大小", getAllSize(obj));
 }
-// console.log("总共有多少图片", imgArr);
-// console.log("obj", allImgArr);
-// console.log("共有重复图片", repeatImgArr.sort());
-console.log("共有js文件", obj.js);
-console.log("共有json文件", obj.json);
-console.log("共有vue文件", obj.vue);
-console.log("共有css文件", obj.css);
-console.log("共有scss文件", obj.scss);
-console.log("共有图片", imgArr.length);
-console.log("共有重复图片", repeatImgArr.length);
-console.log("共有重复js", obj.jsArr.length);
-console.log("共有重复vue", obj.vueArr.length);
-console.log("共有重复scss", obj.scssArr.length);
-console.log("重复文件占用大小", getAllSize(obj));
-
+printAll(obj);
 function writeJson(data, name) {
   fs.writeFile(name, data, (err, data) => {
     if (err) {
