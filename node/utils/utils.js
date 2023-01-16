@@ -17,7 +17,7 @@ function getAllSize(obj) {
       }
     }
   }
-  return parseInt(size / 1024) + "kb";
+  return size > 1024 ? parseInt(size / 1024) + "kb" : `${size}byte`;
 }
 function getTypeof(a) {
   const str = Object.prototype.toString.call(a);
