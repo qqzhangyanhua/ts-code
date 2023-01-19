@@ -1,0 +1,168 @@
+2023-01-19 01:06:52,181 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 1006451ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 01:24:02,199 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 989988ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 01:41:06,233 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 963993ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 01:59:58,244 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 971982ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 03:15:58,172 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 939700ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 03:48:56,550 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 932724ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 04:05:25,874 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 949311ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 05:41:04,845 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 994004ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 07:31:51,283 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 1025011ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 07:47:52,019 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 920749ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 08:03:37,711 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 905713ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 09:19:47,354 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 929379ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 09:37:34,622 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 987203ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 09:53:23,496 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 908882ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 10:04:20,411 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 616922ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 11:31:27,168 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 92692ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 11:38:44,181 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 309883ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 11:55:13,324 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 949138ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 12:36:48,265 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 207621ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 12:46:51,367 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 421647ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 13:07:59,930 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 1000078ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+

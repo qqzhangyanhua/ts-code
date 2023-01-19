@@ -1,0 +1,312 @@
+2023-01-18 21:00:58,813 INFO 5840 [egg:logger] init all loggers with options: {"dir":"/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/logs/test-egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"test-egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{"enabled":false}}
+2023-01-18 21:00:58,817 INFO 5840 [egg:core] dump config after load, 2ms
+2023-01-18 21:00:58,833 INFO 5840 [egg-watcher] Start watching: ["/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app","/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/config","/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/mocks","/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/mocks_proxy","/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app.js"]
+2023-01-18 21:00:58,833 INFO 5840 [egg-watcher] Start watching: "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app"
+2023-01-18 21:00:58,833 INFO 5840 [egg-watcher] Start watching: "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/config"
+2023-01-18 21:00:58,833 INFO 5840 [egg-watcher] Start watching: "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/mocks"
+2023-01-18 21:00:58,833 INFO 5840 [egg-watcher] Start watching: "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/mocks_proxy"
+2023-01-18 21:00:58,833 INFO 5840 [egg-watcher] Start watching: "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app.js"
+2023-01-18 21:00:58,834 INFO 5840 [egg-watcher:agent] watcher start success
+2023-01-18 21:00:58,838 INFO 5840 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [189ms] - #0 Process Start
+                                   ▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [79ms] - #1 Application Start
+                                   ▇ [7ms] - #2 Load Plugin
+                                    ▇ [7ms] - #3 Load Config
+                                    ▇ [1ms] - #4 Require(0) node_modules/.pnpm/egg-session@3.3.0/node_modules/egg-session/config/config.default.js
+                                    ▇ [0ms] - #5 Require(1) node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js
+                                    ▇ [1ms] - #6 Require(2) node_modules/.pnpm/egg-jsonp@2.0.0/node_modules/egg-jsonp/config/config.default.js
+                                     ▇ [0ms] - #7 Require(3) node_modules/.pnpm/egg-onerror@2.2.0/node_modules/egg-onerror/config/config.default.js
+                                     ▇ [0ms] - #8 Require(4) node_modules/.pnpm/egg-i18n@2.1.1/node_modules/egg-i18n/config/config.default.js
+                                     ▇ [1ms] - #9 Require(5) node_modules/.pnpm/egg-watcher@3.1.1/node_modules/egg-watcher/config/config.default.js
+                                     ▇ [0ms] - #10 Require(6) node_modules/.pnpm/egg-schedule@4.0.0/node_modules/egg-schedule/config/config.default.js
+                                     ▇ [0ms] - #11 Require(7) node_modules/.pnpm/egg-multipart@3.3.0/node_modules/egg-multipart/config/config.default.js
+                                     ▇ [0ms] - #12 Require(8) node_modules/.pnpm/egg-development@2.7.0/node_modules/egg-development/config/config.default.js
+                                     ▇ [0ms] - #13 Require(9) node_modules/.pnpm/egg-logrotator@3.1.0/node_modules/egg-logrotator/config/config.default.js
+                                     ▇ [0ms] - #14 Require(10) node_modules/.pnpm/egg-static@2.2.0/node_modules/egg-static/config/config.default.js
+                                     ▇ [0ms] - #15 Require(11) node_modules/.pnpm/egg-view@2.1.3/node_modules/egg-view/config/config.default.js
+                                     ▇ [0ms] - #16 Require(12) node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js
+                                     ▇ [0ms] - #17 Require(13) node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.local.js
+                                     ▇ [0ms] - #18 Require(14) node_modules/.pnpm/egg-watcher@3.1.1/node_modules/egg-watcher/config/config.local.js
+                                     ▇ [0ms] - #19 Require(15) node_modules/.pnpm/egg-view@2.1.3/node_modules/egg-view/config/config.local.js
+                                     ▇ [0ms] - #20 Require(16) node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.local.js
+                                     ▇▇▇ [20ms] - #21 Load extend/agent.js
+                                      ▇ [0ms] - #22 Require(17) node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/app/extend/agent.js
+                                      ▇▇▇ [17ms] - #23 Require(18) node_modules/.pnpm/egg-schedule@4.0.0/node_modules/egg-schedule/app/extend/agent.js
+                                         ▇ [0ms] - #24 Require(19) node_modules/.pnpm/egg-logrotator@3.1.0/node_modules/egg-logrotator/app/extend/agent.js
+                                         ▇▇ [13ms] - #25 Load extend/context.js
+                                         ▇ [4ms] - #26 Require(20) node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/app/extend/context.js
+                                          ▇ [1ms] - #27 Require(21) node_modules/.pnpm/egg-jsonp@2.0.0/node_modules/egg-jsonp/app/extend/context.js
+                                          ▇ [0ms] - #28 Require(22) node_modules/.pnpm/egg-i18n@2.1.1/node_modules/egg-i18n/app/extend/context.js
+                                          ▇ [5ms] - #29 Require(23) node_modules/.pnpm/egg-multipart@3.3.0/node_modules/egg-multipart/app/extend/context.js
+                                           ▇ [0ms] - #30 Require(24) node_modules/.pnpm/egg-view@2.1.3/node_modules/egg-view/app/extend/context.js
+                                           ▇ [0ms] - #31 Require(25) node_modules/.pnpm/egg@3.14.1/node_modules/egg/app/extend/context.js
+                                            ▇ [6ms] - #32 Load agent.js
+                                            ▇ [0ms] - #33 Require(26) node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/agent.js
+                                            ▇ [0ms] - #34 Require(27) node_modules/.pnpm/egg-onerror@2.2.0/node_modules/egg-onerror/agent.js
+                                            ▇ [1ms] - #35 Require(28) node_modules/.pnpm/egg-watcher@3.1.1/node_modules/egg-watcher/agent.js
+                                            ▇ [0ms] - #36 Require(29) node_modules/.pnpm/egg-schedule@4.0.0/node_modules/egg-schedule/agent.js
+                                            ▇ [3ms] - #37 Require(30) node_modules/.pnpm/egg-development@2.7.0/node_modules/egg-development/agent.js
+                                             ▇ [1ms] - #38 Require(31) node_modules/.pnpm/egg-logrotator@3.1.0/node_modules/egg-logrotator/agent.js
+                                             ▇ [0ms] - #39 Require(32) node_modules/.pnpm/egg@3.14.1/node_modules/egg/agent.js
+                                             ▇▇▇ [20ms] - #40 Before Start in node_modules/.pnpm/egg-watcher@3.1.1/node_modules/egg-watcher/lib/init.js:15:14
+                                             ▇▇ [14ms] - #41 Before Start in node_modules/.pnpm/egg-schedule@4.0.0/node_modules/egg-schedule/agent.js:12:9
+                                             ▇▇▇ [19ms] - #42 Before Start in node_modules/.pnpm/egg-development@2.7.0/node_modules/egg-development/agent.js:12:9
+2023-01-18 21:00:58,838 INFO 5840 [egg:core] dump config after ready, 2ms
+2023-01-18 21:04:00,565 INFO 6012 [egg:logger] init all loggers with options: {"dir":"/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/logs/test-egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"test-egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{"enabled":false}}
+2023-01-18 21:04:00,568 INFO 6012 [egg:core] dump config after load, 2ms
+2023-01-18 21:04:00,584 INFO 6012 [egg-watcher] Start watching: ["/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app","/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/config","/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/mocks","/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/mocks_proxy","/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app.js"]
+2023-01-18 21:04:00,584 INFO 6012 [egg-watcher] Start watching: "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app"
+2023-01-18 21:04:00,584 INFO 6012 [egg-watcher] Start watching: "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/config"
+2023-01-18 21:04:00,584 INFO 6012 [egg-watcher] Start watching: "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/mocks"
+2023-01-18 21:04:00,584 INFO 6012 [egg-watcher] Start watching: "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/mocks_proxy"
+2023-01-18 21:04:00,584 INFO 6012 [egg-watcher] Start watching: "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app.js"
+2023-01-18 21:04:00,584 INFO 6012 [egg-watcher:agent] watcher start success
+2023-01-18 21:04:00,590 INFO 6012 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [182ms] - #0 Process Start
+                                   ▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [77ms] - #1 Application Start
+                                   ▇ [6ms] - #2 Load Plugin
+                                    ▇ [8ms] - #3 Load Config
+                                    ▇ [1ms] - #4 Require(0) node_modules/.pnpm/egg-session@3.3.0/node_modules/egg-session/config/config.default.js
+                                    ▇ [0ms] - #5 Require(1) node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js
+                                    ▇ [1ms] - #6 Require(2) node_modules/.pnpm/egg-jsonp@2.0.0/node_modules/egg-jsonp/config/config.default.js
+                                    ▇ [0ms] - #7 Require(3) node_modules/.pnpm/egg-onerror@2.2.0/node_modules/egg-onerror/config/config.default.js
+                                    ▇ [0ms] - #8 Require(4) node_modules/.pnpm/egg-i18n@2.1.1/node_modules/egg-i18n/config/config.default.js
+                                     ▇ [0ms] - #9 Require(5) node_modules/.pnpm/egg-watcher@3.1.1/node_modules/egg-watcher/config/config.default.js
+                                     ▇ [0ms] - #10 Require(6) node_modules/.pnpm/egg-schedule@4.0.0/node_modules/egg-schedule/config/config.default.js
+                                     ▇ [0ms] - #11 Require(7) node_modules/.pnpm/egg-multipart@3.3.0/node_modules/egg-multipart/config/config.default.js
+                                     ▇ [0ms] - #12 Require(8) node_modules/.pnpm/egg-development@2.7.0/node_modules/egg-development/config/config.default.js
+                                     ▇ [0ms] - #13 Require(9) node_modules/.pnpm/egg-logrotator@3.1.0/node_modules/egg-logrotator/config/config.default.js
+                                     ▇ [0ms] - #14 Require(10) node_modules/.pnpm/egg-static@2.2.0/node_modules/egg-static/config/config.default.js
+                                     ▇ [0ms] - #15 Require(11) node_modules/.pnpm/egg-view@2.1.3/node_modules/egg-view/config/config.default.js
+                                     ▇ [0ms] - #16 Require(12) node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js
+                                     ▇ [0ms] - #17 Require(13) node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.local.js
+                                     ▇ [0ms] - #18 Require(14) node_modules/.pnpm/egg-watcher@3.1.1/node_modules/egg-watcher/config/config.local.js
+                                     ▇ [1ms] - #19 Require(15) node_modules/.pnpm/egg-view@2.1.3/node_modules/egg-view/config/config.local.js
+                                      ▇ [0ms] - #20 Require(16) node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.local.js
+                                      ▇▇▇ [19ms] - #21 Load extend/agent.js
+                                      ▇ [1ms] - #22 Require(17) node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/app/extend/agent.js
+                                      ▇▇▇ [16ms] - #23 Require(18) node_modules/.pnpm/egg-schedule@4.0.0/node_modules/egg-schedule/app/extend/agent.js
+                                         ▇ [1ms] - #24 Require(19) node_modules/.pnpm/egg-logrotator@3.1.0/node_modules/egg-logrotator/app/extend/agent.js
+                                         ▇▇ [11ms] - #25 Load extend/context.js
+                                         ▇ [4ms] - #26 Require(20) node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/app/extend/context.js
+                                          ▇ [1ms] - #27 Require(21) node_modules/.pnpm/egg-jsonp@2.0.0/node_modules/egg-jsonp/app/extend/context.js
+                                          ▇ [0ms] - #28 Require(22) node_modules/.pnpm/egg-i18n@2.1.1/node_modules/egg-i18n/app/extend/context.js
+                                          ▇ [5ms] - #29 Require(23) node_modules/.pnpm/egg-multipart@3.3.0/node_modules/egg-multipart/app/extend/context.js
+                                           ▇ [0ms] - #30 Require(24) node_modules/.pnpm/egg-view@2.1.3/node_modules/egg-view/app/extend/context.js
+                                           ▇ [0ms] - #31 Require(25) node_modules/.pnpm/egg@3.14.1/node_modules/egg/app/extend/context.js
+                                           ▇ [6ms] - #32 Load agent.js
+                                           ▇ [1ms] - #33 Require(26) node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/agent.js
+                                            ▇ [0ms] - #34 Require(27) node_modules/.pnpm/egg-onerror@2.2.0/node_modules/egg-onerror/agent.js
+                                            ▇ [1ms] - #35 Require(28) node_modules/.pnpm/egg-watcher@3.1.1/node_modules/egg-watcher/agent.js
+                                            ▇ [1ms] - #36 Require(29) node_modules/.pnpm/egg-schedule@4.0.0/node_modules/egg-schedule/agent.js
+                                            ▇ [3ms] - #37 Require(30) node_modules/.pnpm/egg-development@2.7.0/node_modules/egg-development/agent.js
+                                             ▇ [0ms] - #38 Require(31) node_modules/.pnpm/egg-logrotator@3.1.0/node_modules/egg-logrotator/agent.js
+                                             ▇ [0ms] - #39 Require(32) node_modules/.pnpm/egg@3.14.1/node_modules/egg/agent.js
+                                             ▇▇▇ [19ms] - #40 Before Start in node_modules/.pnpm/egg-watcher@3.1.1/node_modules/egg-watcher/lib/init.js:15:14
+                                             ▇▇ [14ms] - #41 Before Start in node_modules/.pnpm/egg-schedule@4.0.0/node_modules/egg-schedule/agent.js:12:9
+                                             ▇▇▇▇ [22ms] - #42 Before Start in node_modules/.pnpm/egg-development@2.7.0/node_modules/egg-development/agent.js:12:9
+2023-01-18 21:04:00,590 INFO 6012 [egg:core] dump config after ready, 2ms
+2023-01-18 21:05:26,541 INFO 6062 [egg:logger] init all loggers with options: {"dir":"/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/logs/test-egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"test-egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{"enabled":false}}
+2023-01-18 21:05:26,545 INFO 6062 [egg:core] dump config after load, 2ms
+2023-01-18 21:05:26,560 INFO 6062 [egg-watcher] Start watching: ["/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app","/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/config","/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/mocks","/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/mocks_proxy","/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app.js"]
+2023-01-18 21:05:26,560 INFO 6062 [egg-watcher] Start watching: "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app"
+2023-01-18 21:05:26,560 INFO 6062 [egg-watcher] Start watching: "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/config"
+2023-01-18 21:05:26,560 INFO 6062 [egg-watcher] Start watching: "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/mocks"
+2023-01-18 21:05:26,560 INFO 6062 [egg-watcher] Start watching: "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/mocks_proxy"
+2023-01-18 21:05:26,560 INFO 6062 [egg-watcher] Start watching: "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app.js"
+2023-01-18 21:05:26,560 INFO 6062 [egg-watcher:agent] watcher start success
+2023-01-18 21:05:26,570 INFO 6062 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [200ms] - #0 Process Start
+                                   ▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [82ms] - #1 Application Start
+                                   ▇ [4ms] - #2 Load Plugin
+                                    ▇ [11ms] - #3 Load Config
+                                    ▇ [0ms] - #4 Require(0) node_modules/.pnpm/egg-session@3.3.0/node_modules/egg-session/config/config.default.js
+                                    ▇ [0ms] - #5 Require(1) node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js
+                                    ▇ [0ms] - #6 Require(2) node_modules/.pnpm/egg-jsonp@2.0.0/node_modules/egg-jsonp/config/config.default.js
+                                    ▇ [0ms] - #7 Require(3) node_modules/.pnpm/egg-onerror@2.2.0/node_modules/egg-onerror/config/config.default.js
+                                    ▇ [1ms] - #8 Require(4) node_modules/.pnpm/egg-i18n@2.1.1/node_modules/egg-i18n/config/config.default.js
+                                    ▇ [0ms] - #9 Require(5) node_modules/.pnpm/egg-watcher@3.1.1/node_modules/egg-watcher/config/config.default.js
+                                    ▇ [0ms] - #10 Require(6) node_modules/.pnpm/egg-schedule@4.0.0/node_modules/egg-schedule/config/config.default.js
+                                     ▇ [0ms] - #11 Require(7) node_modules/.pnpm/egg-multipart@3.3.0/node_modules/egg-multipart/config/config.default.js
+                                     ▇ [0ms] - #12 Require(8) node_modules/.pnpm/egg-development@2.7.0/node_modules/egg-development/config/config.default.js
+                                     ▇ [1ms] - #13 Require(9) node_modules/.pnpm/egg-logrotator@3.1.0/node_modules/egg-logrotator/config/config.default.js
+                                     ▇ [0ms] - #14 Require(10) node_modules/.pnpm/egg-static@2.2.0/node_modules/egg-static/config/config.default.js
+                                     ▇ [0ms] - #15 Require(11) node_modules/.pnpm/egg-view@2.1.3/node_modules/egg-view/config/config.default.js
+                                     ▇ [0ms] - #16 Require(12) node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js
+                                     ▇ [0ms] - #17 Require(13) node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.local.js
+                                     ▇ [2ms] - #18 Require(14) node_modules/.pnpm/egg-watcher@3.1.1/node_modules/egg-watcher/config/config.local.js
+                                     ▇ [1ms] - #19 Require(15) node_modules/.pnpm/egg-view@2.1.3/node_modules/egg-view/config/config.local.js
+                                      ▇ [1ms] - #20 Require(16) node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.local.js
+                                      ▇▇▇ [19ms] - #21 Load extend/agent.js
+                                      ▇ [1ms] - #22 Require(17) node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/app/extend/agent.js
+                                      ▇▇ [17ms] - #23 Require(18) node_modules/.pnpm/egg-schedule@4.0.0/node_modules/egg-schedule/app/extend/agent.js
+                                         ▇ [1ms] - #24 Require(19) node_modules/.pnpm/egg-logrotator@3.1.0/node_modules/egg-logrotator/app/extend/agent.js
+                                         ▇▇ [12ms] - #25 Load extend/context.js
+                                         ▇ [4ms] - #26 Require(20) node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/app/extend/context.js
+                                          ▇ [1ms] - #27 Require(21) node_modules/.pnpm/egg-jsonp@2.0.0/node_modules/egg-jsonp/app/extend/context.js
+                                          ▇ [1ms] - #28 Require(22) node_modules/.pnpm/egg-i18n@2.1.1/node_modules/egg-i18n/app/extend/context.js
+                                          ▇ [4ms] - #29 Require(23) node_modules/.pnpm/egg-multipart@3.3.0/node_modules/egg-multipart/app/extend/context.js
+                                           ▇ [0ms] - #30 Require(24) node_modules/.pnpm/egg-view@2.1.3/node_modules/egg-view/app/extend/context.js
+                                           ▇ [0ms] - #31 Require(25) node_modules/.pnpm/egg@3.14.1/node_modules/egg/app/extend/context.js
+                                           ▇ [6ms] - #32 Load agent.js
+                                           ▇ [0ms] - #33 Require(26) node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/agent.js
+                                           ▇ [0ms] - #34 Require(27) node_modules/.pnpm/egg-onerror@2.2.0/node_modules/egg-onerror/agent.js
+                                           ▇ [1ms] - #35 Require(28) node_modules/.pnpm/egg-watcher@3.1.1/node_modules/egg-watcher/agent.js
+                                            ▇ [0ms] - #36 Require(29) node_modules/.pnpm/egg-schedule@4.0.0/node_modules/egg-schedule/agent.js
+                                            ▇ [3ms] - #37 Require(30) node_modules/.pnpm/egg-development@2.7.0/node_modules/egg-development/agent.js
+                                            ▇ [1ms] - #38 Require(31) node_modules/.pnpm/egg-logrotator@3.1.0/node_modules/egg-logrotator/agent.js
+                                            ▇ [0ms] - #39 Require(32) node_modules/.pnpm/egg@3.14.1/node_modules/egg/agent.js
+                                             ▇▇▇ [18ms] - #40 Before Start in node_modules/.pnpm/egg-watcher@3.1.1/node_modules/egg-watcher/lib/init.js:15:14
+                                             ▇▇ [13ms] - #41 Before Start in node_modules/.pnpm/egg-schedule@4.0.0/node_modules/egg-schedule/agent.js:12:9
+                                             ▇▇▇▇ [25ms] - #42 Before Start in node_modules/.pnpm/egg-development@2.7.0/node_modules/egg-development/agent.js:12:9
+2023-01-18 21:05:26,571 INFO 6062 [egg:core] dump config after ready, 3ms
+2023-01-18 21:05:52,524 INFO 6125 [egg:logger] init all loggers with options: {"dir":"/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/logs/test-egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"test-egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{"enabled":false}}
+2023-01-18 21:05:52,528 INFO 6125 [egg:core] dump config after load, 2ms
+2023-01-18 21:05:52,543 INFO 6125 [egg-watcher] Start watching: ["/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app","/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/config","/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/mocks","/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/mocks_proxy","/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app.js"]
+2023-01-18 21:05:52,543 INFO 6125 [egg-watcher] Start watching: "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app"
+2023-01-18 21:05:52,543 INFO 6125 [egg-watcher] Start watching: "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/config"
+2023-01-18 21:05:52,543 INFO 6125 [egg-watcher] Start watching: "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/mocks"
+2023-01-18 21:05:52,543 INFO 6125 [egg-watcher] Start watching: "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/mocks_proxy"
+2023-01-18 21:05:52,543 INFO 6125 [egg-watcher] Start watching: "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app.js"
+2023-01-18 21:05:52,543 INFO 6125 [egg-watcher:agent] watcher start success
+2023-01-18 21:05:52,548 INFO 6125 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [187ms] - #0 Process Start
+                                     ▇▇▇▇▇▇▇▇▇▇▇▇ [61ms] - #1 Application Start
+                                     ▇ [4ms] - #2 Load Plugin
+                                      ▇ [5ms] - #3 Load Config
+                                      ▇ [0ms] - #4 Require(0) node_modules/.pnpm/egg-session@3.3.0/node_modules/egg-session/config/config.default.js
+                                      ▇ [0ms] - #5 Require(1) node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js
+                                       ▇ [0ms] - #6 Require(2) node_modules/.pnpm/egg-jsonp@2.0.0/node_modules/egg-jsonp/config/config.default.js
+                                       ▇ [0ms] - #7 Require(3) node_modules/.pnpm/egg-onerror@2.2.0/node_modules/egg-onerror/config/config.default.js
+                                       ▇ [0ms] - #8 Require(4) node_modules/.pnpm/egg-i18n@2.1.1/node_modules/egg-i18n/config/config.default.js
+                                       ▇ [0ms] - #9 Require(5) node_modules/.pnpm/egg-watcher@3.1.1/node_modules/egg-watcher/config/config.default.js
+                                       ▇ [0ms] - #10 Require(6) node_modules/.pnpm/egg-schedule@4.0.0/node_modules/egg-schedule/config/config.default.js
+                                       ▇ [0ms] - #11 Require(7) node_modules/.pnpm/egg-multipart@3.3.0/node_modules/egg-multipart/config/config.default.js
+                                       ▇ [0ms] - #12 Require(8) node_modules/.pnpm/egg-development@2.7.0/node_modules/egg-development/config/config.default.js
+                                       ▇ [0ms] - #13 Require(9) node_modules/.pnpm/egg-logrotator@3.1.0/node_modules/egg-logrotator/config/config.default.js
+                                       ▇ [0ms] - #14 Require(10) node_modules/.pnpm/egg-static@2.2.0/node_modules/egg-static/config/config.default.js
+                                       ▇ [0ms] - #15 Require(11) node_modules/.pnpm/egg-view@2.1.3/node_modules/egg-view/config/config.default.js
+                                       ▇ [0ms] - #16 Require(12) node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js
+                                       ▇ [0ms] - #17 Require(13) node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.local.js
+                                       ▇ [0ms] - #18 Require(14) node_modules/.pnpm/egg-watcher@3.1.1/node_modules/egg-watcher/config/config.local.js
+                                       ▇ [0ms] - #19 Require(15) node_modules/.pnpm/egg-view@2.1.3/node_modules/egg-view/config/config.local.js
+                                       ▇ [0ms] - #20 Require(16) node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.local.js
+                                       ▇▇ [14ms] - #21 Load extend/agent.js
+                                       ▇ [0ms] - #22 Require(17) node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/app/extend/agent.js
+                                       ▇▇ [12ms] - #23 Require(18) node_modules/.pnpm/egg-schedule@4.0.0/node_modules/egg-schedule/app/extend/agent.js
+                                          ▇ [0ms] - #24 Require(19) node_modules/.pnpm/egg-logrotator@3.1.0/node_modules/egg-logrotator/app/extend/agent.js
+                                          ▇ [7ms] - #25 Load extend/context.js
+                                          ▇ [2ms] - #26 Require(20) node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/app/extend/context.js
+                                           ▇ [1ms] - #27 Require(21) node_modules/.pnpm/egg-jsonp@2.0.0/node_modules/egg-jsonp/app/extend/context.js
+                                           ▇ [0ms] - #28 Require(22) node_modules/.pnpm/egg-i18n@2.1.1/node_modules/egg-i18n/app/extend/context.js
+                                           ▇ [3ms] - #29 Require(23) node_modules/.pnpm/egg-multipart@3.3.0/node_modules/egg-multipart/app/extend/context.js
+                                           ▇ [0ms] - #30 Require(24) node_modules/.pnpm/egg-view@2.1.3/node_modules/egg-view/app/extend/context.js
+                                           ▇ [1ms] - #31 Require(25) node_modules/.pnpm/egg@3.14.1/node_modules/egg/app/extend/context.js
+                                            ▇ [4ms] - #32 Load agent.js
+                                            ▇ [1ms] - #33 Require(26) node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/agent.js
+                                            ▇ [0ms] - #34 Require(27) node_modules/.pnpm/egg-onerror@2.2.0/node_modules/egg-onerror/agent.js
+                                            ▇ [1ms] - #35 Require(28) node_modules/.pnpm/egg-watcher@3.1.1/node_modules/egg-watcher/agent.js
+                                            ▇ [0ms] - #36 Require(29) node_modules/.pnpm/egg-schedule@4.0.0/node_modules/egg-schedule/agent.js
+                                            ▇ [1ms] - #37 Require(30) node_modules/.pnpm/egg-development@2.7.0/node_modules/egg-development/agent.js
+                                            ▇ [1ms] - #38 Require(31) node_modules/.pnpm/egg-logrotator@3.1.0/node_modules/egg-logrotator/agent.js
+                                            ▇ [0ms] - #39 Require(32) node_modules/.pnpm/egg@3.14.1/node_modules/egg/agent.js
+                                             ▇▇▇ [18ms] - #40 Before Start in node_modules/.pnpm/egg-watcher@3.1.1/node_modules/egg-watcher/lib/init.js:15:14
+                                             ▇▇ [14ms] - #41 Before Start in node_modules/.pnpm/egg-schedule@4.0.0/node_modules/egg-schedule/agent.js:12:9
+                                             ▇▇▇▇ [21ms] - #42 Before Start in node_modules/.pnpm/egg-development@2.7.0/node_modules/egg-development/agent.js:12:9
+2023-01-18 21:05:52,548 INFO 6125 [egg:core] dump config after ready, 1ms
+2023-01-18 21:07:51,569 INFO 6181 [egg:logger] init all loggers with options: {"dir":"/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/logs/test-egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"test-egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{"enabled":false}}
+2023-01-18 21:07:51,572 INFO 6181 [egg:core] dump config after load, 2ms
+2023-01-18 21:07:51,589 INFO 6181 [egg-watcher] Start watching: ["/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app","/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/config","/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/mocks","/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/mocks_proxy","/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app.js"]
+2023-01-18 21:07:51,590 INFO 6181 [egg-watcher] Start watching: "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app"
+2023-01-18 21:07:51,590 INFO 6181 [egg-watcher] Start watching: "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/config"
+2023-01-18 21:07:51,590 INFO 6181 [egg-watcher] Start watching: "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/mocks"
+2023-01-18 21:07:51,590 INFO 6181 [egg-watcher] Start watching: "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/mocks_proxy"
+2023-01-18 21:07:51,590 INFO 6181 [egg-watcher] Start watching: "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app.js"
+2023-01-18 21:07:51,590 INFO 6181 [egg-watcher:agent] watcher start success
+2023-01-18 21:07:51,595 INFO 6181 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [187ms] - #0 Process Start
+                                   ▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [79ms] - #1 Application Start
+                                   ▇ [6ms] - #2 Load Plugin
+                                    ▇ [7ms] - #3 Load Config
+                                    ▇ [0ms] - #4 Require(0) config/config.default.js
+                                    ▇ [1ms] - #5 Require(1) node_modules/.pnpm/egg-session@3.3.0/node_modules/egg-session/config/config.default.js
+                                    ▇ [0ms] - #6 Require(2) node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js
+                                    ▇ [0ms] - #7 Require(3) node_modules/.pnpm/egg-jsonp@2.0.0/node_modules/egg-jsonp/config/config.default.js
+                                    ▇ [0ms] - #8 Require(4) node_modules/.pnpm/egg-onerror@2.2.0/node_modules/egg-onerror/config/config.default.js
+                                    ▇ [0ms] - #9 Require(5) node_modules/.pnpm/egg-i18n@2.1.1/node_modules/egg-i18n/config/config.default.js
+                                     ▇ [0ms] - #10 Require(6) node_modules/.pnpm/egg-watcher@3.1.1/node_modules/egg-watcher/config/config.default.js
+                                     ▇ [0ms] - #11 Require(7) node_modules/.pnpm/egg-schedule@4.0.0/node_modules/egg-schedule/config/config.default.js
+                                     ▇ [0ms] - #12 Require(8) node_modules/.pnpm/egg-multipart@3.3.0/node_modules/egg-multipart/config/config.default.js
+                                     ▇ [0ms] - #13 Require(9) node_modules/.pnpm/egg-development@2.7.0/node_modules/egg-development/config/config.default.js
+                                     ▇ [0ms] - #14 Require(10) node_modules/.pnpm/egg-logrotator@3.1.0/node_modules/egg-logrotator/config/config.default.js
+                                     ▇ [1ms] - #15 Require(11) node_modules/.pnpm/egg-static@2.2.0/node_modules/egg-static/config/config.default.js
+                                     ▇ [0ms] - #16 Require(12) node_modules/.pnpm/egg-view@2.1.3/node_modules/egg-view/config/config.default.js
+                                     ▇ [0ms] - #17 Require(13) node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js
+                                     ▇ [0ms] - #18 Require(14) config/config.default.js
+                                     ▇ [0ms] - #19 Require(15) node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.local.js
+                                     ▇ [1ms] - #20 Require(16) node_modules/.pnpm/egg-watcher@3.1.1/node_modules/egg-watcher/config/config.local.js
+                                     ▇ [0ms] - #21 Require(17) node_modules/.pnpm/egg-view@2.1.3/node_modules/egg-view/config/config.local.js
+                                     ▇ [0ms] - #22 Require(18) node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.local.js
+                                      ▇▇▇ [20ms] - #23 Load extend/agent.js
+                                      ▇ [0ms] - #24 Require(19) node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/app/extend/agent.js
+                                      ▇▇▇ [18ms] - #25 Require(20) node_modules/.pnpm/egg-schedule@4.0.0/node_modules/egg-schedule/app/extend/agent.js
+                                         ▇ [0ms] - #26 Require(21) node_modules/.pnpm/egg-logrotator@3.1.0/node_modules/egg-logrotator/app/extend/agent.js
+                                         ▇▇ [11ms] - #27 Load extend/context.js
+                                         ▇ [4ms] - #28 Require(22) node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/app/extend/context.js
+                                          ▇ [1ms] - #29 Require(23) node_modules/.pnpm/egg-jsonp@2.0.0/node_modules/egg-jsonp/app/extend/context.js
+                                          ▇ [0ms] - #30 Require(24) node_modules/.pnpm/egg-i18n@2.1.1/node_modules/egg-i18n/app/extend/context.js
+                                          ▇ [4ms] - #31 Require(25) node_modules/.pnpm/egg-multipart@3.3.0/node_modules/egg-multipart/app/extend/context.js
+                                           ▇ [1ms] - #32 Require(26) node_modules/.pnpm/egg-view@2.1.3/node_modules/egg-view/app/extend/context.js
+                                           ▇ [0ms] - #33 Require(27) node_modules/.pnpm/egg@3.14.1/node_modules/egg/app/extend/context.js
+                                           ▇ [5ms] - #34 Load agent.js
+                                           ▇ [0ms] - #35 Require(28) node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/agent.js
+                                           ▇ [0ms] - #36 Require(29) node_modules/.pnpm/egg-onerror@2.2.0/node_modules/egg-onerror/agent.js
+                                           ▇ [1ms] - #37 Require(30) node_modules/.pnpm/egg-watcher@3.1.1/node_modules/egg-watcher/agent.js
+                                            ▇ [1ms] - #38 Require(31) node_modules/.pnpm/egg-schedule@4.0.0/node_modules/egg-schedule/agent.js
+                                            ▇ [3ms] - #39 Require(32) node_modules/.pnpm/egg-development@2.7.0/node_modules/egg-development/agent.js
+                                            ▇ [0ms] - #40 Require(33) node_modules/.pnpm/egg-logrotator@3.1.0/node_modules/egg-logrotator/agent.js
+                                            ▇ [0ms] - #41 Require(34) node_modules/.pnpm/egg@3.14.1/node_modules/egg/agent.js
+                                             ▇▇▇ [20ms] - #42 Before Start in node_modules/.pnpm/egg-watcher@3.1.1/node_modules/egg-watcher/lib/init.js:15:14
+                                             ▇▇ [16ms] - #43 Before Start in node_modules/.pnpm/egg-schedule@4.0.0/node_modules/egg-schedule/agent.js:12:9
+                                             ▇▇▇▇ [23ms] - #44 Before Start in node_modules/.pnpm/egg-development@2.7.0/node_modules/egg-development/agent.js:12:9
+2023-01-18 21:07:51,595 INFO 6181 [egg:core] dump config after ready, 1ms
+2023-01-18 21:09:18,727 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 66825ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-18 21:18:11,197 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 512442ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-18 21:34:54,329 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 963117ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-18 21:51:24,301 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 949971ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-18 22:08:26,274 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 981952ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+

@@ -1,0 +1,188 @@
+2023-01-19 00:00:00,990 INFO 6181 [egg-logrotator] agent logger reload: got log-reload message
+2023-01-19 01:06:52,181 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 1006451ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 01:24:02,199 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 989988ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 01:41:06,233 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 963993ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 01:59:58,244 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 971982ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 03:15:58,172 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 939700ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 03:48:56,550 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 932724ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 04:05:25,874 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 949311ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 05:41:04,845 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 994004ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 07:31:51,284 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 1025011ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 07:47:52,019 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 920749ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 08:03:37,711 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 905713ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 09:19:47,356 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 929379ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 09:37:34,622 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 987203ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 09:53:23,496 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 908882ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 10:04:20,411 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 616922ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 11:05:26,963 WARN 6181 [agent:development] reload worker because /Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app/controller/list.js rename
+2023-01-19 11:05:26,756 INFO 6181 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app/controller/list.js","stat":{"dev":16777231,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":9655841,"size":0,"blocks":0,"atimeMs":1674097526685.65,"mtimeMs":1674097526685.65,"ctimeMs":1674097526685.65,"birthtimeMs":1674097526685.65,"atime":"2023-01-19T03:05:26.686Z","mtime":"2023-01-19T03:05:26.686Z","ctime":"2023-01-19T03:05:26.686Z","birthtime":"2023-01-19T03:05:26.686Z"},"remove":false,"isDirectory":false,"isFile":true}
+2023-01-19 11:05:57,768 WARN 6181 [agent:development] reload worker because /Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app/controller/list.js change
+2023-01-19 11:05:57,567 INFO 6181 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app/controller/list.js","stat":{"dev":16777231,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":9655841,"size":220,"blocks":8,"atimeMs":1674097557534.9822,"mtimeMs":1674097557504.453,"ctimeMs":1674097557504.453,"birthtimeMs":1674097526685.65,"atime":"2023-01-19T03:05:57.535Z","mtime":"2023-01-19T03:05:57.504Z","ctime":"2023-01-19T03:05:57.504Z","birthtime":"2023-01-19T03:05:26.686Z"},"remove":false,"isDirectory":false,"isFile":true}
+2023-01-19 11:06:14,027 WARN 6181 [agent:development] reload worker because /Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app/router.js change
+2023-01-19 11:06:13,826 INFO 6181 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app/router.js","stat":{"dev":16777231,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":9625261,"size":176,"blocks":8,"atimeMs":1674097573796.2383,"mtimeMs":1674097573764.5076,"ctimeMs":1674097573764.5076,"birthtimeMs":1674046932825.191,"atime":"2023-01-19T03:06:13.796Z","mtime":"2023-01-19T03:06:13.765Z","ctime":"2023-01-19T03:06:13.765Z","birthtime":"2023-01-18T13:02:12.825Z"},"remove":false,"isDirectory":false,"isFile":true}
+2023-01-19 11:31:27,168 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 92692ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 11:38:44,181 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 309883ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 11:55:13,324 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 949138ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 12:36:48,265 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 207621ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 12:46:51,367 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 421647ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 13:07:59,930 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 1000078ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-19 14:32:25,626 WARN 6181 [agent:development] reload worker because /Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app/controller/list.js change
+2023-01-19 14:32:25,425 INFO 6181 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app/controller/list.js","stat":{"dev":16777231,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":9655841,"size":256,"blocks":8,"atimeMs":1674109945394.2063,"mtimeMs":1674109945362.2441,"ctimeMs":1674109945362.2441,"birthtimeMs":1674097526685.65,"atime":"2023-01-19T06:32:25.394Z","mtime":"2023-01-19T06:32:25.362Z","ctime":"2023-01-19T06:32:25.362Z","birthtime":"2023-01-19T03:05:26.686Z"},"remove":false,"isDirectory":false,"isFile":true}
+2023-01-19 14:53:22,455 INFO 6181 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app/controller/news.js","stat":{"dev":16777231,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":9680232,"size":0,"blocks":0,"atimeMs":1674111202374.8967,"mtimeMs":1674111202374.8967,"ctimeMs":1674111202374.8967,"birthtimeMs":1674111202374.8967,"atime":"2023-01-19T06:53:22.375Z","mtime":"2023-01-19T06:53:22.375Z","ctime":"2023-01-19T06:53:22.375Z","birthtime":"2023-01-19T06:53:22.375Z"},"remove":false,"isDirectory":false,"isFile":true}
+2023-01-19 14:53:22,660 WARN 6181 [agent:development] reload worker because /Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app/controller/news.js rename
+2023-01-19 15:00:37,552 WARN 6181 [agent:development] reload worker because /Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app/controller/news.js change
+2023-01-19 15:00:37,350 INFO 6181 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app/controller/news.js","stat":{"dev":16777231,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":9680232,"size":191,"blocks":8,"atimeMs":1674111637317.7004,"mtimeMs":1674111637287.8518,"ctimeMs":1674111637287.8518,"birthtimeMs":1674111202374.8967,"atime":"2023-01-19T07:00:37.318Z","mtime":"2023-01-19T07:00:37.288Z","ctime":"2023-01-19T07:00:37.288Z","birthtime":"2023-01-19T06:53:22.375Z"},"remove":false,"isDirectory":false,"isFile":true}
+2023-01-19 15:01:13,048 WARN 6181 [agent:development] reload worker because /Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app/router.js change
+2023-01-19 15:01:12,847 INFO 6181 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app/router.js","stat":{"dev":16777231,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":9625261,"size":223,"blocks":8,"atimeMs":1674111672815.6812,"mtimeMs":1674111672785.2751,"ctimeMs":1674111672785.2751,"birthtimeMs":1674046932825.191,"atime":"2023-01-19T07:01:12.816Z","mtime":"2023-01-19T07:01:12.785Z","ctime":"2023-01-19T07:01:12.785Z","birthtime":"2023-01-18T13:02:12.825Z"},"remove":false,"isDirectory":false,"isFile":true}
+2023-01-19 15:21:59,435 INFO 6181 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/config/config.default.js","stat":{"dev":16777231,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":9625393,"size":53,"blocks":8,"atimeMs":1674112919403.758,"mtimeMs":1674112919372.7212,"ctimeMs":1674112919372.7212,"birthtimeMs":1674046993148.6233,"atime":"2023-01-19T07:21:59.404Z","mtime":"2023-01-19T07:21:59.373Z","ctime":"2023-01-19T07:21:59.373Z","birthtime":"2023-01-18T13:03:13.149Z"},"remove":false,"isDirectory":false,"isFile":true}
+2023-01-19 15:21:59,636 WARN 6181 [agent:development] reload worker because /Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/config/config.default.js change
+2023-01-19 15:22:18,492 INFO 6181 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app/public/1.css","stat":{"dev":16777231,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":9685162,"size":0,"blocks":0,"atimeMs":1674112938429.7214,"mtimeMs":1674112938429.7214,"ctimeMs":1674112938429.7214,"birthtimeMs":1674112938429.7214,"atime":"2023-01-19T07:22:18.430Z","mtime":"2023-01-19T07:22:18.430Z","ctime":"2023-01-19T07:22:18.430Z","birthtime":"2023-01-19T07:22:18.430Z"},"remove":false,"isDirectory":false,"isFile":true}
+2023-01-19 15:22:25,245 INFO 6181 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app/public/1.css","stat":{"dev":16777231,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":9685162,"size":24,"blocks":8,"atimeMs":1674112938429.7214,"mtimeMs":1674112945231.7202,"ctimeMs":1674112945231.7202,"birthtimeMs":1674112938429.7214,"atime":"2023-01-19T07:22:18.430Z","mtime":"2023-01-19T07:22:25.232Z","ctime":"2023-01-19T07:22:25.232Z","birthtime":"2023-01-19T07:22:18.430Z"},"remove":false,"isDirectory":false,"isFile":true}
+2023-01-19 15:22:25,297 INFO 6181 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/app/public/1.css","stat":{"dev":16777231,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":9685162,"size":24,"blocks":8,"atimeMs":1674112945260.8044,"mtimeMs":1674112945231.7202,"ctimeMs":1674112945231.7202,"birthtimeMs":1674112938429.7214,"atime":"2023-01-19T07:22:25.261Z","mtime":"2023-01-19T07:22:25.232Z","ctime":"2023-01-19T07:22:25.232Z","birthtime":"2023-01-19T07:22:18.430Z"},"remove":false,"isDirectory":false,"isFile":true}

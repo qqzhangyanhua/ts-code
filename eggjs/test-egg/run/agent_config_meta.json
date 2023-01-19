@@ -1,0 +1,278 @@
+{
+  "keys": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/config/config.default.js",
+  "session": {
+    "maxAge": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-session@3.3.0/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-session@3.3.0/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-session@3.3.0/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-session@3.3.0/node_modules/egg-session/config/config.default.js",
+    "logValue": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-session@3.3.0/node_modules/egg-session/config/config.default.js"
+  },
+  "security": {
+    "domainWhiteList": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
+    "csrf": {
+      "enable": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
+      "type": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
+      "useSession": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
+      "supportedRequests": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js"
+    },
+    "xframe": {
+      "enable": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
+      "ipExceptionList": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js"
+    }
+  },
+  "helper": {
+    "shtml": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-jsonp@2.0.0/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-jsonp@2.0.0/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-jsonp@2.0.0/node_modules/egg-jsonp/config/config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-onerror@2.2.0/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-onerror@2.2.0/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-onerror@2.2.0/node_modules/egg-onerror/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-i18n@2.1.1/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-i18n@2.1.1/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-i18n@2.1.1/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-i18n@2.1.1/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-i18n@2.1.1/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-i18n@2.1.1/node_modules/egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-watcher@3.1.1/node_modules/egg-watcher/config/config.local.js",
+    "eventSources": {
+      "default": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-watcher@3.1.1/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-watcher@3.1.1/node_modules/egg-watcher/config/config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-schedule@4.0.0/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-schedule@4.0.0/node_modules/egg-schedule/config/config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-schedule@4.0.0/node_modules/egg-schedule/config/config.default.js"
+  },
+  "multipart": {
+    "mode": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-multipart@3.3.0/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-multipart@3.3.0/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-multipart@3.3.0/node_modules/egg-multipart/config/config.default.js",
+    "defaultParamCharset": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-multipart@3.3.0/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-multipart@3.3.0/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-multipart@3.3.0/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-multipart@3.3.0/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-multipart@3.3.0/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-multipart@3.3.0/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-multipart@3.3.0/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-multipart@3.3.0/node_modules/egg-multipart/config/config.default.js",
+    "allowArrayField": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-multipart@3.3.0/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-multipart@3.3.0/node_modules/egg-multipart/config/config.default.js",
+    "cleanSchedule": {
+      "cron": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-multipart@3.3.0/node_modules/egg-multipart/config/config.default.js",
+      "disable": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-multipart@3.3.0/node_modules/egg-multipart/config/config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-development@2.7.0/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-development@2.7.0/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-development@2.7.0/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-development@2.7.0/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-development@2.7.0/node_modules/egg-development/config/config.default.js",
+    "overrideIgnore": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-development@2.7.0/node_modules/egg-development/config/config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-logrotator@3.1.0/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-logrotator@3.1.0/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-logrotator@3.1.0/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-logrotator@3.1.0/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-logrotator@3.1.0/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-logrotator@3.1.0/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-logrotator@3.1.0/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "static": {
+    "prefix": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-static@2.2.0/node_modules/egg-static/config/config.default.js",
+    "dir": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-static@2.2.0/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-static@2.2.0/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-static@2.2.0/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-static@2.2.0/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-static@2.2.0/node_modules/egg-static/config/config.default.js"
+  },
+  "view": {
+    "root": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-view@2.1.3/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-view@2.1.3/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-view@2.1.3/node_modules/egg-view/config/config.default.js",
+    "defaultViewEngine": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-view@2.1.3/node_modules/egg-view/config/config.default.js",
+    "mapping": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-view@2.1.3/node_modules/egg-view/config/config.default.js"
+  },
+  "env": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+  "name": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+  "cookies": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+  "proxy": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+  "maxIpsCount": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+  "pkg": {
+    "name": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "version": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "description": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "main": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "scripts": {
+      "dev": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js"
+    },
+    "keywords": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "author": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "license": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "dependencies": {
+      "egg": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js"
+    },
+    "devDependencies": {
+      "egg-bin": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js"
+    }
+  },
+  "baseDir": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+  "dump": {
+    "ignore": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "timing": {
+      "slowBootActionMinDuration": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js"
+    }
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "cacheControl": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js"
+  },
+  "bodyParser": {
+    "enable": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "textLimit": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "strict": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+      "depth": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js"
+    },
+    "onerror": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js"
+  },
+  "logger": {
+    "dir": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "env": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "level": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.local.js"
+    },
+    "allowDebugAtProd": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "enablePerformanceTimer": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "enableFastContextLogger": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "request": {
+      "timeout": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js"
+    },
+    "useHttpClientNext": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js"
+  },
+  "meta": {
+    "enable": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "logging": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js"
+  },
+  "coreMiddleware": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+      "port": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js"
+  },
+  "onClientError": "/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/config/config.default.js"
+}

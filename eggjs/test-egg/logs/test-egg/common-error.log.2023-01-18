@@ -1,0 +1,85 @@
+2023-01-18 21:01:03,396 ERROR 5841 [-/127.0.0.1/-/2ms GET /] nodejs.Error: Please set config.keys first
+    at get keys [as keys] (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/lib/application.js:284:15)
+    at get cookies [as cookies] (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/app/extend/context.js:23:66)
+    at get [egg-security#CSRF_SECRET] (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/app/extend/context.js:91:35)
+    at Object.ensureCsrfSecret (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/app/extend/context.js:104:13)
+    at csrf (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/lib/middlewares/csrf.js:15:11)
+    at dispatch (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/koa-session@6.3.1/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+
+pid: 5841
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-18 21:03:38,798 ERROR 5841 [-/127.0.0.1/-/2ms GET /] nodejs.Error: Please set config.keys first
+    at get keys [as keys] (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/lib/application.js:284:15)
+    at get cookies [as cookies] (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/app/extend/context.js:23:66)
+    at get [egg-security#CSRF_SECRET] (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/app/extend/context.js:91:35)
+    at Object.ensureCsrfSecret (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/app/extend/context.js:104:13)
+    at csrf (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/lib/middlewares/csrf.js:15:11)
+    at dispatch (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/koa-session@6.3.1/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+
+pid: 5841
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-18 21:03:39,955 ERROR 5841 [-/127.0.0.1/-/1ms GET /] nodejs.Error: Please set config.keys first
+    at get keys [as keys] (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/lib/application.js:284:15)
+    at get cookies [as cookies] (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg@3.14.1/node_modules/egg/app/extend/context.js:23:66)
+    at get [egg-security#CSRF_SECRET] (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/app/extend/context.js:91:35)
+    at Object.ensureCsrfSecret (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/app/extend/context.js:104:13)
+    at csrf (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/lib/middlewares/csrf.js:15:11)
+    at dispatch (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/koa-session@6.3.1/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+
+pid: 5841
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-18 21:09:18,726 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 66825ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-18 21:18:11,196 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 512442ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-18 21:34:54,328 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 963117ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-18 21:51:24,301 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 949971ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
+2023-01-18 22:08:26,274 ERROR 6181 nodejs.ClusterClientNoResponseError: client no response in 981952ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangyanhua/Desktop/workcode/ts-code/eggjs/test-egg/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 6181
+hostname: zhangyanhuadeMacBook-Pro.local
+
