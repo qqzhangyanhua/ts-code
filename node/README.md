@@ -15,6 +15,6 @@ npm install file-nums
 # 在项目根目录下执行
 npm run file-nums
 or
-npx file-nums 全路径
+npm file-nums 全路径
 
 ```
