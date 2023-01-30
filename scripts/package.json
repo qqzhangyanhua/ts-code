@@ -1,0 +1,15 @@
+{
+  "name": "scripts-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:images": "scripty"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "imagemin-cli": "^7.0.0"
+  }
+}
