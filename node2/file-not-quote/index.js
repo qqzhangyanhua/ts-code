@@ -19,16 +19,16 @@ const semiObj = {
   fullJson: [],
   fullImg: [],
 };
+const map = new Map();
 //获取传入的参数
 function getEntryFolder() {
   return process.argv[2];
 }
 //开始执行
-function init() {
-  const pkg = getEntryFolder() || process.cwd();
+function init(pkg) {
   sync = fs.readdirSync(pkg);
-  console.log(sync);
   sync.forEach((file) => {
+    if (file === "node_modules") return;
     let fullFilePath = path.join(pkg, file);
     let fileStat = fs.statSync(fullFilePath);
     const ext = path.extname(file);
@@ -36,7 +36,7 @@ function init() {
     if (fileStat.isDirectory()) {
       init(fullFilePath);
     } else {
-      console.log(file);
+      // console.log(file);
       saveFileName(file, fullFilePath);
     }
   });
@@ -48,15 +48,49 @@ function saveFileName(file, fullFilePath) {
     semiObj[`full${toUpperFirst(ext)}`].push(fullFilePath);
   }
 }
-init();
+const pkg = getEntryFolder() || process.cwd();
+init(pkg);
 
 function readAllFiles() {
-  fs.readFile(fullFilePath, "utf-8", (err, data) => {
-    if (err) {
-      console.log(err);
-    }
-    console.log("222222222", data);
-  });
+  if (semiObj.fullVue.length > 0) {
+    const arr = semiObj.fullVue;
+    arr.forEach((fullFilePath) => {
+      fs.readFile(fullFilePath, "utf-8", (err, data) => {
+        if (err) {
+          console.log(err);
+        }
+        //先判断是否有引入,如果没有引入的文件就不做处理
+        if (data.includes("import")) {
+          // console.log("有引入文件==", data);
+          //这个正则会匹配所有的import语句 不包含 'import {} from' ,''import * as' , 'import()'
+          const reg = /import\s+\w+\s+from\s+['"](.*)['"]/g;
+          const importArr = data.match(reg);
+          if (importArr && importArr.length > 0) {
+            const arr = importArr.map((item) => {
+              const val = item.replace(
+                /import\s+\w+\s+from\s+['"](.*)['"]/g,
+                "$1"
+              );
+              return val; //path.resolve(fullFilePath, val);
+            });
+            map.set(fullFilePath, arr);
+          }
+
+          // console.log("arr1==", importArr);
+        }
+      });
+    });
+    console.log("==========", map);
+  }
+}
+//计划用链表存储
+function ListNode(val) {
+  this.val = val;
+  this.next = null;
 }
 readAllFiles();
-console.log(semiObj);
+setTimeout(() => {
+  console.log("==========", map);
+}, 1000);
+// console.log(semiObj);
+//生成map  父===>子
