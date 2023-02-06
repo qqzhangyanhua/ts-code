@@ -5,6 +5,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "调试查找未使用模块",
+      "request": "launch",
+      "program": "${workspaceFolder}/find-unused-module/test/demo2.js",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    },
+    {
       "name": "Launch Program",
       "program": "${workspaceFolder}/app.js",
       "request": "launch",
@@ -14,10 +21,11 @@
 
     {
       "name": "调试js",
-      "program": "${workspaceFolder}/调试/js/test.js",
+      "program": "${workspaceFolder}/find-unused-module/test/demo2.js",
       "request": "launch",
       "skipFiles": ["<node_internals>/**"],
-      "type": "node"
+      "type": "node",
+      "stopOnEntry": true
     },
 
     {
