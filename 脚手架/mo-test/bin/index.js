@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-console.log("action");
 
 const yargs = require("yargs/yargs");
 const { hideBin } = require("yargs/helpers");
@@ -31,4 +30,38 @@ yargs(arg)
     alias: "r",
   })
   .group(["debug", "ci"], "调试选项:")
+  .command(
+    "init [name]",
+    "do init a project",
+    (yargs) => {
+      yargs.option("name", {
+        type: "string",
+        describe: "name of project",
+      });
+    },
+    (argv) => {
+      console.log(argv);
+    }
+  )
+  .command({
+    command: "list",
+    describe: "list local packages",
+    aliases: ["ls", "la", "ll"],
+    builder: (yargs) => {
+      // yargs.option("name", {
+      //   type: "string",
+      //   describe: "name of project",
+      // });
+    },
+    handler: (argv) => {
+      console.log(argv);
+    },
+  })
+  .recommendCommands() //推荐命令
+  .fail((err, msg, yargs) => {
+    console.log("err", err);
+
+    // console.log(yargs.help());
+    process.exit(1);
+  })
   .demandCommand(1, "最少输入一个参数").argv;
