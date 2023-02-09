@@ -27,7 +27,14 @@
       "type": "node",
       "stopOnEntry": true
     },
-
+    {
+      "name": "调试readline",
+      "program": "${workspaceFolder}/脚手架/mo-test/bin/inquirer/readline.js",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node",
+      "stopOnEntry": true
+    },
     {
       "name": "5173",
       "request": "launch",
