@@ -1,5 +1,5 @@
-name:Github action test
-on:[push]
+name: Github action test
+on: [push]
 jobs:
   Test:
     runs-on: ubuntu-latest
