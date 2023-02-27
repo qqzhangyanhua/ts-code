@@ -5,6 +5,7 @@
   "main": "index.js",
   "devDependencies": {
     "@babel/core": "^7.16.5",
+    "@babel/helper-plugin-utils": "^7.20.2",
     "@babel/preset-env": "^7.16.5",
     "babel-loader": "^8.2.3",
     "clean-webpack-plugin": "^4.0.0",

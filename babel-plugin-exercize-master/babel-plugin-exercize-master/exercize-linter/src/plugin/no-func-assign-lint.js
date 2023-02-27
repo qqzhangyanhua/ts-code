@@ -9,6 +9,7 @@ const noFuncAssignLint = declare((api, options, dirname) => {
         },
         visitor: {
             AssignmentExpression(path, state) {
+                
                 const errors = state.file.get('errors');
                 const assignTarget = path.get('left').toString()
                 const binding = path.scope.getBinding(assignTarget);
