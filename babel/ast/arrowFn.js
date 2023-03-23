@@ -2,18 +2,12 @@ const babel = require("@babel/core");
 // const sourceCode = `const ast = (a,b) =>{a+b}`;
 const sourceCode = `
     console.log(1);
-
     function func() {
         console.info(2);
+    const all=(a,b)=>{
+      console.log(this)
+      return a+b
     }
-
-    export default class Clazz {
-        say() {
-            console.debug(3);
-        }
-        render() {
-            return <div>{console.error(4)}</div>
-        }
     }
 `;
 const t = require("@babel/types"); //babel的types模块,生成对应的表达式
