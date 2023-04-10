@@ -7,3 +7,15 @@ console.log(encryptData);
 // let encryptData = sm4.encrypt(msg, key, {padding: 'none'}) // 加密，不使用 padding
 // let encryptData = sm4.encrypt(msg, key, {padding: 'none', output: 'array'}) // 加密，不使用 padding，输出为字节数组
 // let encryptData = sm4.encrypt(msg, key, {mode: 'cbc', iv: 'fedcba98765432100123456789abcdef'}) // 加密，cbc 模式
+
+
+
+const key2 = "2223434";
+const encryptedDataFn = (val)=>{
+    return sm4.encrypt(val, key)
+}
+//  const encryption=(data)=>{
+//     const encrypted = sm4.encrypt(data, key2);
+//     return encrypted;
+// }
+console.log(encryptedDataFn('sdsdsads'))
