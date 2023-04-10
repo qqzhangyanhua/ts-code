@@ -1,0 +1,25 @@
+lockfileVersion: 5.4
+
+specifiers:
+  crypto-js: ^4.1.1
+  sm-crypto: ^0.3.12
+
+dependencies:
+  crypto-js: 4.1.1
+  sm-crypto: 0.3.12
+
+packages:
+
+  /crypto-js/4.1.1:
+    resolution: {integrity: sha512-o2JlM7ydqd3Qk9CA0L4NL6mTzU2sdx96a+oOfPu8Mkl/PK51vSyoi8/rQ8NknZtk44vq15lmhAj9CIAGwgeWKw==}
+    dev: false
+
+  /jsbn/1.1.0:
+    resolution: {integrity: sha512-4bYVV3aAMtDTTu4+xsDYa6sy9GyJ69/amsu9sYF2zqjiEoZA5xJi3BrfX3uY+/IekIu7MwdObdbDWpoZdBv3/A==}
+    dev: false
+
+  /sm-crypto/0.3.12:
+    resolution: {integrity: sha512-272PBzB4PYaBdeGa41TH9ZlMGLPVRmS36Gs4FjmHwXIdihQypAbhhFWZTaa/3de69q2KfMme1M5O2W5+spAdrg==}
+    dependencies:
+      jsbn: 1.1.0
+    dev: false

@@ -1,7 +1,7 @@
 const { ESLint } = require("eslint");
 
 const engine = new ESLint({
-    fix: true,
+    fix: false,
     overrideConfig: {
         parserOptions: {
             ecmaVersion: 6,
@@ -13,6 +13,7 @@ const engine = new ESLint({
     rulePaths: [__dirname],
     useEslintrc: false
 });
+
 (async function main() {
     const results = await engine.lintText(`
         if (print) 
@@ -24,7 +25,10 @@ const engine = new ESLint({
         {
             console.log(i);
         }
+        while(a){
+        }
   `);
+  console.log('results',results[0].source);
   
     console.log(results[0].output);
   

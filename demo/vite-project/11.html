@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>倾斜的蓝色按钮</title>
+</head>
+<style>
+
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+}
+
+.blue-button {
+    display: inline-block;
+    background-color: #3498db;
+    padding: 5px 55px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    /* transform: skew(-20deg); */
+}
+
+.blue-button:hover {
+    background-color: #2980b9;
+}
+
+
+</style>
+<body>
+    <div class="container">
+        <a href="#" class="blue-button">1点击我</a>
+    </div>
+</body>
+</html>

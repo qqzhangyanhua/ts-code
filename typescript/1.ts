@@ -30,7 +30,7 @@ y=1;
 y=undefined;
 y=null;
 
-
+console.log('3333');
 // never 代表不会出现的值
 // 
 function error(msg:string):never{
