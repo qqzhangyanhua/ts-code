@@ -13,7 +13,7 @@ const MyComponent = {
 const vnode = {
   tag: MyComponent,
 };
-function renderer(vnode, container) {
+export function renderer(vnode, container) {
   if (typeof vnode.tag === "object") {
     //说明是描述节点
     mountComponent(vnode, container);
@@ -52,4 +52,4 @@ function mountComponent(vnode, container) {
   renderer(subtree, container);
 }
 
-renderer(vnode, document.body);
+// renderer(vnode, document.body);

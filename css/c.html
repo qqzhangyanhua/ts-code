@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>步骤条示例</title>
+  <style>
+   body {
+  font-family: Arial, sans-serif;
+}
+
+.step-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.step-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  background-color: #fff;
+  z-index: 1;
+}
+
+
+
+
+
+.line{
+    height: 1px;
+    background-color: aqua;
+    width: 200px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="step-container">
+    <div class="step">
+      <div class="step-circle">1</div>
+      <span>步骤一</span>
+    </div>
+    <div class="line"></div>
+    <div class="step">
+      <div class="step-circle">2</div>
+      <span>步骤二</span>
+    </div>
+    <div class="line"></div>
+    <div class="step">
+      <div class="step-circle">3</div>
+      <span>步骤das搭讪大师三</span>
+    </div>
+    <div class="line"></div>
+    <div class="step">
+      <div class="step-circle">4</div>
+      <span>步骤四</span>
+    </div>
+  </div>
+</body>
+</html>

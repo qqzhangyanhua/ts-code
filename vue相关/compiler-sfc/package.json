@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@vue/compiler-sfc": "^3.2.47"
+  },
+  "devDependencies": {
+    "rollup": "^3.20.2"
   }
 }

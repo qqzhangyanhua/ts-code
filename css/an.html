@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .slot-machine {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .slot-window {
+        position: relative;
+        width: 120px;
+        height: 40px;
+        border: 1px solid #000;
+        overflow: hidden;
+      }
+
+      .slot-number {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        transform: translateY(0);
+        animation-duration: 1s;
+        animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        animation-iteration-count: infinite;
+        animation-play-state: paused;
+      }
+
+      @keyframes scroll {
+        from {
+          transform: translateY(0);
+        }
+        to {
+          transform: translateY(-100%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slot-machine">
+      <div class="slot-window">
+        <div class="slot-number">0</div>
+        <div class="slot-number">1</div>
+        <div class="slot-number">2</div>
+        <div class="slot-number">3</div>
+        <div class="slot-number">4</div>
+        <div class="slot-number">5</div>
+        <div class="slot-number">6</div>
+        <div class="slot-number">7</div>
+        <div class="slot-number">8</div>
+        <div class="slot-number">9</div>
+      </div>
+      <button id="start">开始</button>
+    </div>
+
+    <button id="pause">暂停</button>
+  </body>
+  <script>
+   const startBtn = document.getElementById('start');
+const numbers = document.querySelectorAll('.slot-number');
+
+let isStarted = false;
+
+startBtn.addEventListener('click', () => {
+  if (!isStarted) {
+    isStarted = true;
+    startBtn.textContent = '停止';
+
+    // 随机生成停止位置
+    const stopIndex = Math.floor(Math.random() * numbers.length);
+    const stopNumber = numbers[stopIndex];
+
+    // 设置每个数字的动画延迟，让它们形成错落的效果
+    numbers.forEach((number, index) => {
+      const delay = index * 100;
+      number.style.animationDelay = `${delay}ms`;
+      number.style.animationPlayState = 'running';
+    });
+
+    // 在一定时间后停止滚动
+    setTimeout(() => {
+      let stopTop = stopNumber.offsetTop;
+      if (stopIndex === 0) {
+        stopTop = -numbers.length * numbers[0].offsetHeight;
+      } else {
+        stopTop -= numbers[0].offsetHeight;
+      }
+      numbers.forEach((number) => {
+        number.style.animationPlayState = 'paused';
+        number.style.transform = `translateY(${stopTop}px)`;
+      });
+      isStarted = false;
+      startBtn.textContent = '开始';
+    }, 2000);
+  } else {
+    isStarted = false;
+    startBtn.textContent = '开始';
+    numbers.forEach((number) => {
+      number.style.animationPlayState = 'paused';
+      number.style.transform = 'translateY(0)';
+    });
+  }
+});
+
+  </script>
+</html>
