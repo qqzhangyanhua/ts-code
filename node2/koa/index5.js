@@ -11,7 +11,7 @@ const puppeteer = require("puppeteer");
 
   const page = await browser.newPage();
   await page.goto(
-    "https://zwdtyjschange.sh.gov.cn/qykj/shell_oc_xh/enterprise/eindex"
+
   );
   const cookieHandle = await page.cookies();
   console.log("cookieHandle", cookieHandle);
